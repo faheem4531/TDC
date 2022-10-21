@@ -17290,6 +17290,29 @@ mark[data-aos="highlight-text"].aos-animate {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+
+#snackbar3 {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+   background-color: #fff;
+  color: #2B59FF;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+  left: 29%;
+  bottom: -70px;
+  font-size: 18px;
+}
+
+#snackbar3.show3 {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
 @-webkit-keyframes fadein {
   from {
     bottom: 0;

@@ -26,6 +26,13 @@
     setTimeout(function () { x.className = 'snackbar2' }, 3000);
     return false
   }
+
+    function toastMessagefour(e) {
+        var x = document.getElementById("snackbar3");
+        x.className = "show3";
+        setTimeout(function () { x.className = 'snackbar3' }, 3000);
+        return false
+      }
 </script>
 
 <head>
@@ -426,7 +433,7 @@
               <p class="section-title__description">We have the tools to make your ideas into reality. <br
                   class="d-none d-xs-block" /> We are available to assist you and respond to your questions.</p>
             </div>
-            <form action="https://finestdevs.com/demos/fastland-html/" class="contact-form" data-aos="fade-up"
+            <form onsubmit="return toastMessagefour()" class="contact-form" data-aos="fade-up"
               data-aos-duration="500" data-aos-delay="300" data-aos-once="false">
               <div class="row">
                 <div class="col-lg-6 mb-4">
@@ -468,6 +475,7 @@
                     <div class="col-md-4 col-lg-5 col-xl-4 text-md-end pt-3">
                       <button class="btn btn-secondary shadow--secondary-4 btn--lg-2 rounded-55 text-white">Send
                         Message</button>
+                        <div id="snackbar3">We've received your message. We'll contact you soon.</div>
                     </div>
                   </div>
                 </div>
