@@ -4325,7 +4325,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
   border-radius: 15px;
   transition: 0.4s;
   background-color: white;
-  height: 400px;
+  height: 470px;
 }
 .heading-card {
   border: none;
@@ -4337,7 +4337,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
   border-radius: 15px;
   transition: 0.4s;
   background-color: white;
-  height: 400px;
+  height: 470px;
 }
 
 @media (min-width: 576px) {
