@@ -3438,7 +3438,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
 }
 
 .site-menu-main .sub-menu--item:hover > a {
-  color: #2B59FF;
+  color: #2b59ff;
 }
 
 @media (min-width: 992px) {
@@ -3620,7 +3620,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
     padding-right: 10px;
   }
   .site-menu-main .sub-menu.megamenu .mega-drop-menu-item:hover {
-    color: #2B59FF !important;
+    color: #2b59ff !important;
   }
 }
 
@@ -5410,9 +5410,10 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
   margin-bottom: 10px;
 }
 
-.widget--contact.active .widget-icon {
-  color: #5034fc;
-  background-color: #fff;
+.widget--contact:hover .widget-icon {
+  color: #5034fc !important;
+  background-color: #fff !important;
+  transition: 0.5s;
 }
 
 /*
@@ -17219,14 +17220,14 @@ mark[data-aos="highlight-text"].aos-animate {
   color: #5034fc !important;
 }
 .highlighted-link a {
-  color: #5034FC !important;
+  color: #5034fc !important;
 }
 
 #snackbar {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background-color: #2B59FF;
+  background-color: #2b59ff;
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -17248,7 +17249,7 @@ mark[data-aos="highlight-text"].aos-animate {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background-color: #2B59FF;
+  background-color: #2b59ff;
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -17272,8 +17273,8 @@ mark[data-aos="highlight-text"].aos-animate {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-   background-color: #fff;
-  color: #2B59FF;
+  background-color: #fff;
+  color: #2b59ff;
   text-align: center;
   border-radius: 10px;
   padding: 20px;
@@ -17290,13 +17291,12 @@ mark[data-aos="highlight-text"].aos-animate {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-
 #snackbar3 {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-   background-color: #fff;
-  color: #2B59FF;
+  background-color: #fff;
+  color: #2b59ff;
   text-align: center;
   border-radius: 10px;
   padding: 15px;
@@ -17361,6 +17361,6 @@ mark[data-aos="highlight-text"].aos-animate {
   }
 }
 
-.hello{
-  margin-top:30px;
+.hello {
+  margin-top: 30px;
 }
