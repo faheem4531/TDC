@@ -3,14 +3,47 @@
 
 
 <!-- Mirrored from finestdevs.com/demos/fastland-html/home-project-management.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Sep 2022 15:08:15 GMT -->
+
+<script>
+
+  function toastMessage(e) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = 'snackbar' }, 3000);
+    return false
+  }
+
+  function toastMessagetwo(e) {
+    var x = document.getElementById("snackbar1");
+    x.className = "show1";
+    setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+
+  function toastMessagefour(e) {
+    var x = document.getElementById("snackbar4");
+    x.className = "show4";
+    setTimeout(function () { x.className = 'snackbar4' }, 3000);
+    return false
+  }
+
+  function toastMessagethree(e) {
+    var x = document.getElementById("snackbar2");
+    x.className = "show2";
+    setTimeout(function () { x.className = 'snackbar2' }, 3000);
+    return false
+  }
+</script>
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    Fastland- Landing Page Template for SaaS, Startup & Agency
+    The Dev Corporate
   </title>
-  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="image/tdc_favicon.svg" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="fonts/icon-font/css/style.css">
@@ -30,7 +63,10 @@
 <body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden ">
     <div id="loading">
-      <img src="image/preloader.gif" alt="">
+      <!-- <img src="image/fev-icon.svg" alt=""> -->
+      <video width="30%" height="30%" autoplay muted>
+        <source src="./image/tdc_animation.mp4" type="video/mp4">
+      </video>
     </div>
     <!-- Clean The Code And Hop in -->
     <!-- Header Area -->
@@ -41,19 +77,20 @@
    </div>
    </div>   -->
     <!-- Header Area -->
-    <header class="site-header site-header--menu-left dynamic-sticky-bg mt-2 mt-lg-0 menu-block-4 mb-7 mb-lg-0 site-header--absolute site-header--sticky">
-      <div class="container">
+    <header
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg px-3 site-header--absolute site-header--sticky">
+      <div class="container-fluid ">
         <nav class="navbar site-navbar">
           <!-- Brand Logo-->
           <div class="brand-logo">
-            <a href="https://finestdevs.com/home-marketing.html">
+            <a href="index.html">
               <!-- light version logo (logo must be black)-->
-              <img src="image/png/logo-dark.png" alt="" class="light-version-logo">
+              <img src="image/tdc_logo.svg" alt="" class="light-version-logo">
               <!-- Dark version logo (logo must be White)-->
-              <img src="image/png/logo-white.png" alt="" class="dark-version-logo">
+              <img src="image/tdc_logo.svg" alt="" class="dark-version-logo">
             </a>
           </div>
-          <div class="menu-block-wrapper ">
+          <div class="menu-block-wrapper  ms-lg-7">
             <div class="menu-overlay"></div>
             <nav class="menu-block" id="append-menu-header">
               <div class="mobile-menu-head">
@@ -64,224 +101,115 @@
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Home <i class="fas fa-angle-down"></i>
+                <li class="nav-item nav-item-has-children ">
+                  <a href="#" class="nav-link-item drop-trigger">Home<i class="fas fa-angle-down"></i>
                   </a>
                   <ul class="sub-menu" id="submenu-1">
-                    <li class="sub-menu--item">
-                      <a href="home-marketing.html">Marketing</a>
-                    </li>
-                    <li class="sub-menu--item">
+                    <li class="sub-menu--item highlighted-link">
                       <a href="home-project-management.html">Project Management</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="home-it-services.html">IT Services</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="home-services.html">Services</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="home-agency.html">Agency</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="home-digital-agency.html">Digital Agency</a>
                     </li>
                     <li class="sub-menu--item">
                       <a href="home-app.html">App Presenting</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="home-startup.html">Startup</a>
+                      <a href="home-digital-agency.html">Digital Agency</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="home-it-services.html">IT Services</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="services-page.html">Services</a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item nav-item-has-children">
+                <li class="nav-item nav-item-has-children ">
                   <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
                   </a>
                   <ul class="sub-menu" id="submenu-2">
                     <li class="sub-menu--item">
+                      <a href="terms-page.html">Terms & Conditions</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="career-details.html">Carreer Details</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="testimonial-1.html">Testimonial</a>
+                    </li>
+                    <li class="sub-menu--item">
                       <a href="about-us.html">About Us</a>
                     </li>
-                    <li class="sub-menu--item nav-item-has-children">
-                      <a href="#" data-menu-get="h3" class="drop-trigger">Blog<i class="fas fa-angle-right"></i>
-                      </a>
-                      <ul class="sub-menu" id="submenu-3">
-                        <li class="sub-menu--item">
-                          <a href="blogs.html">Blog</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="blog-details.html">Blog Details</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="blog-right-sidebar.html">Blog Right Sidebar </a>
-                        </li>
-                      </ul>
+                    <li class="sub-menu--item">
+                      <a href="career.html">Careers</a>
                     </li>
-                    <li class="sub-menu--item nav-item-has-children">
-                      <a href="#" data-menu-get="h3" class="drop-trigger">Careers<i class="fas fa-angle-right"></i>
-                      </a>
-                      <ul class="sub-menu" id="submenu-4">
-                        <li class="sub-menu--item">
-                          <a href="career.html">Careers</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="career-details.html">Carreer Details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="sub-menu--item nav-item-has-children">
-                      <a href="#" data-menu-get="h3" class="drop-trigger">Pricing<i class="fas fa-angle-right"></i>
-                      </a>
-                      <ul class="sub-menu" id="submenu-5">
-                        <li class="sub-menu--item">
-                          <a href="pricing-1.html">Pricing-01</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="pricing-2.html">Pricing-02</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="sub-menu--item nav-item-has-children">
-                      <a href="#" data-menu-get="h3" class="drop-trigger">Account<i class="fas fa-angle-right"></i>
-                      </a>
-                      <ul class="sub-menu" id="submenu-7">
-                        <li class="sub-menu--item">
-                          <a href="sign-in.html">Sign In</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="sign-up.html">Sign Up</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="reset-password.html">Reset Password</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="sub-menu--item nav-item-has-children">
-                      <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-right"></i>
-                      </a>
-                      <ul class="sub-menu" id="submenu-8">
-                        <li class="sub-menu--item">
-                          <a href="faq.html">FAQ</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="terms-page.html">Terms & Conditions</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="404.html">404 Error</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="coming-soon.html">Coming Soon</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="testimonial-1.html">Testimonial One</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="testimonial-2.html">Testimonial Two</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="sub-menu--item nav-item-has-children">
-                      <a href="#" data-menu-get="h3" class="drop-trigger">Contact<i class="fas fa-angle-right"></i>
-                      </a>
-                      <ul class="sub-menu" id="submenu-9">
-                        <li class="sub-menu--item">
-                          <a href="contact-1.html">Contact One</a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="contact-2.html">Contact Two</a>
-                        </li>
-                      </ul>
+                    <li class="sub-menu--item">
+                      <a href="faq.html">FAQ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item nav-item-has-children has-megamenu">
-                  <a href="#" class="nav-link-item drop-trigger">Portfolios <i class="fas fa-angle-down"></i>
+                  <a href="#" class="nav-link-item drop-trigger">Technologies<i class="fas fa-angle-down"></i>
                   </a>
-                  <div class="sub-menu megamenu megadropdown-center  d-lg-flex" id="submenu-100">
+                  <div class="sub-menu megamenu  megadropdown-center  d-lg-flex" id="submenu-100">
                     <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
                       <li class="col-lg-3">
                         <div class="single-dropdown-block">
-                          <h3>Gallery Style</h3>
-                          <a href="portfolio-grid-2-container.html" class="mega-drop-menu-item sub-menu--item">Two Column Grid</a>
-                          <a href="portfolio-grid-3-container.html" class="mega-drop-menu-item sub-menu--item">Three Column Grid</a>
-                          <a href="portfolio-grid-4-container.html" class="mega-drop-menu-item sub-menu--item">Four Column Grid</a>
-                          <a href="portfolio-grid-2-container-fluid.html" class="mega-drop-menu-item sub-menu--item">Two Column Wide</a>
-                          <a href="portfolio-grid-3-container-fluid.html" class="mega-drop-menu-item sub-menu--item">Three Column Wide</a>
-                          <a href="portfolio-grid-4-container-fluid.html" class="mega-drop-menu-item sub-menu--item">Four Column Wide</a>
+                          <h3>Frontend</h3>
+                          <div class="mega-drop-menu-item sub-menu--item">React JS</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Angular</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Vue JS</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Next JS</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Bootstrap</div>
                         </div>
                       </li>
                       <li class="col-lg-3">
                         <div class="single-dropdown-block">
-                          <h3>Gallery (No Gap)</h3>
-                          <a href="portfolio-grid-2-no-gap.html" class="mega-drop-menu-item sub-menu--item">Two Column Grid</a>
-                          <a href="portfolio-grid-3-no-gap.html" class="mega-drop-menu-item sub-menu--item">Three Column Grid</a>
-                          <a href="portfolio-grid-4-no-gap.html" class="mega-drop-menu-item sub-menu--item">Four Column Grid</a>
-                          <a href="portfolio-grid-2-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Two Column Wide</a>
-                          <a href="portfolio-grid-3-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Three Column Wide</a>
-                          <a href="portfolio-grid-4-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Four Column Wide</a>
+                          <h3>Backend</h3>
+                          <div class="mega-drop-menu-item sub-menu--item">Node</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Express JS</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Jest</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Nest JS</div>
+                          <div class="mega-drop-menu-item sub-menu--item">MongoDB</div>
+                          <div class="mega-drop-menu-item sub-menu--item">PostgreSQL</div>
                         </div>
                       </li>
                       <li class="col-lg-3">
                         <div class="single-dropdown-block">
-                          <h3>Masonry Style</h3>
-                          <a href="portfolio-masonary-2-no-gap.html" class="mega-drop-menu-item sub-menu--item">Two Column Masonary</a>
-                          <a href="portfolio-masonary-3-no-gap.html" class="mega-drop-menu-item sub-menu--item">Three Column Masonary</a>
-                          <a href="portfolio-masonary-4-no-gap.html" class="mega-drop-menu-item sub-menu--item">Four Column Masonary</a>
-                          <a href="portfolio-masonary-2-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Two Column Wide</a>
-                          <a href="portfolio-masonary-3-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Three Column Wide</a>
-                          <a href="portfolio-masonary-4-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Four Column Wide</a>
+                          <h3>Designing</h3>
+                          <div class="mega-drop-menu-item sub-menu--item">Figma</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Adobe XD</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Adobe Illustrator</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Canva</div>
                         </div>
                       </li>
                       <li class="col-lg-3">
                         <div class="single-dropdown-block">
-                          <h3>Portfolio Details</h3>
-                          <a href="portfolio-details-1.html" class="mega-drop-menu-item sub-menu--item">Portfolio Details 1</a>
-                          <a href="portfolio-details-2.html" class="mega-drop-menu-item sub-menu--item">Portfolio Details 2</a>
-                          <a href="portfolio-details-3.html" class="mega-drop-menu-item sub-menu--item">Portfolio Details 3</a>
+                          <h3>Quality Assurance</h3>
+                          <div class="mega-drop-menu-item sub-menu--item">Manual Testing</div>
+                          <div class="mega-drop-menu-item sub-menu--item">ClickUP</div>
+                          <div class="mega-drop-menu-item sub-menu--item">API Testing</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Unit Testing</div>
+                          <div class="mega-drop-menu-item sub-menu--item">Selenium</div>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Blogs <i class="fas fa-angle-down"></i>
+                <li class="nav-item nav-item-has-children ">
+                  <a href="portfolio-grid-3-container.html" class="nav-link-item drop-trigger">Portfolios</i>
                   </a>
-                  <ul class="sub-menu" id="submenu-10">
-                    <li class="sub-menu--item">
-                      <a href="blogs.html">Blog Reguler</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
-                    </li>
-                  </ul>
                 </li>
                 <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Contact <i class="fas fa-angle-down"></i>
+                  <a href="contact-1.html" class="nav-link-item">Contact Us</i>
                   </a>
-                  <ul class="sub-menu" id="submenu-11">
-                    <li class="sub-menu--item">
-                      <a href="contact-1.html">Contact One</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="contact-2.html">Contact Two</a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center heading-default-color">
-            <a class="btn-link heading-default-color-2 transition-4s me-3" href="#">
-              Login
-            </a>
-            <a class="btn btn--xxl h-45 btn-primary text-white rounded-55" href="#">
-              Get Started For Free
-            </a>
+          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Hire Now
+            </button>
           </div>
           <!-- mobile menu trigger -->
           <div class="mobile-menu-trigger">
@@ -293,44 +221,95 @@
     </header>
     <!-- navbar- -->
     <!--/ .Header Area -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <form class="modal-content custom-border-none">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hire Now</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="user-input-label">Name</div>
+          <input type="text" class="user-input" placeholder="Name" required />
+          <div class="user-input-label">Company Name</div>
+          <input type="text" class="user-input" placeholder="Company Name" required />
+          <div class="user-input-label">Email Address</div>
+          <input type="email" class="user-input" placeholder="Email address" required />
+          <div class="user-input-label">Hiring Position</div>
+          <select class="user-custom-select form-select form-select-sm" required>
+            <option value="">Hiring Position</option>
+            <option value="1">Front-end</option>
+            <option value="2">Back-end</option>
+            <option value="3">QA's</option>
+            <option value="3">DevOps</option>
+            <option value="3">Full-Stack</option>
+            <option value="3">Tech-Stack</option>
+          </select>
+          <div class="user-input-label">Experience</div>
+          <select class="user-custom-select form-select form-select-sm" required>
+            <option value="">Experience</option>
+            <option value="1">1-3 years</option>
+            <option value="2">3-5 years</option>
+            <option value="3">5++ years</option>
+          </select>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Modal -->
+
     <!-- Hero Area -->
     <div class="welcome-area welcome-area--l2 bg-default">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-11">
             <div class="welcome-content welcome-content--l2 text-center position-relative">
-              <h1 class="welcome-content--l2__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">The intelligent way to manage projects.</h1>
-              <p class="welcome-content--l2__descriptions" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="false">Create custom landing pages with Fastland that<br class="d-none d-xs-block"> converts more
-                        visitors than any website.
+              <h1 class="welcome-content--l2__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+                The intelligent way to manage projects.</h1>
+              <p class="welcome-content--l2__descriptions" data-aos="fade-up" data-aos-duration="500"
+                data-aos-delay="300" data-aos-once="false">Create custom landing pages with Fastland that<br
+                  class="d-none d-xs-block"> converts more
+                visitors than any website.
               </p>
-              <div class="welcome-content--l2-shape" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+              <div class="welcome-content--l2-shape" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500"
+                data-aos-once="false">
                 <img class="w-100" src="image/home-2/l2-hero-shape.png" alt="">
               </div>
             </div>
             <!-- Newsletter -->
-            <div class="welcome-content--l2__newsletter" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
-              <div class="newsletter-form mx-auto newsletter-form--l2">
-                <form action="https://finestdevs.com/.">
+            <div class="welcome-content--l2__newsletter" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+              data-aos-once="false">
+              <div class="newsletter-form mx-auto newsletter-form--l2 ">
+                <form id="hire-now-form1" action="" onsubmit="return toastMessagefour()">
                   <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
                     <input class="form-control  rounded-55" type="email" placeholder="@ Enter your email" required>
                     <button class=" btn btn-primary text-white btn--medium rounded-55" type="submit">Start Now!</button>
+                    <div id="snackbar4">We've received your mail. We'll contact you soon.</div>
                   </div>
                 </form>
               </div>
             </div>
             <!--/ .Newsletter -->
           </div>
-          <div class="col-lg-5 col-md-7" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+          <div class="col-lg-5 col-md-7" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+            data-aos-once="false">
             <div class="welcome-image welcome-image--l2">
               <img class="w-100" src="image/home-2/l2-hero-image.png" alt="">
             </div>
           </div>
         </div>
       </div>
-      <div class="welcome-area--l2-shape-1" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+      <div class="welcome-area--l2-shape-1" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"
+        data-aos-once="false">
         <img class="w-100" src="image/home-2/l2-hero-shape-2.png" alt="">
       </div>
-      <div class="welcome-area--l2-shape-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+      <div class="welcome-area--l2-shape-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500"
+        data-aos-once="false">
         <img class="w-100" src="image/home-2/l2-hero-shape-1.png" alt="">
       </div>
     </div>
@@ -344,19 +323,23 @@
               <div class="feature-area--l2__tab" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
                 <ul class="nav nav-tabs nav-tab--feature-2" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Project Management</a>
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                      aria-controls="home" aria-selected="false">Project Management</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Task Management</a>
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                      aria-controls="profile" aria-selected="false">Task Management</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Easy Schedule</a>
+                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
+                      aria-controls="contact" aria-selected="false">Easy Schedule</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="tab-content tab-content--feature-l2" id="myTabContent" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="false">
+          <div class="tab-content tab-content--feature-l2" id="myTabContent" data-aos="fade-up" data-aos-duration="500"
+            data-aos-delay="300" data-aos-once="false">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row align-items-center justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-5 col-xs-10">
@@ -369,8 +352,9 @@
                 </div>
                 <div class="col-xl-5 col-lg-6 col-md-7 col-xs-10">
                   <div class="feature-area--l2__content">
-                    <h2 class="feature-area--l2__content__heading content-widget-l2__heading">Best features<br class="d-none d-xs-block">
-                                    for your project<br class="d-none d-xs-block"> management.</h2>
+                    <h2 class="feature-area--l2__content__heading content-widget-l2__heading">Best features<br
+                        class="d-none d-xs-block">
+                      for your project<br class="d-none d-xs-block"> management.</h2>
                     <!-- Feature widgets -->
                     <div class="feature-area--l2-widgets">
                       <!-- Single Feature Widgets -->
@@ -380,7 +364,8 @@
                         </div>
                         <div class="widget--feature-2__body">
                           <h4 class="widget--feature-2__title">Manage Smartly</h4>
-                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br class='d-none d-xs-block'> in touch with what's happening</p>
+                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br
+                              class='d-none d-xs-block'> in touch with what's happening</p>
                         </div>
                       </div>
                       <!--/ .Single Feature Widgets -->
@@ -391,7 +376,8 @@
                         </div>
                         <div class="widget--feature-2__body">
                           <h4 class="widget--feature-2__title">Communicate Fast</h4>
-                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br class='d-none d-xs-block'> in touch with what's happening</p>
+                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br
+                              class='d-none d-xs-block'> in touch with what's happening</p>
                         </div>
                       </div>
                       <!--/ .Single Feature Widgets -->
@@ -413,8 +399,9 @@
                 </div>
                 <div class="col-xl-5 col-lg-6 col-md-7 col-xs-10">
                   <div class="feature-area--l2__content">
-                    <h2 class="feature-area--l2__content__heading content-widget-l2__heading">Manage your<br class="d-none d-xs-block">
-                                   tasks easily with<br class="d-none d-xs-block"> FastLand.</h2>
+                    <h2 class="feature-area--l2__content__heading content-widget-l2__heading">Manage your<br
+                        class="d-none d-xs-block">
+                      tasks easily with<br class="d-none d-xs-block"> FastLand.</h2>
                     <!-- Feature widgets -->
                     <div class="feature-area--l2-widgets">
                       <!-- Single Feature Widgets -->
@@ -424,7 +411,8 @@
                         </div>
                         <div class="widget--feature-2__body">
                           <h4 class="widget--feature-2__title">Manage Smartly</h4>
-                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br class='d-none d-xs-block'> in touch with what's happening</p>
+                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br
+                              class='d-none d-xs-block'> in touch with what's happening</p>
                         </div>
                       </div>
                       <!--/ .Single Feature Widgets -->
@@ -435,7 +423,8 @@
                         </div>
                         <div class="widget--feature-2__body">
                           <h4 class="widget--feature-2__title">Communicate Fast</h4>
-                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br class='d-none d-xs-block'> in touch with what's happening</p>
+                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br
+                              class='d-none d-xs-block'> in touch with what's happening</p>
                         </div>
                       </div>
                       <!--/ .Single Feature Widgets -->
@@ -457,8 +446,9 @@
                 </div>
                 <div class="col-xl-5 col-lg-6 col-md-7 col-xs-10">
                   <div class="feature-area--l2__content">
-                    <h2 class="feature-area--l2__content__heading content-widget-l2__heading">Make Schedules<br class="d-none d-xs-block">
-                                    for Any Meeting<br class="d-none d-xs-block"> on Calendar.</h2>
+                    <h2 class="feature-area--l2__content__heading content-widget-l2__heading">Make Schedules<br
+                        class="d-none d-xs-block">
+                      for Any Meeting<br class="d-none d-xs-block"> on Calendar.</h2>
                     <!-- Feature widgets -->
                     <div class="feature-area--l2-widgets">
                       <!-- Single Feature Widgets -->
@@ -468,7 +458,8 @@
                         </div>
                         <div class="widget--feature-2__body">
                           <h4 class="widget--feature-2__title">Manage Smartly</h4>
-                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br class='d-none d-xs-block'> in touch with what's happening</p>
+                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br
+                              class='d-none d-xs-block'> in touch with what's happening</p>
                         </div>
                       </div>
                       <!--/ .Single Feature Widgets -->
@@ -479,7 +470,8 @@
                         </div>
                         <div class="widget--feature-2__body">
                           <h4 class="widget--feature-2__title">Communicate Fast</h4>
-                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br class='d-none d-xs-block'> in touch with what's happening</p>
+                          <p class="widget--feature-2__content">Stay on top of your task lists and stay<br
+                              class='d-none d-xs-block'> in touch with what's happening</p>
                         </div>
                       </div>
                       <!--/ .Single Feature Widgets -->
@@ -503,18 +495,25 @@
         <div class="row align-items-center justify-content-center justify-content-lg-start">
           <div class="col-xl-5 col-lg-6 col-md-8 col-xs-10 order-2 order-lg-1">
             <div class="content-texts content-texts--l2-1 text-center text-lg-start">
-              <h2 class="content-texts--l2-1__heading" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">The intelligent<br class="d-none d-lg-block"> way to manage<br class="d-none d-lg-block"> any project.</h2>
-              <p class="content-texts--l2-1__content" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300" data-aos-once="false">Create custom landing pages with Fastland<br class="d-none d-xs-block"> that converts more visitors than any<br class="d-none d-xs-block"> website. Easy, Reliable & Fast.</p>
+              <h2 class="content-texts--l2-1__heading" data-aos="fade-right" data-aos-duration="500"
+                data-aos-once="false">The intelligent<br class="d-none d-lg-block"> way to manage<br
+                  class="d-none d-lg-block"> any project.</h2>
+              <p class="content-texts--l2-1__content" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300"
+                data-aos-once="false">Create custom landing pages with Fastland<br class="d-none d-xs-block"> that
+                converts more visitors than any<br class="d-none d-xs-block"> website. Easy, Reliable & Fast.</p>
               <div class="content-texts--l2-1__button">
-                <a class="btn-link--2 with--line border--primary" href="#" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500" data-aos-once="false">Get Started Now</a>
+                <a class="btn-link--2 with--line border--primary" href="#" data-aos="fade-right" data-aos-delay="500"
+                  data-aos-duration="500" data-aos-once="false">Get Started Now</a>
               </div>
             </div>
           </div>
           <div class="col-xl-7 col-lg-6 col-md-8 col-xs-10 order-1 order-lg-2">
             <div class="content-image-group content-image-group--l2-1">
-              <img class="w-100" src="image/home-2/l2-content-img-1.png" alt="" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+              <img class="w-100" src="image/home-2/l2-content-img-1.png" alt="" data-aos="fade-left"
+                data-aos-duration="500" data-aos-once="false">
               <div class="content-image-group--l2-1__img-1">
-                <img class="w-100" src="image/home-2/l2-content-shape-2.png" alt="" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500" data-aos-once="false">
+                <img class="w-100" src="image/home-2/l2-content-shape-2.png" alt="" data-aos="fade-left"
+                  data-aos-delay="300" data-aos-duration="500" data-aos-once="false">
               </div>
             </div>
           </div>
@@ -529,17 +528,25 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-xl-7 col-lg-6 col-md-8 col-xs-10">
               <div class="content-image-group--l2-2">
-                <img class="w-100" src="image/home-2/l2-content-img-2.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
+                <img class="w-100" src="image/home-2/l2-content-img-2.png" alt="" data-aos="fade-right"
+                  data-aos-duration="500" data-aos-once="false">
                 <div class="content-image-group--l2-2__img-1">
-                  <img class="w-100" src="image/home-2/l2-content-2-shape-2.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="false" data-aos-delay="300">
+                  <img class="w-100" src="image/home-2/l2-content-2-shape-2.png" alt="" data-aos="fade-right"
+                    data-aos-duration="500" data-aos-once="false" data-aos-delay="300">
                 </div>
               </div>
             </div>
             <div class="col-xl-5 col-lg-6 col-md-8 col-xs-10">
               <div class="content-texts content-texts--l2-1 text-center text-lg-start">
-                <h2 class="content-texts--l2-1__heading" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">Connect with<br class="d-none d-lg-block"> team members<br class="d-none d-lg-block"> with ease.</h2>
-                <p class="content-texts--l2-1__content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300" data-aos-once="false">Create custom landing pages with Fastland<br class="d-none d-xs-block"> that converts more visitors than any<br class="d-none d-xs-block"> website. Easy, Reliable & Fast.</p>
-                <div class="content-texts--l2-1__button" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+                <h2 class="content-texts--l2-1__heading" data-aos="fade-left" data-aos-duration="500"
+                  data-aos-once="false">Connect with<br class="d-none d-lg-block"> team members<br
+                    class="d-none d-lg-block"> with ease.</h2>
+                <p class="content-texts--l2-1__content" data-aos="fade-left" data-aos-duration="500"
+                  data-aos-delay="300" data-aos-once="false">Create custom landing pages with Fastland<br
+                    class="d-none d-xs-block"> that converts more visitors than any<br class="d-none d-xs-block">
+                  website. Easy, Reliable & Fast.</p>
+                <div class="content-texts--l2-1__button" data-aos="fade-left" data-aos-duration="500"
+                  data-aos-delay="500" data-aos-once="false">
                   <a class="btn-link--2 with--line border--primary" href="#">Get Started Now</a>
                 </div>
               </div>
@@ -558,18 +565,23 @@
         <div class="row justify-content-center">
           <div class="col-xl-10">
             <div class="section-title--2 text-center">
-              <h2 class="section-title--2__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">Software Integrations</h2>
-              <p class="section-title--2__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="false">Create custom landing pages with Fastland that converts <br class="d-none d-sm-block"> more
-                        visitors than any website.</p>
+              <h2 class="section-title--2__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+                Software Integrations</h2>
+              <p class="section-title--2__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                data-aos-once="false">Create custom landing pages with Fastland that converts <br
+                  class="d-none d-sm-block"> more
+                visitors than any website.</p>
               <div class="section-title--2__button">
-                <a class="btn-link--2 with--line border--primary" href="#" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-aos-once="false">Explore All
+                <a class="btn-link--2 with--line border--primary" href="#" data-aos="fade-up" data-aos-duration="500"
+                  data-aos-delay="400" data-aos-once="false">Explore All
                   Apps</a>
               </div>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-xl-5 col-lg-6 col-md-9" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+          <div class="col-xl-5 col-lg-6 col-md-9" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+            data-aos-once="false">
             <div class="brand-image-group brand-image-group--l2">
               <div class="brand-image-group--l2__image--main circle-126">
                 <div class="img-0">
@@ -654,11 +666,13 @@
         <div class="cta-section--l2__content bg-electric-violet dark-mode-texts">
           <div class="row align-items-center">
             <div class="col-lg-7">
-              <h3 class="cta-section--l2__content__heading" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">Get started by<br class="d-none d-xs-block">  downloading apps.</h3>
+              <h3 class="cta-section--l2__content__heading" data-aos="fade-right" data-aos-duration="500"
+                data-aos-once="false">Get started by<br class="d-none d-xs-block"> downloading apps.</h3>
             </div>
             <div class="col-lg-5">
               <div class="cta-section--l2__button text-center text-lg-end">
-                <a class="btn btn--190 btn-white rounded-55" href="#" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">Download App</a>
+                <a class="btn btn--190 btn-white rounded-55" href="#" data-aos="fade-left" data-aos-duration="500"
+                  data-aos-once="false">Download App</a>
               </div>
             </div>
           </div>
@@ -667,98 +681,119 @@
     </div>
     <!--/ .Cta Area -->
     <!-- Footer Area -->
-    <div class="footer-area footer-section--2 position-relative bg-default">
+    <div class="footer-area footer-inner-1 position-relative bg-default-3">
       <div class="container">
         <footer class="footer-top">
           <div class="row">
-            <div class="col-lg-4 col-md-8 col-xs-10">
-              <div class="footer-widgets footer-widgets--l2">
+            <div class="col-lg-3 col-md-7 col-xs-9">
+              <div class="footer-widgets footer-widgets--l7">
                 <!-- Brand Logo-->
                 <div class="brand-logo mt-1">
                   <a href="#">
                     <!-- light version logo (logo must be black)-->
-                    <img src="image/png/logo-dark.png" alt="" class="light-version-logo">
+                    <img src="image/tdc_logo.svg" alt="" class="light-version-logo footer-logo">
                     <!-- Dark version logo (logo must be White)-->
-                    <img src="image/png/logo-white.png" alt="" class="dark-version-logo">
+                    <img src="image/tdc_logo.svg" alt="" class="dark-version-logo footer-logo">
                   </a>
                 </div>
-                <p class="footer-widgets__text">The best
-                  medicines & biggest<br class="d-none d-lg-block"> brands within 30 minutes at your<br class="d-none d-lg-block"> home. Experience the power of<br class="d-none d-lg-block"> MedCartel today.</p>
+                <p class="footer-widgets__text mt-5">
+                  We will bring your idea into its digital creation the way you want it to be.</p>
+                <ul class="footer-social-share footer-social-share--rounded mt-4">
+                  <li>
+                    <a href="https://www.facebook.com/thedevcorporate">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/thedevcorporate/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-9">
               <div class="row">
                 <div class="col-md-4 col-xs-6">
-                  <div class="footer-widgets footer-widgets--l2 mb-10 mb-md-0">
+                  <div class="footer-widgets footer-widgets--l7">
+                    <h4 class="footer-widgets__title">Contact Details</h4>
+                    <ul class="footer-widgets__list footer-widgets--address">
+                      <li>
+                        <i class="fa fa-map-marker-alt text-electric-violet-2"></i>
+                        <a href="https://goo.gl/maps/bnLo3HwwPhWmrwXw8">
+                          <span>Address: <br class="d-block">
+                            392 F Block Phase 1,<br class="d-block">
+                            Johar Town Lahore</span>
+                        </a>
+                      </li>
+                      <li>
+                        <i class="fa fa-phone-alt text-electric-violet-2"></i>
+                        <div class="list-content">
+                          <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                          <a href="#">+92 322 6761800</a>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope text-electric-violet-2"></i>
+                        <a class="heading-default-color gr-text-hover-underline text-break"
+                          href="mailto:info@medcartel.com">
+                          <span class="d-block gr-text-hover-decoration-none"> Email:
+                          </span>hr@thedevcorporate.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                  <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
                     <h4 class="footer-widgets__title">Company</h4>
                     <ul class="footer-widgets__list">
                       <li>
                         <a href="about-us.html">About us</a>
                       </li>
                       <li>
-                        <a href="terms-page.html">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a href="terms-page.html">Terms & Conditions</a>
-                      </li>
-                      <li>
-                        <a href="testimonial-1.html">Reviews</a>
+                        <a href="portfolio-grid-3-container.html">Portfolios</a>
                       </li>
                       <li>
                         <a href="contact-1.html">Contact</a>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-4 col-xs-6">
-                  <div class="footer-widgets footer-widgets--l2">
-                    <h4 class="footer-widgets__title">Contact Details</h4>
-                    <ul class="footer-widgets__list footer-widgets--address">
-                      <li> <i
-                                            class="fa fa-map-marker-alt text-radical-red"></i>
-                        <span>Amsterdam <br class="d-block">
-                                            Netherlands</span>
-                      </li>
-                      <li> <i class="fa fa-phone-alt text-radical-red"></i>
-                        <div class="list-content">
-                          <a href="#">+31 62 19
-                            22 705</a>
-                          <span class="d-block gr-text-hover-decoration-none"> 7 Days - 8am
-                                                - 10pm </span>
-                        </div>
-                      </li>
-                      <li> <i class="fa fa-envelope text-radical-red"></i>
-                        <a class="heading-default-color gr-text-hover-underline text-break" href="mailto:info@medcartel.com">info@medcartel.com</a>
+                      <li>
+                        <a href="services-page.html">Services</a>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-4 col-xs-7">
-                  <div class="footer-widgets footer-widgets--l2">
-                    <h4 class="footer-widgets__title">Follow us on social
-                      media</h4>
-                    <div class="footer-social-share dot-right footer-social-share--2">
-                      <ul class="list-unstyled d-flex align-items-center">
-                        <li>
-                          <a href="#">Facebook</a>
-                        </li>
-                        <li>
-                          <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                          <a href="#">Instagram</a>
-                        </li>
-                      </ul>
+                <div class="col-md-4 col-xs-9">
+                  <div class="footer-widgets footer-widgets--l7">
+                    <h4 class="footer-widgets__title">Newsletter</h4>
+                    <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
+                    <!-- Newsletter -->
+                    <div class="newsletter newsletter--l7">
+                      <form class="form2" id="hire-now-form1" action="" onsubmit="return toastMessagetwo()">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button class="btn btn-secondary shadow--secondary-4" type="submit">Hire Now</button>
+                        <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                      </form>
                     </div>
-                    <div class="payment-gatway border-top border-default-color">
-                      <img class="w-100" src="image/home-2/payment-gatway.png" alt="">
-                    </div>
+                    <!--/ .Newsletter -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </footer>
+        <div class="copyright text-center border-top border-default-color-3">
+          <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+        </div>
       </div>
     </div>
     <!--/ .Footer Area -->
@@ -783,4 +818,5 @@
 
 
 <!-- Mirrored from finestdevs.com/demos/fastland-html/home-project-management.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Sep 2022 15:08:28 GMT -->
+
 </html>

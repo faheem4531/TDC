@@ -7109,7 +7109,7 @@ ________________________________ */
     transform: translateY(-50%);
     width: 2px;
     height: 68px;
-    background-color: #fd346e;
+    background-color: #2b59ff;
   }
 }
 
@@ -7133,7 +7133,7 @@ ________________________________ */
 
 @media (min-width: 992px) {
   .about-us-section--l7 .counter-widgets__single:nth-child(2)::before {
-    background-color: #fd346e;
+    background-color: #2b59ff;
   }
 }
 
@@ -7149,7 +7149,7 @@ ________________________________ */
 }
 
 .about-us-section--l7 .counter-widgets__single .counter-content__heading {
-  color: #fd346e;
+  color: #2b59ff;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: normal;
@@ -7504,7 +7504,7 @@ ________________________________ */
   bottom: 0;
   width: 210px;
   height: 1px;
-  background-color: #fd346e;
+  background-color: #2b59ff;
 }
 
 @media (min-width: 992px) {
@@ -9378,10 +9378,10 @@ ________________________________ */
   bottom: -50%;
   background: linear-gradient(
     360deg,
-    #fd346e 0%,
-    rgba(253, 52, 110, 0.69) 38.45%,
-    rgba(253, 52, 110, 0) 79.35%,
-    rgba(253, 52, 110, 0) 111.11%
+    #2b59ff 0%,
+    rgba(43, 89, 255, 0.69) 38.45%,
+    rgba(43, 89, 255, 0) 79.35%,
+    rgba(43, 89, 255, 0) 111.11%
   );
   width: 100%;
   height: 50%;
@@ -9465,7 +9465,7 @@ ________________________________ */
 }
 
 .testimonial-slider--l7 .slick-dots li.slick-active button {
-  background-color: #fd346e;
+  background-color: #2b59ff;
 }
 
 .social-profile ul li a {
@@ -10469,10 +10469,10 @@ ________________________________ */
   left: 0;
   top: 0;
   background: linear-gradient(
-    261.26deg,
-    rgba(253, 52, 110, 0.96) 14.9%,
-    #b81c5c 43.58%,
-    #0abfbc 89.94%
+    221.26deg,
+    rgba(43, 89, 255, 0.1) 14.9%,
+    #2b59ff 43.58%,
+    #2b59ff 89.94%
   );
   opacity: 0.7;
   position: absolute;
@@ -10550,7 +10550,7 @@ ________________________________ */
   Home 8 : Welcome Section
 ------------------------------*/
 .welcome-area--l8 {
-  background-color: rgba(21, 205, 168, 0.2);
+  background-color: rgba(43, 89, 255, 0.3);
   padding-top: 0;
   padding-top: 50px;
   padding-bottom: 60px;
@@ -17217,10 +17217,10 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 .highlighted-link {
-  color: #5034fc !important;
+  color: #2b59ff !important;
 }
 .highlighted-link a {
-  color: #5034fc !important;
+  color: #2b59ff !important;
 }
 
 #snackbar {
@@ -17308,6 +17308,26 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 #snackbar3.show3 {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar4 {
+  visibility: hidden;
+  background-color: #2b59ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  position: fixed;
+  z-index: 1000;
+  margin: auto;
+  bottom: -65px;
+  font-size: 18px;
+}
+
+#snackbar4.show4 {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
