@@ -15349,7 +15349,7 @@ ________________________________ */
 }
 
 .faq-tabs .nav-link.active {
-  color: #0abfbc;
+  color: #2b59ff;
   background-color: transparent;
 }
 
@@ -15406,7 +15406,7 @@ ________________________________ */
     transform: translateY(-50%);
     font-weight: 700;
     background-image: none;
-    color: #0abfbc;
+    color: #2b59ff;
   }
 }
 
@@ -15457,7 +15457,7 @@ ________________________________ */
   top: 0;
   width: 4px;
   height: 93px;
-  background-color: #0abfbc;
+  background-color: #2b59ff;
 }
 
 .buttons p,
@@ -17308,26 +17308,6 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 #snackbar3.show3 {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-#snackbar4 {
-  visibility: hidden;
-  background-color: #2b59ff;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  position: fixed;
-  z-index: 1000;
-  margin: auto;
-  bottom: -65px;
-  font-size: 18px;
-}
-
-#snackbar4.show4 {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
