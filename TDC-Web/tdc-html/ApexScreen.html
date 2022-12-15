@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-  function toastMessagetwo(e) {
-    var x = document.getElementById("snackbar1");
-    x.className = "show1";
-    setTimeout(function () { x.className = 'snackbar1' }, 3000);
-    return false
-  }
-</script>
+  <script>
+    function toastMessagetwo(e) {
+      var x = document.getElementById("snackbar1");
+      x.className = "show1";
+      setTimeout(function () { x.className = 'snackbar1' }, 3000);
+      return false
+    }
+  </script>
 
 <head>
   <meta charset="UTF-8">
@@ -38,6 +38,7 @@
 <body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden ">
     <div id="loading">
+      <!-- <img src="image/fev-icon.svg" alt=""> -->
       <video width="30%" height="30%" autoplay muted>
         <source src="./image/tdc_animation.mp4" type="video/mp4">
       </video>
@@ -227,10 +228,11 @@
     </div>
     <!-- Modal -->
 
+    <!-- Content Start -->
     <div class="portfolio-details-area bg-default-3">
       <div class="container">
         <div class="banner-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-          <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-2.png" alt="">
+          <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-11.png" alt="">
         </div>
         <div class="portfolio-details">
           <div class="row align-items-start">
@@ -239,45 +241,38 @@
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">PROJECT INFORMATION</h2>
                 <p class="portfolio-content-box__text">
-                  Swvl is a provider of tech-enabled mass transit solutions, offering intercity, intracity, B2B, and B2G
-                  transportation products and services. Swvl operates in 135 cities in 20 countries across Latin
-                  America, Europe, Africa, and Asia
+                  APEX:E3 is a provider of multi-asset analytics tools
+                  for retail and institutional investors.
                 </p>
               </div>
               <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500"
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">Requirements</h2>
                 <p class="portfolio-content-box__text">
-                  The concept of swvl was derived from the fact that there wasn't any proper platform that suggested a
-                  more lenient way for B2B transits to pursue upon. Or even using it from a common traveler’s point of
-                  view from transiting from one area to another. Swvl provides ride-hailing services with a focus on
-                  mass transit. Using the app, customers can reserve and pay for rides on private buses operating on
-                  fixed routes. The company’s proprietary algorithm uses the passenger’s location and destination to
-                  calculate the quickest trip time. The services provide reliable alternatives to public transportation
-                  without the expense of individual ridesharing options. The technology also allows for more efficiency
-                  than public transportation, which results in lower emissions. Swvl also provides inter-city rides, car
-                  ride-sharing, and corporate services.
+                  The approach with Apex:E3 was to create a multi asset analytics tool whose practicality could be
+                  implemented by small/medium firms on scale that approached globally.
+                  Their requirements massed a greater reach and wanted the approach to be utilised in that same order,
+                  an easy and comprehensible medium that assisted greatly with a firm's analytics.
                 </p>
               </div>
               <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500"
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">Solutions</h2>
                 <p class="portfolio-content-box__text">
-                  The team came up with a concept for the client's requirement through meticulous evaluation and
-                  brainstorming that was highly adaptable and in line with their need.The Team opted to employ the
-                  following for an appropriate formation after carefully examining the client's approach and enhancing
-                  it with the usage of pertinent technology node js with the express, MongoDB, google cloud, unit
-                  testing using jest
+                  Based on the Clients requirements, it was clearly apprehended that this was a complex project that
+                  needed to run with its maximum effectivity and efficiency.
+                  Hence why through thoughtful and complex arguments, the development team came to the conclusion that
+                  the following technologies: React, Nest JS, Postgres and Redis. Which created a well rounded mixture
+                  in order to retain proficiency and accessibility with the user preferences.
                 </p>
               </div>
               <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500"
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">Results</h2>
                 <p class="portfolio-content-box__text">
-                  The Apps User Interface was very accessible for every kind of user. The app has a very unique feature
-                  that targets the common worker/traveler in making life easy because it provides a comfortable ride at
-                  a reasonable price, and even assists the B2B transits as well. With the basic motto of providing
-                  reachability and access to bus transits through technology.
+                  The end product of Apex:E3 came into its creation and was approached as quite successful in capturing
+                  the attention of the Client and its users. The interface was quite comprehensible, very alluring and
+                  helpful to its users in providing the best results and insights regarding a firm.
                 </p>
               </div>
             </div>
@@ -286,28 +281,26 @@
                 data-aos-once="false">
                 <h3>Technologies Used</h3>
                 <ul class="list-unstyled mt-5">
-                  <li><span>Node JS</span></li>
-                  <li><span>Express</span></li>
-                  <li><span>MongoDB</span></li>
-                  <li><span>Google Cloud </span></li>
-                  <li><span>Unit Testing using Jest </span></li>
+                  <li><span>React</span></li>
+                  <li><span>Nest JS</span></li>
+                  <li><span>Postgres</span></li>
+                  <li><span>Redis</span></li>
                 </ul>
               </div>
 
-              <div class="portfolio-content-box__list mt-7" data-aos="fade-left" data-aos-duration="500"
-                data-aos-once="false">
+              <!-- <div class="portfolio-content-box__list mt-7" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
                 <h3>Project Link</h3>
                 <ul class="list-unstyled mt-3">
-                  <li><a href="https://play.google.com/store/apps/details?id=io.swvl.customer&hl=en&gl=US"
-                      target="blank"><span>Click to open the link</span></a></li>
+                  <li><a href="https://app.ae3platform.com/" target="blank"><span>Click to open the link</span></a></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
 
           </div>
         </div>
       </div>
     </div>
+    <!-- Content End -->
 
     <!-- promo Area -->
     <div class="promo-area promo-area--inner-2 bg-default">
@@ -330,7 +323,6 @@
       </div>
     </div>
     <!--/ .promo Area -->
-
     <!-- Footer Area -->
     <div class="footer-area footer-inner-1 position-relative bg-default-3">
       <div class="container">
@@ -448,7 +440,6 @@
       </div>
     </div>
     <!--/ .Footer Area -->
-    
   </div>
   <!-- Plugin's Scripts -->
   <script src="plugins/jquery/jquery.min.js"></script>
@@ -467,5 +458,4 @@
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
 </body>
-
 </html>

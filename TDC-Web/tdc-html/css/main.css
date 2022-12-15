@@ -10822,7 +10822,6 @@ ________________________________ */
 .service-area--l1 {
   padding-top: 55px;
   padding-bottom: 5px;
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -17181,6 +17180,11 @@ mark[data-aos="highlight-text"].aos-animate {
     display: flex;
     justify-content: center;
   }
+  #snackbar1 {
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 60px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -17225,18 +17229,16 @@ mark[data-aos="highlight-text"].aos-animate {
 
 #snackbar {
   visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
   background-color: #2b59ff;
   color: #fff;
   text-align: center;
   border-radius: 10px;
   padding: 20px;
-  position: fixed;
-  z-index: 1;
-  left: 26%;
-  bottom: -100px;
+  position: absolute;
+  z-index: 9999 !important;
+  left: 13px;
   font-size: 18px;
+  bottom: -100px;
 }
 
 #snackbar.show {
@@ -17247,8 +17249,6 @@ mark[data-aos="highlight-text"].aos-animate {
 
 #snackbar1 {
   visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
   background-color: #2b59ff;
   color: #fff;
   text-align: center;
@@ -17256,11 +17256,9 @@ mark[data-aos="highlight-text"].aos-animate {
   padding: 20px;
   position: fixed;
   z-index: 1;
-  right: 5%;
-  bottom: 30px;
+  right: 52px;
+  bottom: 90px;
   font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 #snackbar1.show1 {
@@ -17271,8 +17269,6 @@ mark[data-aos="highlight-text"].aos-animate {
 
 #snackbar2 {
   visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
   background-color: #fff;
   color: #2b59ff;
   text-align: center;
@@ -17280,7 +17276,6 @@ mark[data-aos="highlight-text"].aos-animate {
   padding: 20px;
   position: fixed;
   z-index: 1;
-  left: 42%;
   bottom: 30px;
   font-size: 18px;
 }
@@ -17311,6 +17306,24 @@ mark[data-aos="highlight-text"].aos-animate {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@media only screen and (max-width: 465px) {
+  #snackbar {
+    left: 15px;
+    right: 15px;
+  }
+  #snackbar2 {
+    bottom: -50px !important;
+    left: 15px;
+    right: 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #snackbar2 {
+    bottom: -40px;
+  }
 }
 
 @-webkit-keyframes fadein {

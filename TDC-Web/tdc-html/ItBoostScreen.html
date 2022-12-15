@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-  function toastMessagetwo(e) {
-    var x = document.getElementById("snackbar1");
-    x.className = "show1";
-    setTimeout(function () { x.className = 'snackbar1' }, 3000);
-    return false
-  }
-</script>
+  <script>
+    function toastMessagetwo(e) {
+      var x = document.getElementById("snackbar1");
+      x.className = "show1";
+      setTimeout(function () { x.className = 'snackbar1' }, 3000);
+      return false
+    }
+  </script>
 
 <head>
   <meta charset="UTF-8">
@@ -38,6 +38,7 @@
 <body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden ">
     <div id="loading">
+      <!-- <img src="image/fev-icon.svg" alt=""> -->
       <video width="30%" height="30%" autoplay muted>
         <source src="./image/tdc_animation.mp4" type="video/mp4">
       </video>
@@ -227,10 +228,11 @@
     </div>
     <!-- Modal -->
 
+    <!-- Content Start -->
     <div class="portfolio-details-area bg-default-3">
       <div class="container">
         <div class="banner-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-          <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-2.png" alt="">
+          <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-16.png" alt="">
         </div>
         <div class="portfolio-details">
           <div class="row align-items-start">
@@ -239,45 +241,39 @@
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">PROJECT INFORMATION</h2>
                 <p class="portfolio-content-box__text">
-                  Swvl is a provider of tech-enabled mass transit solutions, offering intercity, intracity, B2B, and B2G
-                  transportation products and services. Swvl operates in 135 cities in 20 countries across Latin
-                  America, Europe, Africa, and Asia
+                  ITBoost leverages advanced technology to show you real-time data, with client feedback and password
+                  manager features, as well as ticket, asset and monitoring data from your external IT platforms.
                 </p>
               </div>
               <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500"
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">Requirements</h2>
                 <p class="portfolio-content-box__text">
-                  The concept of swvl was derived from the fact that there wasn't any proper platform that suggested a
-                  more lenient way for B2B transits to pursue upon. Or even using it from a common traveler’s point of
-                  view from transiting from one area to another. Swvl provides ride-hailing services with a focus on
-                  mass transit. Using the app, customers can reserve and pay for rides on private buses operating on
-                  fixed routes. The company’s proprietary algorithm uses the passenger’s location and destination to
-                  calculate the quickest trip time. The services provide reliable alternatives to public transportation
-                  without the expense of individual ridesharing options. The technology also allows for more efficiency
-                  than public transportation, which results in lower emissions. Swvl also provides inter-city rides, car
-                  ride-sharing, and corporate services.
+                  The client came with a very broadend approach of establishing a platform where you could perform a
+                  wide range of performance based evaluations such as KPI’s, Client Feedback, IT Documentation etc. They
+                  wanted a dashboard that could host the most innovative documentation solutions in the industry.
                 </p>
               </div>
               <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500"
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">Solutions</h2>
                 <p class="portfolio-content-box__text">
-                  The team came up with a concept for the client's requirement through meticulous evaluation and
-                  brainstorming that was highly adaptable and in line with their need.The Team opted to employ the
-                  following for an appropriate formation after carefully examining the client's approach and enhancing
-                  it with the usage of pertinent technology node js with the express, MongoDB, google cloud, unit
-                  testing using jest
+                  The development team sat through and understood how performance/organisations based evaluations
+                  require a lot of front end development. Integrating a UI for such a concept was very time consuming as
+                  it related heavily over the interface being as easily comprehensible as it could be. Hence why React
+                  were used because it gives you leniency of augmenting an integrated setup which you can use and alter.
                 </p>
               </div>
               <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500"
                 data-aos-once="false">
                 <h2 class="portfolio-content-box__heading">Results</h2>
                 <p class="portfolio-content-box__text">
-                  The Apps User Interface was very accessible for every kind of user. The app has a very unique feature
-                  that targets the common worker/traveler in making life easy because it provides a comfortable ride at
-                  a reasonable price, and even assists the B2B transits as well. With the basic motto of providing
-                  reachability and access to bus transits through technology.
+                  The final product that came to being was ITBoost, an evaluation platform that helps you with
+                  documenting and understanding your business much more coherently. The developed application posed an
+                  interface that subjectively defined how you could patternize your business and develop its
+                  fundamentals, therefore having a better understanding of your business.
+                  The wide range of capabilities that were integrated within the application was quite helpful for users
+                  in deciding how they chose to evaluate their businesses current progression.
                 </p>
               </div>
             </div>
@@ -286,11 +282,10 @@
                 data-aos-once="false">
                 <h3>Technologies Used</h3>
                 <ul class="list-unstyled mt-5">
+                  <li><span>React JS</span></li>
+                  <li><span>Express JS</span></li>
                   <li><span>Node JS</span></li>
-                  <li><span>Express</span></li>
-                  <li><span>MongoDB</span></li>
-                  <li><span>Google Cloud </span></li>
-                  <li><span>Unit Testing using Jest </span></li>
+                  <li><span>Redux</span></li>
                 </ul>
               </div>
 
@@ -298,8 +293,7 @@
                 data-aos-once="false">
                 <h3>Project Link</h3>
                 <ul class="list-unstyled mt-3">
-                  <li><a href="https://play.google.com/store/apps/details?id=io.swvl.customer&hl=en&gl=US"
-                      target="blank"><span>Click to open the link</span></a></li>
+                  <li><a href="https://www.itboost.com" target="blank"><span>Click to open the link</span></a></li>
                 </ul>
               </div>
             </div>
@@ -308,6 +302,7 @@
         </div>
       </div>
     </div>
+   <!-- Constent Start -->
 
     <!-- promo Area -->
     <div class="promo-area promo-area--inner-2 bg-default">
@@ -448,7 +443,7 @@
       </div>
     </div>
     <!--/ .Footer Area -->
-    
+
   </div>
   <!-- Plugin's Scripts -->
   <script src="plugins/jquery/jquery.min.js"></script>
@@ -467,5 +462,4 @@
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
 </body>
-
 </html>
