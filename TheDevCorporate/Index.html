@@ -50,7 +50,7 @@
 
 <body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden ">
-    
+
     <div id="loading">
       <!-- <img src="image/fev-icon.svg" alt=""> -->
       <video width="30%" height="30%" autoplay muted>
@@ -60,7 +60,7 @@
 
     <!-- Header Area -->
     <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg px-3 site-header--absolute site-header--sticky">
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
       <div class="container-fluid ">
         <nav class="navbar site-navbar">
           <!-- Brand Logo-->
@@ -83,36 +83,74 @@
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger active-link hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Developers
+                  </a>
+                </li>
+
                 <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger">Home<i class="fas fa-angle-down"></i>
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i
+                      class="fas fa-angle-down"></i>
                   </a>
                   <ul class="sub-menu" id="submenu-1">
                     <li class="sub-menu--item">
                       <a href="ProjectManagementScreen.html">Project Management</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="AppPresentingScreen.html">App Presenting</a>
+                      <a href="WebAppDevScreen.html">Web App Development</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Agency</a>
+                      <a href="MobileAppDev.html">Mobile App Development</a>
                     </li>
                     <li class="sub-menu--item">
+                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
                       <a href="ItServicesScreen.html">IT Services</a>
-                    </li>
-                    <li class="sub-menu--item">
+                    </li> -->
+                    <!-- <li class="sub-menu--item">
                       <a href="ServicesScreen.html">Services</a>
-                    </li>
+                    </li> -->
                   </ul>
                 </li>
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="TecnologiesScreen.html"
+                    class="nav-link-item drop-trigger hover-link">Technologies
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i
+                      class="fas fa-angle-down"></i>
                   </a>
                   <ul class="sub-menu" id="submenu-2">
                     <li class="sub-menu--item">
-                      <a href="TermsAndConditions.html">Terms & Conditions</a>
+                      <a href="PortfolioScreen.html">Jobs Done</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="TestimonialScreen.html">Testimonial</a>
+                      <a href="TestimonialScreen.html">Happy Clients</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i
+                      class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="TermsAndConditions.html">Terms & Conditions</a>
                     </li>
                     <li class="sub-menu--item">
                       <a href="AboutUsScreen.html">About Us</a>
@@ -125,60 +163,9 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item nav-item-has-children has-megamenu">
-                  <a href="#" class="nav-link-item drop-trigger">Technologies<i class="fas fa-angle-down"></i>
-                  </a>
-                  <div class="sub-menu megamenu  megadropdown-center  d-lg-flex" id="submenu-100">
-                    <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Frontend</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">React JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Angular</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Vue JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Next JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Bootstrap</div>
-                        </div>
-                      </li>
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Backend</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">Node</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Express JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Jest</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Nest JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">MongoDB</div>
-                          <div class="mega-drop-menu-item sub-menu--item">PostgreSQL</div>
-                        </div>
-                      </li>
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Designing</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">Figma</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Adobe XD</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Adobe Illustrator</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Canva</div>
-                        </div>
-                      </li>
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Quality Assurance</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">Manual Testing</div>
-                          <div class="mega-drop-menu-item sub-menu--item">ClickUP</div>
-                          <div class="mega-drop-menu-item sub-menu--item">API Testing</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Unit Testing</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Selenium</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item nav-item-has-children ">
-                  <a href="PortfolioScreen.html" class="nav-link-item drop-trigger">Portfolios</i>
-                  </a>
-                </li>
+
                 <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item">Contact Us</i>
+                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
                   </a>
                 </li>
               </ul>
@@ -202,43 +189,43 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <form class="modal-content custom-border-none">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Hire Now</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="user-input-label">Name</div>
-                <input type="text" class="user-input" placeholder="Name" required />
-                <div class="user-input-label">Company Name</div>
-                <input type="text" class="user-input" placeholder="Company Name" required />
-                <div class="user-input-label">Email Address</div>
-                <input type="email" class="user-input" placeholder="Email address" required />
-                <div class="user-input-label">Hiring Position</div>
-                <select class="user-custom-select form-select form-select-sm" required>
-                  <option value="">Hiring Position</option>
-                  <option value="1">Front-end</option>
-                  <option value="2">Back-end</option>
-                  <option value="3">QA's</option>
-                  <option value="3">DevOps</option>
-                  <option value="3">Full-Stack</option>
-                  <option value="3">Tech-Stack</option>
-                </select>
-                <div class="user-input-label">Experience</div>
-                <select class="user-custom-select form-select form-select-sm" required>
-                  <option value="">Experience</option>
-                  <option value="1">1-3 years</option>
-                  <option value="2">3-5 years</option>
-                  <option value="3">5++ years</option>
-                </select>
-              </div>
-    
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary">Submit</button>
-              </div>
-            </form>
+      <div class="modal-dialog modal-dialog-scrollable">
+        <form class="modal-content custom-border-none">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hire Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+            <div class="user-input-label">Name</div>
+            <input type="text" class="user-input" placeholder="Name" required />
+            <div class="user-input-label">Company Name</div>
+            <input type="text" class="user-input" placeholder="Company Name" required />
+            <div class="user-input-label">Email Address</div>
+            <input type="email" class="user-input" placeholder="Email address" required />
+            <div class="user-input-label">Hiring Position</div>
+            <select class="user-custom-select form-select form-select-sm" required>
+              <option value="">Hiring Position</option>
+              <option value="1">Front-end</option>
+              <option value="2">Back-end</option>
+              <option value="3">QA's</option>
+              <option value="3">DevOps</option>
+              <option value="3">Full-Stack</option>
+              <option value="3">Tech-Stack</option>
+            </select>
+            <div class="user-input-label">Experience</div>
+            <select class="user-custom-select form-select form-select-sm" required>
+              <option value="">Experience</option>
+              <option value="1">1-3 years</option>
+              <option value="2">3-5 years</option>
+              <option value="3">5++ years</option>
+            </select>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
     <!-- Modal -->
 
@@ -726,7 +713,7 @@
       </div>
     </div>
     <!-- Content Area -->
-    
+
     <!-- FOOTER START -->
     <div class="footer-area footer-inner-1 bg-default-3">
       <div class="container">
@@ -876,4 +863,5 @@
   <script src="js/custom.js"></script>
 
 </body>
+
 </html>

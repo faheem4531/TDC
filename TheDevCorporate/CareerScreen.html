@@ -44,7 +44,7 @@
 
     <!-- Header Area -->
     <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg px-3 site-header--absolute site-header--sticky">
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
       <div class="container-fluid ">
         <nav class="navbar site-navbar">
           <!-- Brand Logo-->
@@ -67,102 +67,89 @@
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger  hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Developers
+                  </a>
+                </li>
+
                 <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger">Home<i class="fas fa-angle-down"></i>
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i
+                      class="fas fa-angle-down"></i>
                   </a>
                   <ul class="sub-menu" id="submenu-1">
                     <li class="sub-menu--item">
                       <a href="ProjectManagementScreen.html">Project Management</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="AppPresentingScreen.html">App Presenting</a>
+                      <a href="WebAppDevScreen.html">Web App Development</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Agency</a>
+                      <a href="MobileAppDev.html">Mobile App Development</a>
                     </li>
                     <li class="sub-menu--item">
+                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
                       <a href="ItServicesScreen.html">IT Services</a>
+                    </li> -->
+                    <!-- <li class="sub-menu--item">
+                      <a href="ServicesScreen.html">Services</a>
+                    </li> -->
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="TecnologiesScreen.html"
+                    class="nav-link-item drop-trigger hover-link">Technologies
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i
+                      class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="PortfolioScreen.html">Jobs Done</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="ServicesScreen.html">Services</a>
+                      <a href="TestimonialScreen.html">Happy Clients</a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
                   </a>
-                  <ul class="sub-menu" id="submenu-2">
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i
+                      class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
                     <li class="sub-menu--item">
                       <a href="TermsAndConditions.html">Terms & Conditions</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="TestimonialScreen.html">Testimonial</a>
-                    </li>
-                    <li class="sub-menu--item">
                       <a href="AboutUsScreen.html">About Us</a>
                     </li>
-                    <li class="sub-menu--item highlighted-link">
-                      <a href="CareerScreen.html">Careers</a>
+                    <li class="sub-menu--item">
+                      <a href="CareerScreen.html" class="active-link">Careers</a>
                     </li>
                     <li class="sub-menu--item">
                       <a href="FaqScreen.html">FAQ</a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item nav-item-has-children has-megamenu">
-                  <a href="#" class="nav-link-item drop-trigger">Technologies<i class="fas fa-angle-down"></i>
-                  </a>
-                  <div class="sub-menu megamenu  megadropdown-center  d-lg-flex" id="submenu-100">
-                    <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Frontend</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">React JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Angular</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Vue JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Next JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Bootstrap</div>
-                        </div>
-                      </li>
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Backend</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">Node</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Express JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Jest</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Nest JS</div>
-                          <div class="mega-drop-menu-item sub-menu--item">MongoDB</div>
-                          <div class="mega-drop-menu-item sub-menu--item">PostgreSQL</div>
-                        </div>
-                      </li>
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Designing</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">Figma</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Adobe XD</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Adobe Illustrator</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Canva</div>
-                        </div>
-                      </li>
-                      <li class="col-lg-3">
-                        <div class="single-dropdown-block">
-                          <h3>Quality Assurance</h3>
-                          <div class="mega-drop-menu-item sub-menu--item">Manual Testing</div>
-                          <div class="mega-drop-menu-item sub-menu--item">ClickUP</div>
-                          <div class="mega-drop-menu-item sub-menu--item">API Testing</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Unit Testing</div>
-                          <div class="mega-drop-menu-item sub-menu--item">Selenium</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item nav-item-has-children ">
-                  <a href="PortfolioScreen.html" class="nav-link-item drop-trigger">Portfolios</i>
-                  </a>
-                </li>
+
                 <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item">Contact Us</i>
+                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
                   </a>
                 </li>
               </ul>
