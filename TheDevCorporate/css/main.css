@@ -107,7 +107,8 @@ p {
 }
 
 .light-version-logo.footer-logo {
-  height: 60px;
+  height: 160px;
+  width: 160px;
 }
 
 .light-version-logo,
@@ -6733,7 +6734,7 @@ ________________________________ */
 
 .footer-inner-1 .footer-social-share--rounded li a:hover {
   background-color: transparent !important;
-  color: #5034fc;
+  color: #2b59ff;
   box-shadow: none;
 }
 
@@ -17128,51 +17129,194 @@ mark[data-aos="highlight-text"].aos-animate {
 .custom-border-none .modal-footer {
   border-top: none !important;
 }
-.user-input {
+
+.modal-dialog-scrollable .modal-content {
+  border-radius: 15px;
+  height: 580px;
+  border: none;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb {
+  background: white;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.modal-dialog-scrollable .modal-body {
+  padding: 35px;
+}
+
+.modal-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2b59ff;
+  margin: 32px 0px 40px 0px;
+}
+
+.modal-field-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  z-index: 1;
+}
+@media only screen and (max-width: 576px) {
+  .modal-field-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+  }
+  .user-input-container {
+    margin-bottom: 15px;
+  }
+  .user-custom-select.nice-select {
+    width: 100% !important;
+    margin-bottom: 15px;
+    z-index: 1;
+  }
+  .modal-right-img {
+    bottom: -52px !important;
+  }
+  .modal-dialog-scrollable .modal-body {
+    padding: 15px;
+  }
+  .modal-dialog-scrollable .modal-content {
+    height: 650px;
+  }
+}
+
+.user-input-container {
+  background: #f9f9f9;
   width: 100%;
-  padding: 3px;
-  border-radius: 4px;
-  border: 1px solid var(--border-color-6);
-  margin: 7px 0px;
+  height: 53px;
+  border-radius: 13px;
+  padding: 12px;
+  border: 1px solid #f9f9f9;
+  display: flex;
+  align-items: center;
+}
+
+.user-input-container:hover {
+  background: #e7ecff;
+  border: 1px solid #2b59ff;
+}
+
+.user-inputs {
+  color: #000;
   padding-left: 14px;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
 }
 
 ::placeholder {
+  font-size: 17px;
   font-weight: 400;
-  font-size: 15px;
+  line-height: 22px;
+  color: #727171;
 }
-.user-input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--color-headings-2);
-  transform: scaleY(1.1);
-}
-.user-input-label {
+
+.modal-button {
+  background: #2b59ff;
+  box-shadow: 14.1053px 16.4561px 44.6667px rgba(39, 36, 94, 0.2);
+  border-radius: 10px;
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-headings-2);
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin: auto;
+  width: 45%;
+  transform: translate(60%, -40%);
+  margin-top: 60px;
 }
+
 .user-custom-select.form-select {
   background-image: none !important;
 }
 .user-custom-select.nice-select {
-  line-height: 26px !important;
-  height: 35px;
-  width: 100% !important;
-  margin-top: 8px;
-  margin-bottom: 10px;
-  border: 1px solid var(--border-color-6);
+  line-height: 45px !important;
+  height: 53px;
+  width: 98%;
+  border: 1px solid white;
+  border-radius: 13px;
+  background: #f9f9f9;
+  font-size: 17px;
+  font-weight: 400;
+  color: #727171;
 }
+
 .user-custom-select .list {
   width: 100% !important;
+}
+
+.user-custom-select.form-select:hover {
+  box-shadow: none !important;
+  background: #e7ecff;
+  border: 1px solid #2b59ff;
 }
 .user-custom-select.form-select:focus {
   box-shadow: none !important;
 }
 
+.user-custom-select-two.nice-select {
+  line-height: 45px !important;
+  height: 53px;
+  width: 100% !important;
+  border: 1px solid white;
+  border-radius: 13px;
+  background: #f9f9f9;
+  font-size: 17px;
+  font-weight: 400;
+  color: #727171;
+}
+
+.user-custom-select-two .list {
+  width: 100% !important;
+}
+.user-custom-select-two.form-select:hover {
+  background: #e7ecff;
+  border: 1px solid #2b59ff;
+}
+.user-custom-select-two.form-select:focus {
+  box-shadow: none !important;
+}
+
 .btn-container {
   margin-top: 20px;
+}
+
+.modal-left-img {
+  width: 140px;
+  height: 120px;
+  position: absolute;
+}
+
+.modal-right-img {
+  width: 110px;
+  height: 160px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+  }
+  .modal-dialog-scrollable {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -17377,4 +17521,9 @@ mark[data-aos="highlight-text"].aos-animate {
 
 .hello {
   margin-top: 30px;
+}
+
+.tdc-logo {
+  width: 50px;
+  height: 50px;
 }
