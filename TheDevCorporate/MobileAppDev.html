@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- Custom stylesheet -->
+  <script src="js/Header.js" type="text/javascript" defer></script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
@@ -43,624 +44,452 @@
       </video>
     </div>
 
-    <!-- Header Area -->
-    <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
-      <div class="container-fluid ">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="Index.html">
-              <!-- light version logo (logo must be black)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper  ms-lg-7">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
-                </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
-                  </a>
-                </li>
+    <!-- Hedaer -->
+    <header-component></header-component>
+    <!-- Hedaer -->
 
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-3">
-                    <li class="sub-menu--item">
-                      <a href="AboutUsScreen.html">About Us</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="CareerScreen.html">Careers</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="FaqScreen.html">FAQ</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TermsAndConditions.html">Terms & Conditions</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Developers
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-1">
-                    <li class="sub-menu--item">
-                      <a href="ProjectManagementScreen.html">Project Management</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="WebAppDevScreen.html">Web App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="MobileAppDev.html" class="active-link hover-link">Mobile App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
-                    </li>
-                    <!-- <li class="sub-menu--item">
-                      <a href="ItServicesScreen.html">IT Services</a>
-                    </li> -->
-                    <!-- <li class="sub-menu--item">
-                      <a href="ServicesScreen.html">Services</a>
-                    </li> -->
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="PortfolioScreen.html">Jobs Done</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TestimonialScreen.html">Happy Clients</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Hire Now
-            </button>
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-    <!--/ .Header Area -->
-  
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable position-relative">
-        <form class="modal-content custom-border-none">
-          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
-          <div class="modal-body home-modal">
-            <div class="d-flex justify-content-end">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Hero Area -->
+  <div class="welcome-area welcome-area--l8 position-relative">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Welcome content Area -->
+        <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
+          <div class="welcome-content welcome-content--l8">
+            <h3 class="welcome-content--l8__sub-title highlighted-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Get Started</h3>
+            <h1 class="welcome-content--l8__title" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="false">Your fitness advisor <br class="d-none d-xs-block d-lg-none d-xl-block">AIl in one
+              place</h1>
+            <p class="welcome-content--l8__descriptions" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+              data-aos-once="false">When, while lovely valley teems with vapour around
+              meand <br class="d-none d-md-block">
+              meridian sun strikes the upper impenetroble.</p>
+            <div class="welcome-btn-group--l8">
+              <a class="btn btn--lg-2  me-3 bg-blue-ribbon text-white rounded-50 me-3 popup-btn"
+                href="https://www.youtube.com/watch?v=LWZ7iytIA6k" data-aos="fade-up" data-aos-duration="500"
+                data-aos-delay="700" data-aos-once="false">Watch
+                Video</a>
             </div>
-            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/user_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Name" required />
-              </div>
-              <div class="user-input-container">
-                <img src="image/company_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Company Name" required />
-              </div>
-            </div>
-
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/email_icon.svg" />
-                <input type="email" class="user-inputs" placeholder="Email Address" required />
-              </div>
-              <select class="user-custom-select form-select form-select-sm" required>
-                <option disabled selected value="">Experience</option>
-                <option value="1">1-3 years</option>
-                <option value="2">3-5 years</option>
-                <option value="3">5++ years</option>
-              </select>
-            </div>
-
-            <select class="user-custom-select-two form-select form-select-sm" required>
-              <option disabled selected value="">Hiring Position</option>
-              <option value="1">Front-end</option>
-              <option value="2">Back-end</option>
-              <option value="3">QA's</option>
-              <option value="3">DevOps</option>
-              <option value="3">Full-Stack</option>
-              <option value="3">Tech-Stack</option>
-            </select>
-            <button type="submit" class="modal-button">Submit</button>
-        </form>
-        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
-      </div>
-    </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- Hero Area -->
-    <div class="welcome-area welcome-area--l8 position-relative">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <!-- Welcome content Area -->
-          <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
-            <div class="welcome-content welcome-content--l8">
-              <h3 class="welcome-content--l8__sub-title highlighted-link" data-aos="fade-up" data-aos-duration="500"
-                data-aos-once="false">Get Started</h3>
-              <h1 class="welcome-content--l8__title" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Your fitness advisor <br class="d-none d-xs-block d-lg-none d-xl-block">AIl in one
-                place</h1>
-              <p class="welcome-content--l8__descriptions" data-aos="fade-up" data-aos-duration="500"
-                data-aos-delay="500" data-aos-once="false">When, while lovely valley teems with vapour around
-                meand <br class="d-none d-md-block">
-                meridian sun strikes the upper impenetroble.</p>
-              <div class="welcome-btn-group--l8">
-                <a class="btn btn--lg-2  me-3 bg-blue-ribbon text-white rounded-50 me-3 popup-btn"
-                  href="https://www.youtube.com/watch?v=LWZ7iytIA6k" data-aos="fade-up" data-aos-duration="500"
-                  data-aos-delay="700" data-aos-once="false">Watch
-                  Video</a>
-              </div>
-            </div>
-          </div>
-          <!--/ .Welcome Content Area -->
-          <!--/ .Welcome img Area -->
-          <div class="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2">
-            <div class="hero-img d-flex align-items-end">
-              <div class="hero-l8-img-group d-flex align-items-end">
-                <div class="hero-l8-img-group__1">
-                  <img class="w-100" src="image/home-7/hero-l8-1.png" alt="">
-                </div>
-                <div class="hero-l8-img-group__2">
-                  <img class="w-100" src="image/home-7/hero-l8-2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/ .Welcome img Area -->
-        </div>
-      </div>
-    </div>
-    <!--/ .Hero Area -->
-
-    <!-- Services Area -->
-    <div class="service-area service-area--l8 bg-default">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-8">
-            <!-- Section Title -->
-            <div class="section-title section-title--l8 text-center">
-              <h6 class="section-title__sub-heading highlighted-link" data-aos="fade-up" data-aos-duration="500"
-                data-aos-once="false">Our Services</h6>
-              <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Provided Feafalses</h2>
-            </div>
-            <!--/ .Section Title -->
           </div>
         </div>
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
-          data-aos-once="false">
-          <!-- Single Services -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
-            <div class="card card--services-l6 text-center card-hover__bittersweet">
-              <div class="card--services-l6__icon bg-op1__bittersweet mx-auto">
-                <i class="text-bittersweet fas fa-bell"></i>
+        <!--/ .Welcome Content Area -->
+        <!--/ .Welcome img Area -->
+        <div class="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2">
+          <div class="hero-img d-flex align-items-end">
+            <div class="hero-l8-img-group d-flex align-items-end">
+              <div class="hero-l8-img-group__1">
+                <img class="w-100" src="image/home-7/hero-l8-1.png" alt="">
               </div>
-              <h3 class="card--services-l6__heading">Team Accounts</h3>
-              <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-                of Lorem
-                lpsum<br class="d-none d-xs-block"> available for use</p>
+              <div class="hero-l8-img-group__2">
+                <img class="w-100" src="image/home-7/hero-l8-2.png" alt="">
+              </div>
             </div>
           </div>
-          <!--/ .Single Services -->
-          <!-- Single Services -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
-            <div class="card card--services-l6 text-center card-hover__niagara">
-              <div class="card--services-l6__icon bg-op1__niagara mx-auto">
-                <i class="text-niagara fas fa-layer-group"></i>
-              </div>
-              <h3 class="card--services-l6__heading">Digital Agency</h3>
-              <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-                of Lorem
-                lpsum<br class="d-none d-xs-block"> available for use</p>
-            </div>
-          </div>
-          <!--/ .Single Services -->
-          <!-- Single Services -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
-            <div class="card card--services-l6 text-center card-hover__coral">
-              <div class="card--services-l6__icon bg-op1__coral mx-auto">
-                <i class="text-coral fas fa-envelope"></i>
-              </div>
-              <h3 class="card--services-l6__heading">Email Marketing</h3>
-              <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-                of Lorem
-                lpsum<br class="d-none d-xs-block"> available for use</p>
-            </div>
-          </div>
-          <!--/ .Single Services -->
-          <!-- Single Services -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
-            <div class="card card--services-l6 text-center card-hover__lavender">
-              <div class="card--services-l6__icon bg-op1__lavender mx-auto">
-                <i class="text-lavender fas fa-chart-pie"></i>
-              </div>
-              <h3 class="card--services-l6__heading">API Reference</h3>
-              <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-                of Lorem
-                lpsum<br class="d-none d-xs-block"> available for use</p>
-            </div>
-          </div>
-          <!--/ .Single Services -->
         </div>
+        <!--/ .Welcome img Area -->
       </div>
     </div>
-    <!--/ .Services Area -->
+  </div>
+  <!--/ .Hero Area -->
 
-    <!-- About Us Area -->
-    <div class="content-section content-section--8 bg-default-5 border-bottom border-default-color-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-6 col-lg-8 col-md-9 col-xs-10">
-            <!-- Section Title -->
-            <div class="section-title section-title--l8 mt-4 mt-md-0 text-center">
-              <h6 class="section-title__sub-heading highlighted-link" data-aos="fade-up" data-aos-duration="500"
-                data-aos-once="false">About Lupinus Group</h6>
-              <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Innovative Building With New Materials</h2>
+  <!-- Services Area -->
+  <div class="service-area service-area--l8 bg-default">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <!-- Section Title -->
+          <div class="section-title section-title--l8 text-center">
+            <h6 class="section-title__sub-heading highlighted-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Our Services</h6>
+            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="false">Provided Feafalses</h2>
+          </div>
+          <!--/ .Section Title -->
+        </div>
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+        data-aos-once="false">
+        <!-- Single Services -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+          <div class="card card--services-l6 text-center card-hover__bittersweet">
+            <div class="card--services-l6__icon bg-op1__bittersweet mx-auto">
+              <i class="text-bittersweet fas fa-bell"></i>
             </div>
-            <!--/ .Section Title -->
+            <h3 class="card--services-l6__heading">Team Accounts</h3>
+            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
+              of Lorem
+              lpsum<br class="d-none d-xs-block"> available for use</p>
           </div>
         </div>
-        <div class="row align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="500"
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+          <div class="card card--services-l6 text-center card-hover__niagara">
+            <div class="card--services-l6__icon bg-op1__niagara mx-auto">
+              <i class="text-niagara fas fa-layer-group"></i>
+            </div>
+            <h3 class="card--services-l6__heading">Digital Agency</h3>
+            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
+              of Lorem
+              lpsum<br class="d-none d-xs-block"> available for use</p>
+          </div>
+        </div>
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+          <div class="card card--services-l6 text-center card-hover__coral">
+            <div class="card--services-l6__icon bg-op1__coral mx-auto">
+              <i class="text-coral fas fa-envelope"></i>
+            </div>
+            <h3 class="card--services-l6__heading">Email Marketing</h3>
+            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
+              of Lorem
+              lpsum<br class="d-none d-xs-block"> available for use</p>
+          </div>
+        </div>
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+          <div class="card card--services-l6 text-center card-hover__lavender">
+            <div class="card--services-l6__icon bg-op1__lavender mx-auto">
+              <i class="text-lavender fas fa-chart-pie"></i>
+            </div>
+            <h3 class="card--services-l6__heading">API Reference</h3>
+            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
+              of Lorem
+              lpsum<br class="d-none d-xs-block"> available for use</p>
+          </div>
+        </div>
+        <!--/ .Single Services -->
+      </div>
+    </div>
+  </div>
+  <!--/ .Services Area -->
+
+  <!-- About Us Area -->
+  <div class="content-section content-section--8 bg-default-5 border-bottom border-default-color-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-8 col-md-9 col-xs-10">
+          <!-- Section Title -->
+          <div class="section-title section-title--l8 mt-4 mt-md-0 text-center">
+            <h6 class="section-title__sub-heading highlighted-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">About Lupinus Group</h6>
+            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="false">Innovative Building With New Materials</h2>
+          </div>
+          <!--/ .Section Title -->
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="500"
+        data-aos-delay="300" data-aos-once="false">
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
+          <div class="widget widget--about widgets-align-right">
+            <!-- Single Services -->
+            <div class="widgets widgets--about-l6 d-flex">
+              <div class="widgets__icon">
+                <i class="fa fa-layer-group"></i>
+              </div>
+              <div class="widgets__content">
+                <h5 class="widgets__title">Optimal Choice</h5>
+                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+              </div>
+            </div>
+            <!--/ .Single Services -->
+            <!-- Single Services -->
+            <div class="widgets widgets--about-l6 d-flex">
+              <div class="widgets__icon">
+                <i class="fa fa-chart-pie"></i>
+              </div>
+              <div class="widgets__content">
+                <h5 class="widgets__title">Financial advice</h5>
+                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+              </div>
+            </div>
+            <!--/ .Single Services -->
+            <!-- Single Services -->
+            <div class="widgets widgets--about-l6 d-flex">
+              <div class="widgets__icon">
+                <i class="fa fa-cog"></i>
+              </div>
+              <div class="widgets__content">
+                <h5 class="widgets__title">Innovative solutions</h5>
+                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+              </div>
+            </div>
+            <!--/ .Single Services -->
+          </div>
+        </div>
+        <div class="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="500"
           data-aos-delay="300" data-aos-once="false">
-          <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
-            <div class="widget widget--about widgets-align-right">
-              <!-- Single Services -->
-              <div class="widgets widgets--about-l6 d-flex">
-                <div class="widgets__icon">
-                  <i class="fa fa-layer-group"></i>
-                </div>
-                <div class="widgets__content">
-                  <h5 class="widgets__title">Optimal Choice</h5>
-                  <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
-                </div>
-              </div>
-              <!--/ .Single Services -->
-              <!-- Single Services -->
-              <div class="widgets widgets--about-l6 d-flex">
-                <div class="widgets__icon">
-                  <i class="fa fa-chart-pie"></i>
-                </div>
-                <div class="widgets__content">
-                  <h5 class="widgets__title">Financial advice</h5>
-                  <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
-                </div>
-              </div>
-              <!--/ .Single Services -->
-              <!-- Single Services -->
-              <div class="widgets widgets--about-l6 d-flex">
-                <div class="widgets__icon">
-                  <i class="fa fa-cog"></i>
-                </div>
-                <div class="widgets__content">
-                  <h5 class="widgets__title">Innovative solutions</h5>
-                  <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
-                </div>
-              </div>
-              <!--/ .Single Services -->
+          <div class="content-img content-img--l7-group-img text-center">
+            <img class="w-100" src="image/home-7/about-mobile-img.png" alt="">
+            <div class="shape">
+              <img src="image/home-7/green-shape.png" alt="">
             </div>
           </div>
-          <div class="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2" data-aos="fade-up"
-            data-aos-duration="500" data-aos-delay="300" data-aos-once="false">
-            <div class="content-img content-img--l7-group-img text-center">
-              <img class="w-100" src="image/home-7/about-mobile-img.png" alt="">
-              <div class="shape">
-                <img src="image/home-7/green-shape.png" alt="">
+        </div>
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3" data-aos="fade-up" data-aos-duration="500"
+          data-aos-delay="300" data-aos-once="false">
+          <div class="widget widget--about">
+            <!-- Single Services -->
+            <div class="widgets widgets--about-l6 d-flex">
+              <div class="widgets__icon">
+                <i class="fa fa-bookmark"></i>
+              </div>
+              <div class="widgets__content">
+                <h5 class="widgets__title">Optimal Choice</h5>
+                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
               </div>
             </div>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3" data-aos="fade-up" data-aos-duration="500"
-            data-aos-delay="300" data-aos-once="false">
-            <div class="widget widget--about">
-              <!-- Single Services -->
-              <div class="widgets widgets--about-l6 d-flex">
-                <div class="widgets__icon">
-                  <i class="fa fa-bookmark"></i>
-                </div>
-                <div class="widgets__content">
-                  <h5 class="widgets__title">Optimal Choice</h5>
-                  <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
-                </div>
+            <!--/ .Single Services -->
+            <!-- Single Services -->
+            <div class="widgets widgets--about-l6 d-flex">
+              <div class="widgets__icon">
+                <i class="fa fa-headphones"></i>
               </div>
-              <!--/ .Single Services -->
-              <!-- Single Services -->
-              <div class="widgets widgets--about-l6 d-flex">
-                <div class="widgets__icon">
-                  <i class="fa fa-headphones"></i>
-                </div>
-                <div class="widgets__content">
-                  <h5 class="widgets__title">Business strategy</h5>
-                  <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
-                </div>
+              <div class="widgets__content">
+                <h5 class="widgets__title">Business strategy</h5>
+                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
               </div>
-              <!--/ .Single Services -->
-              <!-- Single Services -->
-              <div class="widgets widgets--about-l6 d-flex">
-                <div class="widgets__icon">
-                  <i class="fa fa-bell"></i>
-                </div>
-                <div class="widgets__content">
-                  <h5 class="widgets__title">Marketing outline</h5>
-                  <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
-                </div>
-              </div>
-              <!--/ .Single Services -->
             </div>
+            <!--/ .Single Services -->
+            <!-- Single Services -->
+            <div class="widgets widgets--about-l6 d-flex">
+              <div class="widgets__icon">
+                <i class="fa fa-bell"></i>
+              </div>
+              <div class="widgets__content">
+                <h5 class="widgets__title">Marketing outline</h5>
+                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+              </div>
+            </div>
+            <!--/ .Single Services -->
           </div>
         </div>
       </div>
     </div>
-    <!--/ .About Us Area -->
+  </div>
+  <!--/ .About Us Area -->
 
-    <!-- Content One Area -->
-    <div class="content-section content-section--l8-2 bg-default-5 border-bottom boder-default-color">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <!-- about-us Content -->
-          <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-10 order-2 orde-lg-1">
-            <div class="about-us-right mt-4 mt-lg-0">
-              <div class="section-title section-title--l8">
-                <h6 class="section-title__sub-heading  highlighted-link" data-aos="fade-up" data-aos-duration="500"
-                  data-aos-once="false">About Lupinus Group</h6>
-                <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                  data-aos-once="false">Present your app in a beautiful and elegant way.</h2>
-                <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
-                  data-aos-once="false">White iPhone Mockup Templates. A collection of three mockups showing<br
-                    class="d-none d-xl-block"> an iPhone on a dark leather seat. High resolution PSD files, each
-                  coming<br class="d-none d-xl-block"> with a smart object.</p>
-              </div>
+  <!-- Content One Area -->
+  <div class="content-section content-section--l8-2 bg-default-5 border-bottom boder-default-color">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- about-us Content -->
+        <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-10 order-2 orde-lg-1">
+          <div class="about-us-right mt-4 mt-lg-0">
+            <div class="section-title section-title--l8">
+              <h6 class="section-title__sub-heading  highlighted-link" data-aos="fade-up" data-aos-duration="500"
+                data-aos-once="false">About Lupinus Group</h6>
+              <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                data-aos-once="false">Present your app in a beautiful and elegant way.</h2>
+              <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+                data-aos-once="false">White iPhone Mockup Templates. A collection of three mockups showing<br
+                  class="d-none d-xl-block"> an iPhone on a dark leather seat. High resolution PSD files, each
+                coming<br class="d-none d-xl-block"> with a smart object.</p>
             </div>
-            <div class="widgets widgets-content--l8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
-              data-aos-once="false">
-              <div class="row justify-content-center">
-                <div class="col-lg-6 col-xs-6">
-                  <div class="widget widget--content-l6">
-                    <div class="widget--content-l6__circle bg-niagara shadow--niagara dark-mode-texts text-white">
-                      <i class="far fa-envelope"></i>
-                    </div>
-                    <h4 class="widget--content-l6__title">Minimal Design</h4>
-                    <p class="widget--content-l6__text">Generate Lorem Ipsum place holder<br class="d-none d-xl-block">
-                      text for use in your Explore</p>
+          </div>
+          <div class="widgets widgets-content--l8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+            data-aos-once="false">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-xs-6">
+                <div class="widget widget--content-l6">
+                  <div class="widget--content-l6__circle bg-niagara shadow--niagara dark-mode-texts text-white">
+                    <i class="far fa-envelope"></i>
                   </div>
+                  <h4 class="widget--content-l6__title">Minimal Design</h4>
+                  <p class="widget--content-l6__text">Generate Lorem Ipsum place holder<br class="d-none d-xl-block">
+                    text for use in your Explore</p>
                 </div>
-                <div class="col-lg-6 col-xs-6">
-                  <div class="widget widget--content-l6">
-                    <div class="widget--content-l6__circle bg-niagara shadow--niagara dark-mode-texts text-white">
-                      <i class="fa fa-layer-group"></i>
-                    </div>
-                    <h4 class="widget--content-l6__title">Best Material</h4>
-                    <p class="widget--content-l6__text">Generate Lorem Ipsum place holder<br class="d-none d-xl-block">
-                      text for use in your Explore</p>
+              </div>
+              <div class="col-lg-6 col-xs-6">
+                <div class="widget widget--content-l6">
+                  <div class="widget--content-l6__circle bg-niagara shadow--niagara dark-mode-texts text-white">
+                    <i class="fa fa-layer-group"></i>
                   </div>
+                  <h4 class="widget--content-l6__title">Best Material</h4>
+                  <p class="widget--content-l6__text">Generate Lorem Ipsum place holder<br class="d-none d-xl-block">
+                    text for use in your Explore</p>
                 </div>
               </div>
             </div>
           </div>
-          <!--/ .about-us Content -->
-          <div class="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2">
-            <div class="content-img mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-              data-aos-once="false">
-              <img class="w-100" src="image/home-7/content-mobile-img.png" alt="" data-aos="fade-right"
-                data-aos-duration="500" data-aos-once="false">
-              <div class="shape">
-                <img src="image/home-7/red-shape.png" alt="" data-aos="fade-left" data-aos-duration="500"
-                  data-aos-delay="300" data-aos-once="false">
-              </div>
+        </div>
+        <!--/ .about-us Content -->
+        <div class="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2">
+          <div class="content-img mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+            data-aos-once="false">
+            <img class="w-100" src="image/home-7/content-mobile-img.png" alt="" data-aos="fade-right"
+              data-aos-duration="500" data-aos-once="false">
+            <div class="shape">
+              <img src="image/home-7/red-shape.png" alt="" data-aos="fade-left" data-aos-duration="500"
+                data-aos-delay="300" data-aos-once="false">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/ .Content One Area -->
+  </div>
+  <!--/ .Content One Area -->
 
-    <!-- Testimonial Area -->
-    <div class="testimonial-section testimonial-section--l8 bg-default-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8 col-xl-9 col-xxl-7">
-            <div class="section-title section-title--l8 text-center text-lg-start">
-              <h6 class="section-title__sub-heading highlighted-link" data-aos="fade-up" data-aos-duration="500"
-                data-aos-once="false">Testimonial</h6>
-              <h2 class="section-title__heading mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Don’t Just Take Our Words For It</h2>
-            </div>
-          </div>
-          <div class="col-xxl-5 col-xl-3 col-lg-4 text-center text-lg-end ">
-            <div class="testimonial-btn mb-6 mb-lg-0"></div>
+  <!-- Testimonial Area -->
+  <div class="testimonial-section testimonial-section--l8 bg-default-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-xl-9 col-xxl-7">
+          <div class="section-title section-title--l8 text-center text-lg-start">
+            <h6 class="section-title__sub-heading highlighted-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Testimonial</h6>
+            <h2 class="section-title__heading mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="false">Don’t Just Take Our Words For It</h2>
           </div>
         </div>
-        <div class="row justify-content-center testimonial-slider--l8" data-aos="fade-up" data-aos-duration="500"
-          data-aos-delay="500" data-aos-once="false">
-          <div class="col-lg-4 col-md-12">
-            <div class="card card-testimonial--l4">
-              <div class="card-body ">
-                <div class="card-body__top d-flex align-items-center justify-content-between">
-                  <div class="d-flex flex-wrap align-items-center">
-                    <div class="card-image">
-                      <img src="image/home-4/user-img-1.png" alt="">
-                    </div>
-                    <div class="card-body__user mr-3">
-                      <h3 class="card-title">Charles Patterson</h3>
-                      <p class="card-text--ext">One year with us</p>
-                    </div>
+        <div class="col-xxl-5 col-xl-3 col-lg-4 text-center text-lg-end ">
+          <div class="testimonial-btn mb-6 mb-lg-0"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center testimonial-slider--l8" data-aos="fade-up" data-aos-duration="500"
+        data-aos-delay="500" data-aos-once="false">
+        <div class="col-lg-4 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-4/user-img-1.png" alt="">
                   </div>
-                  <div class="card-icon">
-                    <i class="fa fa-quote-left"></i>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Charles Patterson</h3>
+                    <p class="card-text--ext">One year with us</p>
                   </div>
                 </div>
-                <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
-                  labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
+                labore et dolore magna allquyam erat, sed dlam voluptua.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="card card-testimonial--l4">
-              <div class="card-body ">
-                <div class="card-body__top d-flex align-items-center justify-content-between">
-                  <div class="d-flex flex-wrap align-items-center">
-                    <div class="card-image">
-                      <img src="image/home-3/user-circle-1.png" alt="">
-                    </div>
-                    <div class="card-body__user mr-3">
-                      <h3 class="card-title">John Doe</h3>
-                      <p class="card-text--ext">One year with us</p>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-1.png" alt="">
                   </div>
-                  <div class="card-icon">
-                    <i class="fa fa-quote-left"></i>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">John Doe</h3>
+                    <p class="card-text--ext">One year with us</p>
                   </div>
                 </div>
-                <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
-                  labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
+                labore et dolore magna allquyam erat, sed dlam voluptua.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="card card-testimonial--l4">
-              <div class="card-body ">
-                <div class="card-body__top d-flex align-items-center justify-content-between">
-                  <div class="d-flex flex-wrap align-items-center">
-                    <div class="card-image">
-                      <img src="image/home-3/user-circle-2.png" alt="">
-                    </div>
-                    <div class="card-body__user mr-3">
-                      <h3 class="card-title">Tiana Dokidis</h3>
-                      <p class="card-text--ext">One year with us</p>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-2.png" alt="">
                   </div>
-                  <div class="card-icon">
-                    <i class="fa fa-quote-left"></i>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Tiana Dokidis</h3>
+                    <p class="card-text--ext">One year with us</p>
                   </div>
                 </div>
-                <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
-                  labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
+                labore et dolore magna allquyam erat, sed dlam voluptua.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="card card-testimonial--l4">
-              <div class="card-body ">
-                <div class="card-body__top d-flex align-items-center justify-content-between">
-                  <div class="d-flex flex-wrap align-items-center">
-                    <div class="card-image">
-                      <img src="image/home-3/user-circle-3.png" alt="">
-                    </div>
-                    <div class="card-body__user mr-3">
-                      <h3 class="card-title">Tiana Dokidis</h3>
-                      <p class="card-text--ext">One year with us</p>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-3.png" alt="">
                   </div>
-                  <div class="card-icon">
-                    <i class="fa fa-quote-left"></i>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Tiana Dokidis</h3>
+                    <p class="card-text--ext">One year with us</p>
                   </div>
                 </div>
-                <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
-                  labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
+                labore et dolore magna allquyam erat, sed dlam voluptua.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="card card-testimonial--l4">
-              <div class="card-body ">
-                <div class="card-body__top d-flex align-items-center justify-content-between">
-                  <div class="d-flex flex-wrap align-items-center">
-                    <div class="card-image">
-                      <img src="image/home-3/user-circle-1.png" alt="">
-                    </div>
-                    <div class="card-body__user mr-3">
-                      <h3 class="card-title">Talan Bergson</h3>
-                      <p class="card-text--ext">CEO, Greener</p>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-1.png" alt="">
                   </div>
-                  <div class="card-icon">
-                    <i class="fa fa-quote-left"></i>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Talan Bergson</h3>
+                    <p class="card-text--ext">CEO, Greener</p>
                   </div>
                 </div>
-                <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
-                  labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut
+                labore et dolore magna allquyam erat, sed dlam voluptua.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/ .Testimonial Area -->
+  </div>
+  <!--/ .Testimonial Area -->
 
-    <!-- CTA Area -->
-    <div class="cta-area cta-area--l8 bg-default">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-7 col-lg-10 col-md-11">
-            <div class="section-title section-title--l4 text-center">
-              <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-                App Is Available For Free On Google Play & App Store</h2>
-              <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">We’ll help you achieve your marketing & business goals</p>
-              <div class="button-group">
-                <a class="btn btn--lg btn-bittersweet shadow--bittersweet-2 text-white rounded-50 with-icon-2" href="#"
-                  data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false"><i
-                    class="fab fa-apple"></i>Apple Store</a>
-                <a class="btn btn--lg btn-niagara shadow--niagara-2 text-white rounded-50 with-icon-2" href="#"
-                  data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="false"><i
-                    class="fab fa-google-play"></i>Google Play</a>
-              </div>
+  <!-- CTA Area -->
+  <div class="cta-area cta-area--l8 bg-default">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-10 col-md-11">
+          <div class="section-title section-title--l4 text-center">
+            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+              App Is Available For Free On Google Play & App Store</h2>
+            <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="false">We’ll help you achieve your marketing & business goals</p>
+            <div class="button-group">
+              <a class="btn btn--lg btn-bittersweet shadow--bittersweet-2 text-white rounded-50 with-icon-2" href="#"
+                data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false"><i
+                  class="fab fa-apple"></i>Apple Store</a>
+              <a class="btn btn--lg btn-niagara shadow--niagara-2 text-white rounded-50 with-icon-2" href="#"
+                data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="false"><i
+                  class="fab fa-google-play"></i>Google Play</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/ .CTA Area -->
+  </div>
+  <!--/ .CTA Area -->
 
 
   <!-- FOOTER START -->
@@ -801,4 +630,5 @@
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
 </body>
+
 </html>

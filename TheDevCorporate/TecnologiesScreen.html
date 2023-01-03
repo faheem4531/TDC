@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- Custom stylesheet -->
+  <script src="js/Header.js" type="text/javascript" defer></script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
@@ -58,392 +59,220 @@
       </video>
     </div>
 
-    <!-- Header Area -->
-    <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
-      <div class="container-fluid ">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="Index.html">
-              <!-- light version logo (logo must be black)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper  ms-lg-7">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
-                </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
-                  </a>
-                </li>
+    <!-- Hedaer -->
+    <header-component></header-component>
+    <!-- Hedaer -->
 
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-3">
-                    <li class="sub-menu--item">
-                      <a href="AboutUsScreen.html">About Us</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="CareerScreen.html">Careers</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="FaqScreen.html">FAQ</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TermsAndConditions.html">Terms & Conditions</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Developers
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-1">
-                    <li class="sub-menu--item">
-                      <a href="ProjectManagementScreen.html">Project Management</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="WebAppDevScreen.html">Web App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="MobileAppDev.html">Mobile App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
-                    </li>
-                    <!-- <li class="sub-menu--item">
-                      <a href="ItServicesScreen.html">IT Services</a>
-                    </li> -->
-                    <!-- <li class="sub-menu--item">
-                      <a href="ServicesScreen.html">Services</a>
-                    </li> -->
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link active-link">Technologies
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="PortfolioScreen.html">Jobs Done</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TestimonialScreen.html">Happy Clients</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Hire Now
-            </button>
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-    <!--/ .Header Area -->
-  
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable position-relative">
-        <form class="modal-content custom-border-none">
-          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
-          <div class="modal-body home-modal">
-            <div class="d-flex justify-content-end">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/user_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Name" required />
-              </div>
-              <div class="user-input-container">
-                <img src="image/company_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Company Name" required />
-              </div>
-            </div>
-
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/email_icon.svg" />
-                <input type="email" class="user-inputs" placeholder="Email Address" required />
-              </div>
-              <select class="user-custom-select form-select form-select-sm" required>
-                <option disabled selected value="">Experience</option>
-                <option value="1">1-3 years</option>
-                <option value="2">3-5 years</option>
-                <option value="3">5++ years</option>
-              </select>
-            </div>
-
-            <select class="user-custom-select-two form-select form-select-sm" required>
-              <option disabled selected value="">Hiring Position</option>
-              <option value="1">Front-end</option>
-              <option value="2">Back-end</option>
-              <option value="3">QA's</option>
-              <option value="3">DevOps</option>
-              <option value="3">Full-Stack</option>
-              <option value="3">Tech-Stack</option>
-            </select>
-            <button type="submit" class="modal-button">Submit</button>
-        </form>
-        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
-      </div>
-    </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- Page Title Area -->
-    <div class="page-title-content text-center bg-default-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-7">
-            <h2 class="page-title-content__heading">Our Services</h2>
-            <p class="page-title-content__text">We’re disrupting the industry with our ground-breaking
-              solutions and business ideas. </p>
-          </div>
+  <!-- Page Title Area -->
+  <div class="page-title-content text-center bg-default-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <h2 class="page-title-content__heading">Our Services</h2>
+          <p class="page-title-content__text">We’re disrupting the industry with our ground-breaking
+            solutions and business ideas. </p>
         </div>
       </div>
-      <!-- <div class="shape">
+    </div>
+    <!-- <div class="shape">
                 <img class="w-100" src="image/png/inner-banner-shape.png" alt="">
             </div> -->
-    </div>
-    <!--/ .Page Title Area -->
+  </div>
+  <!--/ .Page Title Area -->
 
-    <!-- Services Area -->
-    <div class="feature-section feature-section--l3">
-      <div class="container">
-        <!-- Section Title -->
-        <div class="row">
-          <div class="col-xl-8 col-lg-10">
-            <div class="section-title section-title--l3">
-              <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-                High Quality</h6>
-              <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">
-                Translating your idea into its digital form, the way you like it
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row mb-5 mb-lg-7">
-          <div class="col-lg-6 col-md-12">
-            <div class="section-title section-title--l3">
-              <p class="section-title__description me-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
-                data-aos-once="false">
-                Get inspired by our innovations & the warm atmosphere that our team creates. Take a look
-                at our portfolio, including;
-                software, hardware, business architecture, education, research & development, biotech
-                and space exploration
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="section-title section-title--l3">
-              <p class="section-title__description me-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
-                data-aos-once="false">
-                No matter what your pain points are TDC will find a solution. We offer
-                resources-as-services in software, mobile apps &
-                custom development.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--/ .Section Title -->
-        <!-- Feature Content -->
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-12">
-            <div class="feature-content--l3__image mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="500"
+  <!-- Services Area -->
+  <div class="feature-section feature-section--l3">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="row">
+        <div class="col-xl-8 col-lg-10">
+          <div class="section-title section-title--l3">
+            <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+              High Quality</h6>
+            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
               data-aos-once="false">
-              <img class="w-100" src="image/home-3/feature-l3-image.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="feature-right" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
-              <!-- Feature List -->
-              <ul class="feature-content--l3__list list-unstyled">
-                <li>Product</li>
-                <li>Consultancy</li>
-                <li>Resource Augmentation</li>
-              </ul>
-              <!--/ .Feature List -->
-              <!--Counter Bar -->
-              <div class="feature-counter feature-counter--l3" data-aos="fade-up" data-aos-duration="500"
-                data-aos-delay="300" data-aos-once="false">
-                <div class="counter-widgets dark-mode-texts">
-                  <div class="counter-widgets__single counter-content">
-                    <h2 class="counter-content__heading">+<span class="counter">50</span></h2>
-                    <p class="counter-content__text">Project Launched</p>
-                  </div>
-                  <div class="counter-widgets__single counter-content">
-                    <h2 class="counter-content__heading">+<span class="counter">136</span></h2>
-                    <p class="counter-content__text">Happy clients</p>
-                  </div>
-                  <div class="counter-widgets__single counter-content">
-                    <h2 class="counter-content__heading">+<span class="counter">300</span></h2>
-                    <p class="counter-content__text">Users Comments</p>
-                  </div>
-                </div>
-              </div>
-              <!--/ .Counter Bar -->
-            </div>
+              Translating your idea into its digital form, the way you like it
+            </h2>
           </div>
         </div>
-        <!--/ .Feature Content -->
       </div>
-    </div>
-    <!--/ .Services Area -->
-
-    <div class="container-fluid" style="background-color: #F3F4F6; padding-top: 100px;padding-bottom: 80px;">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 ">
-            <!-- Single Services -->
-            <div class="card heading-card" style="background-color: #F3F4F6;">
-              <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false"
-                style="color: #2B59FF;">Our Services</h6>
-              <h3 style="line-height: 45px;margin-top: 10px;">Providing solutions of every kind</h3>
-              <p class="card--services-l4__content">Our technology has already been recognized by market
-                leaders and our scalable business model is setting the trend for
-                industry standards.</p>
-
-            </div>
-            <!--/ .Single Services -->
-            <!-- Single Services -->
-            <div class="card card--services-l4">
-              <div><img src="./image/services/outsource.png" height="65px" width="65px" style="margin-bottom: 30px;" />
-              </div>
-              <h3 class="card--services-l4__heading">Outsourcing</h3>
-              <p class="card--services-l4__content">Our dedicated developers build accessible, performant,
-                and secure solutions. We only use time-tested engineering
-                patterns to reduce dev time and save your costs.</p>
-
-            </div>
-            <!--/ .Single Services -->
+      <div class="row mb-5 mb-lg-7">
+        <div class="col-lg-6 col-md-12">
+          <div class="section-title section-title--l3">
+            <p class="section-title__description me-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
+              data-aos-once="false">
+              Get inspired by our innovations & the warm atmosphere that our team creates. Take a look
+              at our portfolio, including;
+              software, hardware, business architecture, education, research & development, biotech
+              and space exploration
+            </p>
           </div>
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10">
-            <!-- Single Services -->
-            <div class="card card--services-l4">
-              <div><img src="./image/services/qa.png" height="65px" width="65px" style="margin-bottom: 30px;" /></div>
-              <h3 class="card--services-l4__heading">Quality Assurance</h3>
-              <p class="card--services-l4__content">We run manual and automated tests and use various
-                testing approaches during the entire development life-cycle to
-                eliminate problems and bugs, enhance performance of your product and refine your its
-                business logic and design</p>
-
-            </div>
-            <!--/ .Single Services -->
-            <!-- Single Services -->
-            <div class="card card--services-l4">
-              <div><img src="./image/services/figma.png" height="65px" width="65px" style="margin-bottom: 30px;" />
-              </div>
-              <h3 class="card--services-l4__heading">UI/UX design</h3>
-              <p class="card--services-l4__content">Our UI/UX design team’s expertise and creativity help
-                you to get the product you’ve pictured. We rely on established
-                standards, proven tools and deep understanding of your objectives while designing your
-                product</p>
-
-            </div>
-            <!--/ .Single Services -->
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="section-title section-title--l3">
+            <p class="section-title__description me-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
+              data-aos-once="false">
+              No matter what your pain points are TDC will find a solution. We offer
+              resources-as-services in software, mobile apps &
+              custom development.
+            </p>
           </div>
-          <div class="col-xl-4 col-md-12  col-sm-9 col-xs-10">
-            <div class="row align-items-center">
-              <!-- Single Services -->
-              <div class="col-xl-12 col-md-6">
-                <div class="card card--services-l4">
-                  <div><img src="./image/services/web.png" height="65px" width="65px" style="margin-bottom: 30px;" />
-                  </div>
-                  <h3 class="card--services-l4__heading">Web App development</h3>
-                  <p class="card--services-l4__content">Our experience in building web applications is
-                    gained through cooperating with companies that follow various business
-                    models and operate in various business domains, including FinTech, Healthcare,
-                    Eductaion and other</p>
-
+        </div>
+      </div>
+      <!--/ .Section Title -->
+      <!-- Feature Content -->
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="feature-content--l3__image mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="500"
+            data-aos-once="false">
+            <img class="w-100" src="image/home-3/feature-l3-image.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="feature-right" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+            <!-- Feature List -->
+            <ul class="feature-content--l3__list list-unstyled">
+              <li>Product</li>
+              <li>Consultancy</li>
+              <li>Resource Augmentation</li>
+            </ul>
+            <!--/ .Feature List -->
+            <!--Counter Bar -->
+            <div class="feature-counter feature-counter--l3" data-aos="fade-up" data-aos-duration="500"
+              data-aos-delay="300" data-aos-once="false">
+              <div class="counter-widgets dark-mode-texts">
+                <div class="counter-widgets__single counter-content">
+                  <h2 class="counter-content__heading">+<span class="counter">50</span></h2>
+                  <p class="counter-content__text">Project Launched</p>
                 </div>
+                <div class="counter-widgets__single counter-content">
+                  <h2 class="counter-content__heading">+<span class="counter">136</span></h2>
+                  <p class="counter-content__text">Happy clients</p>
+                </div>
+                <div class="counter-widgets__single counter-content">
+                  <h2 class="counter-content__heading">+<span class="counter">300</span></h2>
+                  <p class="counter-content__text">Users Comments</p>
+                </div>
+              </div>
+            </div>
+            <!--/ .Counter Bar -->
+          </div>
+        </div>
+      </div>
+      <!--/ .Feature Content -->
+    </div>
+  </div>
+  <!--/ .Services Area -->
+
+  <div class="container-fluid" style="background-color: #F3F4F6; padding-top: 100px;padding-bottom: 80px;">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 ">
+          <!-- Single Services -->
+          <div class="card heading-card" style="background-color: #F3F4F6;">
+            <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false"
+              style="color: #2B59FF;">Our Services</h6>
+            <h3 style="line-height: 45px;margin-top: 10px;">Providing solutions of every kind</h3>
+            <p class="card--services-l4__content">Our technology has already been recognized by market
+              leaders and our scalable business model is setting the trend for
+              industry standards.</p>
+
+          </div>
+          <!--/ .Single Services -->
+          <!-- Single Services -->
+          <div class="card card--services-l4">
+            <div><img src="./image/services/outsource.png" height="65px" width="65px" style="margin-bottom: 30px;" />
+            </div>
+            <h3 class="card--services-l4__heading">Outsourcing</h3>
+            <p class="card--services-l4__content">Our dedicated developers build accessible, performant,
+              and secure solutions. We only use time-tested engineering
+              patterns to reduce dev time and save your costs.</p>
+
+          </div>
+          <!--/ .Single Services -->
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10">
+          <!-- Single Services -->
+          <div class="card card--services-l4">
+            <div><img src="./image/services/qa.png" height="65px" width="65px" style="margin-bottom: 30px;" /></div>
+            <h3 class="card--services-l4__heading">Quality Assurance</h3>
+            <p class="card--services-l4__content">We run manual and automated tests and use various
+              testing approaches during the entire development life-cycle to
+              eliminate problems and bugs, enhance performance of your product and refine your its
+              business logic and design</p>
+
+          </div>
+          <!--/ .Single Services -->
+          <!-- Single Services -->
+          <div class="card card--services-l4">
+            <div><img src="./image/services/figma.png" height="65px" width="65px" style="margin-bottom: 30px;" />
+            </div>
+            <h3 class="card--services-l4__heading">UI/UX design</h3>
+            <p class="card--services-l4__content">Our UI/UX design team’s expertise and creativity help
+              you to get the product you’ve pictured. We rely on established
+              standards, proven tools and deep understanding of your objectives while designing your
+              product</p>
+
+          </div>
+          <!--/ .Single Services -->
+        </div>
+        <div class="col-xl-4 col-md-12  col-sm-9 col-xs-10">
+          <div class="row align-items-center">
+            <!-- Single Services -->
+            <div class="col-xl-12 col-md-6">
+              <div class="card card--services-l4">
+                <div><img src="./image/services/web.png" height="65px" width="65px" style="margin-bottom: 30px;" />
+                </div>
+                <h3 class="card--services-l4__heading">Web App development</h3>
+                <p class="card--services-l4__content">Our experience in building web applications is
+                  gained through cooperating with companies that follow various business
+                  models and operate in various business domains, including FinTech, Healthcare,
+                  Eductaion and other</p>
+
+              </div>
+            </div>
+            <!--/ .Single Services -->
+            <!-- Single Services -->
+            <div class="col-xl-12 col-md-6">
+              <div class="card card--services-l4">
+                <div><img src="./image/services/mobile.png" height="65px" width="65px" style="margin-bottom: 30px;" />
+                </div>
+                <h3 class="card--services-l4__heading">Mobile App development</h3>
+                <p class="card--services-l4__content">To empower your brand identity, attract
+                  customers and solve everyday business challenges, TDC mobile developers use
+                  well-proven agile practices, design thinking and client-focused approach in
+                  custom mobile apps development</p>
+
               </div>
               <!--/ .Single Services -->
-              <!-- Single Services -->
-              <div class="col-xl-12 col-md-6">
-                <div class="card card--services-l4">
-                  <div><img src="./image/services/mobile.png" height="65px" width="65px" style="margin-bottom: 30px;" />
-                  </div>
-                  <h3 class="card--services-l4__heading">Mobile App development</h3>
-                  <p class="card--services-l4__content">To empower your brand identity, attract
-                    customers and solve everyday business challenges, TDC mobile developers use
-                    well-proven agile practices, design thinking and client-focused approach in
-                    custom mobile apps development</p>
-
-                </div>
-                <!--/ .Single Services -->
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer up Area -->
-    <div class="promo-area promo-area--inner-about bg-electric-violet-2">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-8">
-            <div class="promo-content dark-mode-texts text-center">
-              <h2 class="promo-content__title">Convinced to work on a new project?</h2>
-              <a href="ContactUsScreen.html" class="btn bg-white btn--lg-2 rounded-50 mt-5 ms-4 btn-hover-shadow"
-                style="color: #2B59FF;">Contact Us</a>
-              <a href="PortfolioScreen.html" class="btn bg-white btn--lg-2 rounded-50 mt-5 btn-hover-shadow"
-                style="color: #2B59FF;">Explore
-                our work</a>
-            </div>
+  <!-- Footer up Area -->
+  <div class="promo-area promo-area--inner-about bg-electric-violet-2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <div class="promo-content dark-mode-texts text-center">
+            <h2 class="promo-content__title">Convinced to work on a new project?</h2>
+            <a href="ContactUsScreen.html" class="btn bg-white btn--lg-2 rounded-50 mt-5 ms-4 btn-hover-shadow"
+              style="color: #2B59FF;">Contact Us</a>
+            <a href="PortfolioScreen.html" class="btn bg-white btn--lg-2 rounded-50 mt-5 btn-hover-shadow"
+              style="color: #2B59FF;">Explore
+              our work</a>
           </div>
         </div>
       </div>
-      <div class="shape">
-        <img class="w-100" src="image/png/inner-banner-shape.png" alt="">
-      </div>
     </div>
-    <!--/Footer up Area -->
+    <div class="shape">
+      <img class="w-100" src="image/png/inner-banner-shape.png" alt="">
+    </div>
+  </div>
+  <!--/Footer up Area -->
 
   <!-- FOOTER START -->
   <div class="footer-area footer-inner-1 bg-default-3">

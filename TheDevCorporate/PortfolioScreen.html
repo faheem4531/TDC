@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- Custom stylesheet -->
+  <script src="js/Header.js" type="text/javascript" defer></script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
@@ -56,514 +57,342 @@
       </video>
     </div>
 
-    <!-- Header Area -->
-    <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
-      <div class="container-fluid ">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="Index.html">
-              <!-- light version logo (logo must be black)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper  ms-lg-7">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
+    <!-- Hedaer -->
+    <header-component></header-component>
+    <!-- Hedaer -->
+
+  <!-- Content Start -->
+  <div class="page-title-content text-center bg-default-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <h2 class="page-title-content__heading">Portfolios</h2>
+        </div>
+      </div>
+    </div>
+    <div class="shape">
+      <img class="w-100" src="image/png/inner-banner-shape.png" alt="">
+    </div>
+  </div>
+  <div class="portfolio-area portfolio-area--inner-1 bg-default-3 border-bottom border-default-color-3 pt-0">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+        <div class="col-md-12 col-xs-10">
+          <div class="grid grid--l6 position-relative">
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development customer-support">
+              <a href="AtomsDetailsScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-1.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Atoms</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-3">
-                    <li class="sub-menu--item">
-                      <a href="AboutUsScreen.html">About Us</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="CareerScreen.html">Careers</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="FaqScreen.html">FAQ</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TermsAndConditions.html">Terms & Conditions</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Developers
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-1">
-                    <li class="sub-menu--item">
-                      <a href="ProjectManagementScreen.html">Project Management</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="WebAppDevScreen.html">Web App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="MobileAppDev.html">Mobile App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
-                    </li>
-                    <!-- <li class="sub-menu--item">
-                      <a href="ItServicesScreen.html">IT Services</a>
-                    </li> -->
-                    <!-- <li class="sub-menu--item">
-                      <a href="ServicesScreen.html">Services</a>
-                    </li> -->
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="PortfolioScreen.html" class="active-link hover-link">Jobs Done</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TestimonialScreen.html">Happy Clients</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Hire Now
-            </button>
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-    <!--/ .Header Area -->
-  
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable position-relative">
-        <form class="modal-content custom-border-none">
-          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
-          <div class="modal-body home-modal">
-            <div class="d-flex justify-content-end">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </a>
             </div>
-            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/user_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Name" required />
-              </div>
-              <div class="user-input-container">
-                <img src="image/company_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Company Name" required />
-              </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development marketing design">
+              <a href="SWVLDetailsScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-2.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">SWVL</h3>
+                    <p class="portfolio__hover__text">Web & Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/email_icon.svg" />
-                <input type="email" class="user-inputs" placeholder="Email Address" required />
-              </div>
-              <select class="user-custom-select form-select form-select-sm" required>
-                <option disabled selected value="">Experience</option>
-                <option value="1">1-3 years</option>
-                <option value="2">3-5 years</option>
-                <option value="3">5++ years</option>
-              </select>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="FreshaScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-3.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Fresha</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-
-            <select class="user-custom-select-two form-select form-select-sm" required>
-              <option disabled selected value="">Hiring Position</option>
-              <option value="1">Front-end</option>
-              <option value="2">Back-end</option>
-              <option value="3">QA's</option>
-              <option value="3">DevOps</option>
-              <option value="3">Full-Stack</option>
-              <option value="3">Tech-Stack</option>
-            </select>
-            <button type="submit" class="modal-button">Submit</button>
-        </form>
-        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
-      </div>
-    </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- Content Start -->
-    <div class="page-title-content text-center bg-default-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-7">
-            <h2 class="page-title-content__heading">Portfolios</h2>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="KronolizerScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-4.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Kronolizer</h3>
+                    <p class="portfolio__hover__text">Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="BringFreshScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-5.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Bring Fresh</h3>
+                    <p class="portfolio__hover__text">Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="HexaWalletScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-6.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Hexa Wallet</h3>
+                    <p class="portfolio__hover__text">Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development customer-support">
+              <a href="XChangerScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-7.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">X-Change</h3>
+                    <p class="portfolio__hover__text">Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development marketing design">
+              <a href="ChexAiScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-8.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Chex.AI</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="UpTokScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-9.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Uptok</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="AlayCareScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-10.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Alaycare</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="ApexScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-11.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Apex:E3</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="BestPriceScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-12.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Best Price</h3>
+                    <p class="portfolio__hover__text">Chrome Extension</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development customer-support">
+              <a href="FocusOnOpthalmologyScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-13.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Focus On Opthalmology</h3>
+                    <p class="portfolio__hover__text">Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development marketing design">
+              <a href="ImInclusiveScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-14.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">ImInclusive</h3>
+                    <p class="portfolio__hover__text">Mobile App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single customer-support development design">
+              <a href="IntertoysScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-15.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">Intertoys</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
+            <!-- Single Grid -->
+            <div class="grid-item grid--3__single  customer-support development design">
+              <a href="ItBoostScreen.html" class="portfolio__single">
+                <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-16.png" alt="">
+                <div
+                  class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                  <div class="hover-content">
+                    <h3 class="portfolio__hover__heading">IT-Boost</h3>
+                    <p class="portfolio__hover__text">Web App</p>
+                  </div>
+                  <div class="hover-right">
+                    <div class="portfolio__hover__link text-white">
+                      <i class="fas fa-external-link-square-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/ .Single Grid -->
           </div>
         </div>
       </div>
-      <div class="shape">
-        <img class="w-100" src="image/png/inner-banner-shape.png" alt="">
-      </div>
-    </div>
-    <div class="portfolio-area portfolio-area--inner-1 bg-default-3 border-bottom border-default-color-3 pt-0">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-          <div class="col-md-12 col-xs-10">
-            <div class="grid grid--l6 position-relative">
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development customer-support">
-                <a href="AtomsDetailsScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-1.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Atoms</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development marketing design">
-                <a href="SWVLDetailsScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-2.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">SWVL</h3>
-                      <p class="portfolio__hover__text">Web & Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="FreshaScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-3.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Fresha</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="KronolizerScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-4.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Kronolizer</h3>
-                      <p class="portfolio__hover__text">Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="BringFreshScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-5.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Bring Fresh</h3>
-                      <p class="portfolio__hover__text">Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="HexaWalletScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-6.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Hexa Wallet</h3>
-                      <p class="portfolio__hover__text">Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development customer-support">
-                <a href="XChangerScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-7.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">X-Change</h3>
-                      <p class="portfolio__hover__text">Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development marketing design">
-                <a href="ChexAiScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-8.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Chex.AI</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="UpTokScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-9.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Uptok</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="AlayCareScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-10.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Alaycare</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="ApexScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-11.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Apex:E3</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="BestPriceScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-12.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Best Price</h3>
-                      <p class="portfolio__hover__text">Chrome Extension</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development customer-support">
-                <a href="FocusOnOpthalmologyScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-13.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Focus On Opthalmology</h3>
-                      <p class="portfolio__hover__text">Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development marketing design">
-                <a href="ImInclusiveScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-14.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">ImInclusive</h3>
-                      <p class="portfolio__hover__text">Mobile App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single customer-support development design">
-                <a href="IntertoysScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-15.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">Intertoys</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-              <!-- Single Grid -->
-              <div class="grid-item grid--3__single  customer-support development design">
-                <a href="ItBoostScreen.html" class="portfolio__single">
-                  <img class="w-100 rounded-10" src="image/png/portfolio-demo-img-16.png" alt="">
-                  <div
-                    class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
-                    <div class="hover-content">
-                      <h3 class="portfolio__hover__heading">IT-Boost</h3>
-                      <p class="portfolio__hover__text">Web App</p>
-                    </div>
-                    <div class="hover-right">
-                      <div class="portfolio__hover__link text-white">
-                        <i class="fas fa-external-link-square-alt"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--/ .Single Grid -->
-            </div>
-          </div>
-        </div>
-        <!-- <div class="buttons text-center mt-lg-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+      <!-- <div class="buttons text-center mt-lg-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
           data-aos-once="false">
           <a class="btn btn-primary  btn--lg-2 rounded-55 text-white mt-3" href="#">Load More</a>
         </div> -->
-      </div>
     </div>
-    <!-- Content End -->
+  </div>
+  <!-- Content End -->
 
   <!-- FOOTER START -->
   <div class="footer-area footer-inner-1 bg-default-3">

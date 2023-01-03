@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- Custom stylesheet -->
+  <script src="js/header.js" type="text/javascript" defer></script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
@@ -44,130 +45,9 @@
       </video>
     </div>
 
-    <!-- Header Area -->
-    <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
-      <div class="container-fluid ">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="Index.html">
-              <!-- light version logo (logo must be black)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper  ms-lg-7">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
-                </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-3">
-                    <li class="sub-menu--item">
-                      <a href="AboutUsScreen.html">About Us</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="CareerScreen.html">Careers</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="FaqScreen.html">FAQ</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TermsAndConditions.html">Terms & Conditions</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Developers
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-1">
-                    <li class="sub-menu--item">
-                      <a href="ProjectManagementScreen.html">Project Management</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="WebAppDevScreen.html">Web App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="MobileAppDev.html">Mobile App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
-                    </li>
-                    <!-- <li class="sub-menu--item">
-                      <a href="ItServicesScreen.html">IT Services</a>
-                    </li> -->
-                    <!-- <li class="sub-menu--item">
-                      <a href="ServicesScreen.html">Services</a>
-                    </li> -->
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="PortfolioScreen.html" class="active-link hover-link">Jobs Done</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="TestimonialScreen.html">Happy Clients</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Hire Now
-            </button>
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-    <!--/ .Header Area -->
+    <!-- Header -->
+    <header-component></header-component>
+    <!-- Header -->
   
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
