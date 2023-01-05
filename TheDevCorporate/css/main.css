@@ -8782,7 +8782,7 @@ ________________________________ */
 }
 
 .sidebar-area .widget__recent-post__single:hover a .widget__recent-post__title {
-  color: #ff5722;
+  color: #2b59ff;
 }
 
 .sidebar-area .widget__recent-post__title {
@@ -8816,7 +8816,7 @@ ________________________________ */
 }
 
 .sidebar-area .widget__tweets li span {
-  color: #5034fc;
+  color: #2b59ff;
 }
 
 .sidebar-area .widget__tweets li:first-child {
@@ -8830,7 +8830,7 @@ ________________________________ */
 }
 
 .sidebar-area .widget__tweets li:hover a {
-  color: #ff5722;
+  color: #2b59ff;
 }
 
 .sidebar-area .widget__tweets li a {
@@ -16031,7 +16031,7 @@ ________________________________ */
 }
 
 .blogs-post .hover-content__date:hover {
-  color: #ff5722;
+  color: #2b59ff;
 }
 
 .blogs-post .hover-content__title {
@@ -16046,7 +16046,7 @@ ________________________________ */
 }
 
 .blogs-post .hover-content__title:hover {
-  color: #ff5722;
+  color: #2b59ff;
 }
 
 .blogs-post .hover-content__post-meta li a {
@@ -16061,7 +16061,7 @@ ________________________________ */
 }
 
 .blogs-post .hover-content__post-meta li a:hover {
-  color: #ff5722;
+  color: #2b59ff;
 }
 
 .blogs-post .hover-content__post-meta li a:before {
@@ -16089,7 +16089,7 @@ ________________________________ */
 .blogs-post .hover-content__post-meta li a i {
   font-weight: 500;
   margin-right: 10px;
-  color: #ff5722;
+  color: #2b59ff;
 }
 
 .blogs-post .hover-content__top {
