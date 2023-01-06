@@ -17373,6 +17373,10 @@ mark[data-aos="highlight-text"].aos-animate {
 .active-link {
   color: #2b59ff !important;
 }
+
+.bg-active-blue {
+  background-color: #2b59ff !important;
+}
 .hover-link:hover {
   color: #2b59ff !important;
 }
@@ -17533,6 +17537,12 @@ mark[data-aos="highlight-text"].aos-animate {
   height: 50px;
 }
 
-.disable{
-  cursor:not-allowed;
+.disable {
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-text {
+    margin-top: 50px;
+  }
 }
