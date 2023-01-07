@@ -7167,7 +7167,7 @@ ________________________________ */
 /* Section intro */
 
 .section-intro{
-  margin-top: 80px;
+  margin: 80px 0;
   /* background-color: #15cda8; */
 }
 
@@ -7193,10 +7193,7 @@ ________________________________ */
   left: 35%;
  }
 .section-intro__image{
-  background: rgb(149,215,255);
-  border-radius: 33% 67% 70% 30% / 32% 40% 60% 68% ;
-  width: 100%;
-  height: 500px;
+  max-width: 70%;
 }
 
 
@@ -7225,6 +7222,9 @@ ________________________________ */
   .section-title__heading-first{
     font-size: 50px;
   }
+  .section-intro__image{
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -7234,6 +7234,9 @@ ________________________________ */
   .section-title__heading-first{
     font-size: 60px;
   }
+  .section-intro__image{
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -7242,6 +7245,11 @@ ________________________________ */
   }
   .section-title__heading-first{
     font-size: 75px;
+  }
+  .section-intro__image{
+    max-height: 730px;
+    max-width: 600px;
+    margin-left: -30px;
   }
 }
 
@@ -10905,12 +10913,13 @@ ________________________________ */
 }
 
 .service-items {
-  margin: 60px 0px;
+  padding: 90px 0px;
+  background: url(../image/analytics-bg.png), rgb(213,222,255, .08);
 }
 
 @media (min-width: 756px) {
   .service-items {
-    margin: 100px 0px;
+    padding: 160px 0px;
   }
 }
 
