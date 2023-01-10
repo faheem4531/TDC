@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  function toastMessagetwo(e) {
+    var x = document.getElementById("snackbar1");
+    x.className = "show1";
+    setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+</script>
+
+<head>
+  <META NAME="robots" CONTENT="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    The Dev Corporate
+  </title>
+  <link rel="shortcut icon" href="image/tdc_circle_logo.svg" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden ">
+    <div id="loading">
+      <video width="80%" height="80%"  autoplay muted>
+        <source src="./image/tdc_animation.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="Index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper  ms-lg-7">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger active-link hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="AboutUsScreen.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="CareerScreen.html">Careers</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="FaqScreen.html">FAQ</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="TermsAndConditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger disable">Developers
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children ">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="ProjectManagementScreen.html">Project Management</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="WebAppDevScreen.html">Web App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="MobileAppDev.html">Mobile App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                    <a href="ItServicesScreen.html">IT Services</a>
+                  </li> -->
+                    <!-- <li class="sub-menu--item">
+                    <a href="ServicesScreen.html">Services</a>
+                  </li> -->
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="PortfolioScreen.html">Jobs Done</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="TestimonialScreen.html">Happy Clients</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Hire Now
+            </button>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable position-relative">
+        <form class="modal-content custom-border-none">
+          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
+          <div class="modal-body home-modal">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/user_icon.svg" />
+                <input type="text" class="user-inputs" placeholder="Name" required />
+              </div>
+              <div class="user-input-container">
+                <img src="image/company_icon.svg" />
+                <input type="text" class="user-inputs" placeholder="Company Name" required />
+              </div>
+            </div>
+
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/email_icon.svg" />
+                <input type="email" class="user-inputs" placeholder="Email Address" required />
+              </div>
+              <select class="user-custom-select form-select form-select-sm" required>
+                <option disabled selected value="">Experience</option>
+                <option value="1">1-3 years</option>
+                <option value="2">3-5 years</option>
+                <option value="3">5++ years</option>
+              </select>
+            </div>
+
+            <select class="user-custom-select-two form-select form-select-sm" required>
+              <option disabled selected value="">Hiring Position</option>
+              <option value="1">Front-end</option>
+              <option value="2">Back-end</option>
+              <option value="3">QA's</option>
+              <option value="3">DevOps</option>
+              <option value="3">Full-Stack</option>
+              <option value="3">Tech-Stack</option>
+            </select>
+            <button type="submit" class="modal-button">Submit</button>
+        </form>
+        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Header -->
+
+  <!-- Content Start -->
+  <div class="portfolio-details-area bg-default-3">
+    <div class="container">
+      <div class="banner-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+        <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-2.png" alt="">
+      </div>
+      <div class="portfolio-details">
+        <div class="row align-items-start">
+          <div class="col-xxl-7 col-xl-8 col-lg-7">
+            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
+              <h2 class="portfolio-content-box__heading">PROJECT INFORMATION</h2>
+              <p class="portfolio-content-box__text">
+                Swvl is a provider of tech-enabled mass transit solutions, offering intercity, intracity, B2B, and B2G
+                transportation products and services. Swvl operates in 135 cities in 20 countries across Latin
+                America, Europe, Africa, and Asia
+              </p>
+            </div>
+            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
+              <h2 class="portfolio-content-box__heading">Requirements</h2>
+              <p class="portfolio-content-box__text">
+                The concept of swvl was derived from the fact that there wasn't any proper platform that suggested a
+                more lenient way for B2B transits to pursue upon. Or even using it from a common traveler’s point of
+                view from transiting from one area to another. Swvl provides ride-hailing services with a focus on
+                mass transit. Using the app, customers can reserve and pay for rides on private buses operating on
+                fixed routes. The company’s proprietary algorithm uses the passenger’s location and destination to
+                calculate the quickest trip time. The services provide reliable alternatives to public transportation
+                without the expense of individual ridesharing options. The technology also allows for more efficiency
+                than public transportation, which results in lower emissions. Swvl also provides inter-city rides, car
+                ride-sharing, and corporate services.
+              </p>
+            </div>
+            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
+              <h2 class="portfolio-content-box__heading">Solutions</h2>
+              <p class="portfolio-content-box__text">
+                The team came up with a concept for the client's requirement through meticulous evaluation and
+                brainstorming that was highly adaptable and in line with their need.The Team opted to employ the
+                following for an appropriate formation after carefully examining the client's approach and enhancing
+                it with the usage of pertinent technology node js with the express, MongoDB, google cloud, unit
+                testing using jest
+              </p>
+            </div>
+            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
+              <h2 class="portfolio-content-box__heading">Results</h2>
+              <p class="portfolio-content-box__text">
+                The Apps User Interface was very accessible for every kind of user. The app has a very unique feature
+                that targets the common worker/traveler in making life easy because it provides a comfortable ride at
+                a reasonable price, and even assists the B2B transits as well. With the basic motto of providing
+                reachability and access to bus transits through technology.
+              </p>
+            </div>
+          </div>
+          <div class="col-xxl-4 offset-xxl-1 col-xl-4 col-lg-5">
+            <div class="portfolio-content-box__list" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+              <h3>Technologies Used</h3>
+              <ul class="list-unstyled mt-5">
+                <li><span>Node JS</span></li>
+                <li><span>Express</span></li>
+                <li><span>MongoDB</span></li>
+                <li><span>Google Cloud </span></li>
+                <li><span>Unit Testing using Jest </span></li>
+              </ul>
+            </div>
+
+            <div class="portfolio-content-box__list mt-7" data-aos="fade-left" data-aos-duration="500"
+              data-aos-once="false">
+              <h3>Project Link</h3>
+              <ul class="list-unstyled mt-3">
+                <li><a href="https://play.google.com/store/apps/details?id=io.swvl.customer&hl=en&gl=US"
+                    target="blank"><span>Click to open the link</span></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content End -->
+
+  <!-- promo Area -->
+  <div class="promo-area promo-area--inner-2 bg-default">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="pormo--l4-content pormo--l7 dark-mode-texts">
+            <div class="section-title section-title--l7 text-center">
+              <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+                Discuss a new project</h2>
+              <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                data-aos-once="false">Don’t miss out the potential visitors and sales for the<br
+                  class="d-none d-sm-block"> absence of your digital presence.</p>
+              <a class="btn btn--lg-2 btn-readical-red text-white rounded-50 mt-2" href="ContactUsScreen.html"
+                data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ .promo Area -->
+
+  <!-- FOOTER START -->
+  <div class="footer-area footer-inner-1 bg-default-3">
+    <div class="container">
+      <footer class="footer-top">
+        <div class="row">
+          <div class="col-lg-3 col-md-7 col-xs-9">
+            <div class="footer-widgets footer-widgets--l7">
+              <!-- Brand Logo-->
+              <div class="d-flex justify-content-center">
+                <div class="brand-logo mt-1">
+                  <a href="#">
+                    <!-- light version logo (logo must be black)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
+                    <!-- Dark version logo (logo must be White)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
+                  </a>
+                </div>
+              </div>
+              <p class="footer-widgets__text mt-5">
+                We will bring your idea into its digital creation the way you want it to be.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                <li>
+                  <a href="https://www.facebook.com/thedevcorporate">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/thedevcorporate/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Contact Details</h4>
+                  <ul class="footer-widgets__list footer-widgets--address">
+                    <li>
+                      <i class="fa fa-map-marker-alt active-link"></i>
+                      <a href="https://goo.gl/maps/bnLo3HwwPhWmrwXw8">
+                        <span>Address: <br class="d-block">
+                          392 F Block Phase 1,<br class="d-block">
+                          Johar Town Lahore</span>
+                      </a>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone-alt active-link"></i>
+                      <div class="list-content">
+                        <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                        <a href="#">+92 322 6761800</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope active-link"></i>
+                      <a class="heading-default-color gr-text-hover-underline text-break"
+                        href="mailto:hr@thedevcorporate.com">
+                        <span class="d-block gr-text-hover-decoration-none"> Email:
+                        </span>hr@thedevcorporate.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
+                  <h4 class="footer-widgets__title">Company</h4>
+                  <ul class="footer-widgets__list">
+                    <li>
+                      <a href="AboutUsScreen.html">About us</a>
+                    </li>
+                    <li>
+                      <a href="PortfolioScreen.html">Portfolios</a>
+                    </li>
+                    <li>
+                      <a href="ContactUsScreen.html">Contact</a>
+                    </li>
+                    <li>
+                      <a href="ServicesScreen.html">Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-9">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Newsletter</h4>
+                  <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
+                  <!-- Newsletter -->
+                  <div class="newsletter newsletter--l7">
+                    <form class="form2" id="hire-now-form1" action="" onsubmit="return toastMessagetwo()">
+                      <input type="email" placeholder="Enter Your Email" required>
+                      <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
+                      <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                    </form>
+                  </div>
+                  <!--/ .Newsletter -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright text-center border-top border-default-color-3">
+        <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER END -->
+
+  </div>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/counter-up/waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+  <!-- Activation Script -->
+  <script src="js/menu.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

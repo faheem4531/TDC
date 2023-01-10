@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  function toastMessagetwo(e) {
+    var x = document.getElementById("snackbar1");
+    x.className = "show1";
+    setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+</script>
+
+<head>
+  <META NAME="robots" CONTENT="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    The Dev Corporate
+  </title>
+  <link rel="shortcut icon" href="image/tdc_circle_logo.svg" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden ">
+    <div id="loading">
+      <video width="80%" height="80%" autoplay muted>
+        <source src="./image/tdc_animation.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Hedaer -->
+    <header
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="Index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper  ms-lg-7">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="AboutUsScreen.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="CareerScreen.html">Careers</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="FaqScreen.html" class="active-link">FAQ</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="TermsAndConditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger disable">Developers
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children ">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="ProjectManagementScreen.html">Project Management</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="WebAppDevScreen.html">Web App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="MobileAppDev.html">Mobile App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                    <a href="ItServicesScreen.html">IT Services</a>
+                  </li> -->
+                    <!-- <li class="sub-menu--item">
+                    <a href="ServicesScreen.html">Services</a>
+                  </li> -->
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="PortfolioScreen.html">Jobs Done</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="TestimonialScreen.html">Happy Clients</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Hire Now
+            </button>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable position-relative">
+        <form class="modal-content custom-border-none">
+          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
+          <div class="modal-body home-modal">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/user_icon.svg" />
+                <input type="text" class="user-inputs" placeholder="Name" required />
+              </div>
+              <div class="user-input-container">
+                <img src="image/company_icon.svg" />
+                <input type="text" class="user-inputs" placeholder="Company Name" required />
+              </div>
+            </div>
+
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/email_icon.svg" />
+                <input type="email" class="user-inputs" placeholder="Email Address" required />
+              </div>
+              <select class="user-custom-select form-select form-select-sm" required>
+                <option disabled selected value="">Experience</option>
+                <option value="1">1-3 years</option>
+                <option value="2">3-5 years</option>
+                <option value="3">5++ years</option>
+              </select>
+            </div>
+
+            <select class="user-custom-select-two form-select form-select-sm" required>
+              <option disabled selected value="">Hiring Position</option>
+              <option value="1">Front-end</option>
+              <option value="2">Back-end</option>
+              <option value="3">QA's</option>
+              <option value="3">DevOps</option>
+              <option value="3">Full-Stack</option>
+              <option value="3">Tech-Stack</option>
+            </select>
+            <button type="submit" class="modal-button">Submit</button>
+        </form>
+        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Hedaer -->
+
+  <!-- Testimonial Area -->
+  <div class="faqs-area faqs-area--inner bg-default-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="section-title section-title--l7 text-center">
+          <h3 class="section-title__heading">
+            Frequently Asked Question
+          </h3>
+        </div>
+      </div>
+      <div class="faq-body">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="row justify-content-center justify-md-content-start">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-xs-8 mb-6 mb-lg-0">
+                <div class="faq-tabs">
+                  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-general-tab" data-bs-toggle="pill" href="#v-pills-general"
+                      role="tab" aria-controls="v-pills-general" aria-selected="true">General</a>
+                    <a class="nav-link" id="v-pills-accounts-tab" data-bs-toggle="pill" href="#v-pills-accounts"
+                      role="tab" aria-controls="v-pills-accounts" aria-selected="false">Accounts</a>
+                    <a class="nav-link" id="v-pills-sales-tab" data-bs-toggle="pill" href="#v-pills-sales" role="tab"
+                      aria-controls="v-pills-sales" aria-selected="false">Sales</a>
+                    <a class="nav-link" id="v-pills-support-tab" data-bs-toggle="pill" href="#v-pills-support"
+                      role="tab" aria-controls="v-pills-support" aria-selected="false">Support</a>
+                    <a class="nav-link" id="v-pills-license-tab" data-bs-toggle="pill" href="#v-pills-license"
+                      role="tab" aria-controls="v-pills-license" aria-selected="false">License</a>
+                    <a class="nav-link" id="v-pills-refund-tab" data-bs-toggle="pill" href="#v-pills-refund" role="tab"
+                      aria-controls="v-pills-refund" aria-selected="false">Refund</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-9 col-lg-8 col-md-11">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel"
+                    aria-labelledby="v-pills-general">
+                    <!-- single Accordion -->
+                    <div class="accordion accordion--inner" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Can I use Fastland for my clients?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Does it work with WordPress?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do I get free updates?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Will you provide support?
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ .single Accordion -->
+                  <!-- single Accordion -->
+                  <div class="tab-pane fade" id="v-pills-accounts" role="tabpanel"
+                    aria-labelledby="v-pills-accounts-tab">
+                    <!-- single Accordion -->
+                    <div class="accordion accordion--inner" id="accordionExample2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Where do I find my fastland product key?
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+                          data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Does it work with WordPress?
+                          </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                          data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            What happens after I download?
+                          </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                          data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Will you provide support?
+                          </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                          data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ .single Accordion -->
+                  <!-- single Accordion -->
+                  <div class="tab-pane fade" id="v-pills-sales" role="tabpanel" aria-labelledby="v-pills-sales-tab">
+                    <!-- single Accordion -->
+                    <div class="accordion accordion--inner" id="accordionExample3">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                            I am having trouble downloading, what else should I do?
+                          </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingNine"
+                          data-bs-parent="#accordionExample3">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            How long does it take to download?
+                          </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                          data-bs-parent="#accordionExample3">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading11">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            Do I get free updates?
+                          </button>
+                        </h2>
+                        <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                          data-bs-parent="#accordionExample3">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading12">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            Will you provide support?
+                          </button>
+                        </h2>
+                        <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                          data-bs-parent="#accordionExample3">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ .single Accordion -->
+                  <!-- single Accordion -->
+                  <div class="tab-pane fade" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab">
+                    <!-- single Accordion -->
+                    <div class="accordion accordion--inner" id="accordionExample4">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading13">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                            Will you provide support?
+                          </button>
+                        </h2>
+                        <div id="collapse13" class="accordion-collapse collapse show" aria-labelledby="heading13"
+                          data-bs-parent="#accordionExample4">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading14">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                            Does it work with WordPress?
+                          </button>
+                        </h2>
+                        <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                          data-bs-parent="#accordionExample4">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading15">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                            Do I get free updates?
+                          </button>
+                        </h2>
+                        <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                          data-bs-parent="#accordionExample4">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading16">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                            Can I use Fastland for my clients?
+                          </button>
+                        </h2>
+                        <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                          data-bs-parent="#accordionExample4">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ .single Accordion -->
+                  <!-- single Accordion -->
+                  <div class="tab-pane fade" id="v-pills-license" role="tabpanel" aria-labelledby="v-pills-license-tab">
+                    <!-- single Accordion -->
+                    <div class="accordion accordion--inner" id="accordionExample5">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading17">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+                            Where do I find my fastland license key?
+                          </button>
+                        </h2>
+                        <div id="collapse17" class="accordion-collapse collapse show" aria-labelledby="heading17"
+                          data-bs-parent="#accordionExample5">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading18">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                            How do I activate my fastland?
+                          </button>
+                        </h2>
+                        <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                          data-bs-parent="#accordionExample5">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading19">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                            Can I purchase backup file?
+                          </button>
+                        </h2>
+                        <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19"
+                          data-bs-parent="#accordionExample5">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading20">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                            Will you provide support?
+                          </button>
+                        </h2>
+                        <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20"
+                          data-bs-parent="#accordionExample5">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ .single Accordion -->
+                  <!-- single Accordion -->
+                  <div class="tab-pane fade" id="v-pills-refund" role="tabpanel" aria-labelledby="v-pills-refund-tab">
+                    <!-- single Accordion -->
+                    <div class="accordion accordion--inner" id="accordionExample6">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading21">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
+                            How do I request a refund?
+                          </button>
+                        </h2>
+                        <div id="collapse21" class="accordion-collapse collapse show" aria-labelledby="heading21"
+                          data-bs-parent="#accordionExample6">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading22">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                            My refund request was denied. Can I contest this decision?
+                          </button>
+                        </h2>
+                        <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+                          data-bs-parent="#accordionExample6">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading23">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                            Do I get free updates?
+                          </button>
+                        </h2>
+                        <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23"
+                          data-bs-parent="#accordionExample6">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading24">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                            Will you provide support?
+                          </button>
+                        </h2>
+                        <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                          data-bs-parent="#accordionExample6">
+                          <div class="accordion-body">
+                            With lots of unique blocks, you can easily build a page without coding. Build your next
+                            landing
+                            page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum
+                            Melisandre.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ .single Accordion -->
+                  <!-- Button  -->
+                  <div class="buttons mt-7">
+                    <p class="">Haven’t got your answer?<a class="btn-link active-link ms-2"
+                        href="ContactUsScreen.html">Contact Us</a>
+                    </p>
+                  </div>
+                  <!-- Button End -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ .Testimonial Area -->
+
+  <!-- FOOTER START -->
+  <div class="footer-area footer-inner-1 bg-default-3">
+    <div class="container">
+      <footer class="footer-top">
+        <div class="row">
+          <div class="col-lg-3 col-md-7 col-xs-9">
+            <div class="footer-widgets footer-widgets--l7">
+              <!-- Brand Logo-->
+              <div class="d-flex justify-content-center">
+                <div class="brand-logo mt-1">
+                  <a href="#">
+                    <!-- light version logo (logo must be black)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
+                    <!-- Dark version logo (logo must be White)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
+                  </a>
+                </div>
+              </div>
+              <p class="footer-widgets__text mt-5">
+                We will bring your idea into its digital creation the way you want it to be.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                <li>
+                  <a href="https://www.facebook.com/thedevcorporate">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/thedevcorporate/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Contact Details</h4>
+                  <ul class="footer-widgets__list footer-widgets--address">
+                    <li>
+                      <i class="fa fa-map-marker-alt active-link"></i>
+                      <a href="https://goo.gl/maps/bnLo3HwwPhWmrwXw8">
+                        <span>Address: <br class="d-block">
+                          392 F Block Phase 1,<br class="d-block">
+                          Johar Town Lahore</span>
+                      </a>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone-alt active-link"></i>
+                      <div class="list-content">
+                        <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                        <a href="#">+92 322 6761800</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope active-link"></i>
+                      <a class="heading-default-color gr-text-hover-underline text-break"
+                        href="mailto:hr@thedevcorporate.com">
+                        <span class="d-block gr-text-hover-decoration-none"> Email:
+                        </span>hr@thedevcorporate.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
+                  <h4 class="footer-widgets__title">Company</h4>
+                  <ul class="footer-widgets__list">
+                    <li>
+                      <a href="AboutUsScreen.html">About us</a>
+                    </li>
+                    <li>
+                      <a href="PortfolioScreen.html">Portfolios</a>
+                    </li>
+                    <li>
+                      <a href="ContactUsScreen.html">Contact</a>
+                    </li>
+                    <li>
+                      <a href="ServicesScreen.html">Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-9">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Newsletter</h4>
+                  <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
+                  <!-- Newsletter -->
+                  <div class="newsletter newsletter--l7">
+                    <form class="form2" id="hire-now-form1" action="" onsubmit="return toastMessagetwo()">
+                      <input type="email" placeholder="Enter Your Email" required>
+                      <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
+                      <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                    </form>
+                  </div>
+                  <!--/ .Newsletter -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright text-center border-top border-default-color-3">
+        <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER END -->
+
+  </div>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/counter-up/waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+  <!-- Activation Script -->
+  <script src="js/menu.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
