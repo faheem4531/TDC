@@ -10962,6 +10962,7 @@ ________________________________ */
   background: url(../image/analytics-bg.png), rgb(213,222,255, .08);
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 756px) {
