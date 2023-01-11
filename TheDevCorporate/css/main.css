@@ -98,6 +98,15 @@ p {
   color: var(--color-texts);
 }
 
+.dot {
+  width: 9px;
+  height: 9px;
+  background: #f7b100;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 .default-logo,
 .default-shape {
   display: block;
@@ -4023,12 +4032,12 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
   margin-bottom: 13px;
 }
 
-.card--content-container{
-  box-shadow: 0px 24px 94px rgb(43,89,255, .4)  !important;
+.card--content-container {
+  box-shadow: 0px 24px 94px rgb(43, 89, 255, 0.4) !important;
 }
 
-.card-head__icon{
-  background-color: rgb(255,209,102) !important;
+.card-head__icon {
+  background-color: rgb(255, 209, 102) !important;
   color: #2b59ff !important;
 }
 
@@ -6130,7 +6139,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
 .cta-section--l1 {
   background-color: black;
   background: url(../image/home-1/footer-bg.webp);
-  opacity: .9;
+  opacity: 0.9;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -6138,14 +6147,14 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
   z-index: 0;
   border-radius: 0;
 }
-.cta-section--l1::before{
-background-color: #2b59ff;
-opacity: 0.5;
-content: '';
-height: 100%;
-position: absolute;
-top: 0%;
-width: 100%;
+.cta-section--l1::before {
+  background-color: #2b59ff;
+  opacity: 0.5;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -7189,17 +7198,17 @@ ________________________________ */
 
 /* Section intro */
 
-.section-intro{
+.section-intro {
   margin: 80px 0;
   /* background-color: #15cda8; */
 }
 
-.section-intro__heading{
+.section-intro__heading {
   font-weight: 500;
   color: var(--color-headings);
 }
 
-.section-intro__bg{
+.section-intro__bg {
   width: 33px !important;
   height: 33px !important;
   flex-shrink: 0;
@@ -7209,28 +7218,27 @@ ________________________________ */
   background-color: #2b59ff;
   position: relative;
 }
- .section-intro__num{
+.section-intro__num {
   font-size: 16px;
   position: absolute;
   top: 8%;
   left: 35%;
- }
-.section-intro__image{
+}
+.section-intro__image {
   max-width: 70%;
 }
-
-
 
 /* Section intro */
 
 /* Section Title */
 
-.section-title__container{
+.section-title__container {
   position: relative;
   z-index: 10;
 }
 
-.section-title__heading, .section-title__heading-first{
+.section-title__heading,
+.section-title__heading-first {
   font-weight: 500;
   letter-spacing: -2px;
   line-height: 1.1;
@@ -7239,37 +7247,40 @@ ________________________________ */
 }
 
 @media (min-width: 576px) {
-  .section-title__heading, .section-intro__heading {
+  .section-title__heading,
+  .section-intro__heading {
     font-size: 40px;
   }
-  .section-title__heading-first{
+  .section-title__heading-first {
     font-size: 50px;
   }
-  .section-intro__image{
+  .section-intro__image {
     max-width: 80%;
   }
 }
 
 @media (min-width: 768px) {
-  .section-title__heading, .section-intro__heading {
+  .section-title__heading,
+  .section-intro__heading {
     font-size: 50px;
   }
-  .section-title__heading-first{
+  .section-title__heading-first {
     font-size: 60px;
   }
-  .section-intro__image{
+  .section-intro__image {
     max-width: 90%;
   }
 }
 
 @media (min-width: 992px) {
-  .section-title__heading, .section-intro__heading {
+  .section-title__heading,
+  .section-intro__heading {
     font-size: 60px;
   }
-  .section-title__heading-first{
+  .section-title__heading-first {
     font-size: 75px;
   }
-  .section-intro__image{
+  .section-intro__image {
     max-height: 730px;
     max-width: 600px;
     margin-left: -30px;
@@ -10912,7 +10923,7 @@ ________________________________ */
   position: relative;
   overflow: hidden;
 }
-.service-yellow-shape{
+.service-yellow-shape {
   width: 40%;
   transform: rotate(75deg);
   position: absolute;
@@ -10924,7 +10935,7 @@ ________________________________ */
   .service-area--l1 {
     padding: 70px 0;
   }
-  .service-yellow-shape{
+  .service-yellow-shape {
     width: 35%;
     transform: rotate(75deg);
     position: absolute;
@@ -10937,13 +10948,12 @@ ________________________________ */
   .service-area--l1 {
     padding: 120px 0;
   }
-  .service-yellow-shape{
+  .service-yellow-shape {
     width: 23%;
     transform: rotate(70deg);
     position: absolute;
     bottom: -32%;
     right: -4.5%;
-  
   }
 }
 
@@ -10959,7 +10969,7 @@ ________________________________ */
 
 .service-items {
   padding: 80px 0px;
-  background: url(../image/analytics-bg.png), rgb(213,222,255, .08);
+  background: url(../image/analytics-bg.png), rgb(213, 222, 255, 0.08);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

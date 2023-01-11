@@ -887,8 +887,12 @@
   <!-- FOOTER END -->
   <script src="plugins/type-js/typed.min.js"></script>
   <script>
+    var strings = ["Easier", "Faster", "Cheaper"];
+    for (var i = 0; i < strings.length; i++) {
+      strings[i] = `${strings[i]}<span><div class="dot"/></span>`
+    }
     var typed = new Typed('.highlight-text', {
-      strings: ["Easier.", "Faster.", "Cheaper."],
+      strings: strings,
       typeSpeed: 80,
       backSpeed: 80,
       cursorChar: '',
