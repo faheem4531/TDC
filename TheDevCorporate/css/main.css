@@ -3039,6 +3039,7 @@ div#loading img {
   justify-content: space-between;
 }
 
+
 @media (min-width: 992px) {
   .site-navbar {
     flex-flow: row nowrap;
@@ -3733,7 +3734,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
     background-color: #ffffff;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     transform: translate(-100%);
     transition: all 0.5s ease;
@@ -3866,7 +3867,7 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 1098;
     visibility: hidden;
     opacity: 0;
@@ -7232,6 +7233,7 @@ ________________________________ */
 
 /* Section Title */
 
+
 .section-title__container {
   position: relative;
   z-index: 10;
@@ -7731,7 +7733,7 @@ ________________________________ */
 .page-title-content .shape {
   position: absolute;
   right: 0;
-  bottom: 30%;
+  top: 28%;
   width: 8%;
   display: none;
 }
@@ -9745,45 +9747,101 @@ ________________________________ */
 /*
   Home 1 : Welcome Section
 ------------------------------*/
+
+
 .welcome-area--l1 {
-  padding-top: 180px;
+  padding-top: 40px;
   padding-bottom: 55px;
+  position: relative;
+  background: url(../image/home-1/homebg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
+
+
+.welcome-area--l1::before{
+  background: rgb(1,10,12);
+background: linear-gradient(90deg, rgba(1,10,12,1) 55%, rgba(9,9,121,1) 100%);
+  opacity: 0.7;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+
+
+.welcome-area--l1-shape-2{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3%;
+  left: -4%;
+  z-index: -1;
+  -webkit-animation: rotation 8s ease 0s infinite alternate none running;
+  animation: rotation 8s ease 0s infinite alternate none running;
+}
+
 
 @media (min-width: 576px) {
   .welcome-area--l1 {
-    padding-top: 180px;
+    padding: 50px 0;
   }
+  .welcome-area--l1-shape-2{
+    width: 100px;
+    height: 100px;
+    top: -7%;
+    left: -5%;
+  }
+  
 }
 
-@media (min-width: 768px) {
-  .welcome-area--l1 {
-    padding-top: 270px;
-    padding-bottom: 60px;
-  }
-}
+
 
 @media (min-width: 992px) {
   .welcome-area--l1 {
-    padding-top: 210px;
-    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-bottom: 35px;
+    
+  }
+  .welcome-area--l1-shape-2{
+    width: 120px;
+    height: 120px;
+    left: -7%;
   }
 }
 
 @media (min-width: 1200px) {
   .welcome-area--l1 {
     padding-top: 140px;
-    padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1366px) {
   .welcome-area--l1 {
-    padding-top: 216px;
-    padding-bottom: 187px;
+    padding-top: 160px;
+    padding-bottom: 100px;
+
+  }
+  .welcome-area--l1-shape-2{
+    width: 180px;
+    height: 180px;
+    top: -13.5%;
+    left: -9.5%;
   }
 }
 
+@media (max-height: 600px) {
+  .welcome-area--l1 {
+    padding-top: 20px;
+  }
+}
+  
 .welcome-area--l1 .newsletter-form {
   max-width: 521px;
 }
@@ -9791,12 +9849,14 @@ ________________________________ */
 /* Welcome content */
 .welcome-content--l1 {
   margin-top: 80px;
+  position: relative;
 }
 
 @media (min-width: 992px) {
   .welcome-content--l1 {
     margin-top: 0;
   }
+  
 }
 
 .welcome-content__title {
@@ -9823,20 +9883,26 @@ ________________________________ */
 
 @media (min-width: 768px) {
   .welcome-content__title {
-    font-size: 65px;
+    font-size: 63px;
     height: 220px;
   }
 }
 
 @media (min-width: 992px) {
   .welcome-content__title {
-    font-size: 70px;
+    font-size: 65px;
   }
 }
 @media (min-width: 1300px) {
   .welcome-content__title {
     font-size: 70px;
     width: 530px;
+  }
+}
+
+@media (max-height: 600px) {
+  .welcome-content__title {
+    margin-bottom: 5px;
   }
 }
 
@@ -9847,6 +9913,12 @@ ________________________________ */
   letter-spacing: normal;
   line-height: 34px;
   margin-bottom: 53px;
+}
+
+@media (max-height: 600px) {
+  .welcome-content__descriptions {
+    margin-bottom: 5px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -9879,10 +9951,10 @@ ________________________________ */
 @media (min-width: 992px) {
   .welcome-image-group-wrapper {
     position: absolute;
-    top: 55%;
+    top: 50%;
     right: 2%;
     transform: translateY(-50%);
-    width: 46%;
+    width: 45%;
   }
 }
 
@@ -9910,7 +9982,7 @@ ________________________________ */
 }
 
 .welcome-image--group-01 img {
-  width: 110%;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -9947,8 +10019,8 @@ ________________________________ */
 .welcome-image--group-01__img-2 {
   position: absolute;
   left: 45%;
-  top: -30%;
-  width: 33%;
+  top: -33%;
+  width: 28%;
   z-index: -1;
 }
 
@@ -10918,8 +10990,7 @@ ________________________________ */
   Home 1 : Service Section
 ---------------------------------*/
 .service-area--l1 {
-  padding-top: 55px;
-  padding-bottom: 5px;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
 }
@@ -10933,7 +11004,7 @@ ________________________________ */
 
 @media (min-width: 768px) {
   .service-area--l1 {
-    padding: 70px 0;
+    padding: 60px 0;
   }
   .service-yellow-shape {
     width: 35%;
@@ -10946,7 +11017,7 @@ ________________________________ */
 
 @media (min-width: 992px) {
   .service-area--l1 {
-    padding: 120px 0;
+    padding: 80px 0;
   }
   .service-yellow-shape {
     width: 23%;
