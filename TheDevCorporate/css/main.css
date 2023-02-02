@@ -7681,22 +7681,28 @@ ________________________________ */
 /*
   Terms Area
 ---------------------------------*/
-.page-title-content {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 20px;
+
+.about-hero-section{
   background: url(../image/png/aboutbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 420px;
 }
 
+.page-title-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 768px) {
   .page-title-content {
     padding-top: 75px;
     padding-bottom: 10px;
+  }
+  .about-hero-section{
     height: 480px;
   }
 }
@@ -7705,7 +7711,9 @@ ________________________________ */
   .page-title-content {
     padding-top: 102px;
     padding-bottom: 20px;
-      height: 554px;
+  }
+    .about-hero-section{
+    height: 554px;
   }
 }
 
