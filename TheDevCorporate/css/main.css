@@ -7287,15 +7287,35 @@ ________________________________ */
   margin-bottom: 10px;
 }
 
+.section-title__descriptionSec{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;  
+  display: flex;
+  align-items: center;
+  
+  color: #25373F;
+}
+
 @media (min-width: 768px) {
   .section-title__description {
     font-size: 21px;
+  }
+  .section-title__descriptionSec{
+    font-size: 26px;
+    line-height: 32px;  
+      font-weight: 500;
   }
 }
 
 @media (min-width: 992px) {
   .section-title__description {
     margin-top: 0;
+  }
+  .section-title__descriptionSec{
+    font-size: 30px;
+    line-height: 35px; 
   }
 }
 
@@ -7456,7 +7476,7 @@ ________________________________ */
   background-color: #2B59FF;
 } */
 
-.section-title--l5 .section-title__heading {
+.section-title--l5 .section-title__heading , .section-title__headingSec {
   font-size: 32px;
   font-weight: 500;
   letter-spacing: normal;
@@ -7465,12 +7485,6 @@ ________________________________ */
 }
 
 @media (min-width: 768px) {
-  .section-title--l5 .section-title__heading {
-    font-size: 33px;
-  }
-}
-
-@media (min-width: 1600px) {
   .section-title--l5 .section-title__heading {
     font-size: 42px;
   }
@@ -7483,6 +7497,19 @@ ________________________________ */
   line-height: 1.77777;
   color: var(--color-texts-3);
 }
+
+.section-title__headingSec{
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.38095;
+  color: var(--color-headings-2);
+}
+
+.section-title__headingColor{
+  color: #0041ff;
+}
+
 
 /*
  =======> Home 6
@@ -7655,15 +7682,22 @@ ________________________________ */
   Terms Area
 ---------------------------------*/
 .page-title-content {
+  display: flex;
+  align-items: center;
   position: relative;
   padding-top: 90px;
   padding-bottom: 20px;
+  background: url(../image/png/aboutbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
 }
 
 @media (min-width: 768px) {
   .page-title-content {
     padding-top: 75px;
     padding-bottom: 10px;
+    height: 480px;
   }
 }
 
@@ -7671,6 +7705,7 @@ ________________________________ */
   .page-title-content {
     padding-top: 102px;
     padding-bottom: 20px;
+      height: 554px;
   }
 }
 
@@ -7731,6 +7766,25 @@ ________________________________ */
   .page-title-content .shape {
     display: block;
   }
+}
+
+.section-title__sub-headingLine,.section-title__sub-headingLine2{
+  width: 40px;
+  height: 1px;
+  background-color: #2B59FF;
+  margin: 0px 20px 22px 0;
+}
+
+.section-title__sub-headingLine2{
+  background-color: white !important;
+}
+
+.about-our-mission{
+  background: url(../image/png/aboutbg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -3334;
 }
 
 /*
@@ -11729,9 +11783,139 @@ ________________________________ */
   Home 3 : Feature Section
 ---------------------------------*/
 .feature-section--l3 {
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 60px;
+  background: url(../image/png/about-brand-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
 }
+
+.feature-section--l3::before{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(13, 6, 94, 0.8);
+  z-index: -1;
+}
+
+.about-brand-logo-container{
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.brand-logo__swwl{
+  width: 120px;
+  margin-left: 20px;
+}
+
+.brand-logo__atoms{
+  width: 210px;
+}
+
+.brand-logo__chex.ai, .brand-logo__bondai{
+  width: 170px;
+  margin-bottom: 20px;
+}
+
+.brand-logo__care{
+  width: 170px;
+  margin-bottom: 20px;
+}
+
+.brand-logo__itbost{
+  width: 180.69px;
+  margin-bottom: 20px;
+}
+
+.brand-logo__uptok{
+  width: 180.47px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 385px) {
+  .about-brand-logo-container{
+    display: block !important;
+    margin: 10px auto;
+  }
+
+.brand-logo__swwl{
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.brand-logo__atoms{
+  width: 170px;
+  margin-bottom: 30px;
+}
+.brand-logo__chexai{
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+ .brand-logo__bondai{
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.brand-logo__care{
+  width: 170px;
+  margin-bottom: 25px;
+}
+
+.brand-logo__itbost{
+  width: 180.69px;
+  margin-bottom: 20px;
+}
+
+.brand-logo__uptok{
+  width: 160.47px;
+  margin-bottom: 40px;
+}
+}
+
+
+@media (min-width: 768px) {
+  .feature-section--l3 {
+  height: 611px;
+}
+
+.brand-logo__swwl{
+  width: 168px;
+}
+
+.brand-logo__atoms{
+  width: 255px;
+}
+
+.brand-logo__chex.ai, .brand-logo__bondai{
+  width: 236.33px;
+  height: 64px;
+}
+
+.brand-logo__care{
+  width: 187px;
+  height: 84.2px;
+}
+
+.brand-logo__itbost{
+  width: 250.69px;
+  height: 68px;
+}
+
+.brand-logo__uptok{
+  width: 210.47px;
+}
+
+
+}
+
+
 
 @media (min-width: 576px) {
   .feature-section--l3 {
@@ -13779,6 +13963,9 @@ ________________________________ */
   padding-top: 50px;
   padding-bottom: 60px;
   position: relative;
+  background: url(../image/png/aboutbg-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -14742,6 +14929,13 @@ ________________________________ */
   margin-bottom: 125px;
 }
 
+.about-us__image2{
+  width: 100%;
+  margin: 50px auto;
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: 1200px) {
   .about-us__image-group-l4 {
     width: 100%;
@@ -14766,6 +14960,35 @@ ________________________________ */
 .video-section {
   padding-top: 60px;
   padding-bottom: 40px;
+  position: relative;
+}
+
+.about-us__vector, .about-us__vector2{
+  width: 80px;
+  position: absolute;
+  right: -10px;
+  bottom: 15px;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .about-us__vector2{
+  display: none !important;
+}
+}
+
+@media (min-width: 480px) {
+  .about-us__vector, .about-us__vector2{
+    width: 145px;
+    display: block;
+    right: 100px;
+    bottom: 10px;
+    z-index: -2;
+  }
+  .about-us__image2{
+  width: 78%;
+  text-align: center;
+}
 }
 
 @media (min-width: 768px) {
@@ -14782,6 +15005,9 @@ ________________________________ */
     padding-top: 125px;
     padding-bottom: 130px;
   }
+  .about-us__vector, .about-us__vector2{
+  width: 172px;
+}
 }
 
 .about-us-section--l5 .section-title,
