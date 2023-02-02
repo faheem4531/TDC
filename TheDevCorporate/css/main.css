@@ -18893,3 +18893,14 @@ flex-wrap: wrap;
 line-height: 50px !important;
 } 
 /* About US */
+
+.join-workplace{
+  width: 70%;
+  margin: auto;
+}
+.terms-Conditions-link{
+color: #757575;
+}
+.terms-Conditions-link:hover{
+  color: #757575;
+  }
