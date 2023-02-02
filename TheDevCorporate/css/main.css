@@ -11841,9 +11841,10 @@ ________________________________ */
 }
 
 .brand-logo__uptok{
-  width: 180.47px;
+  width: 180px;
   margin-bottom: 20px;
 }
+
 
 @media (max-width: 385px) {
   .about-brand-logo-container{
@@ -11879,11 +11880,6 @@ ________________________________ */
 .brand-logo__itbost{
   width: 180.69px;
   margin-bottom: 20px;
-}
-
-.brand-logo__uptok{
-  width: 160.47px;
-  margin-bottom: 40px;
 }
 }
 
@@ -18890,3 +18886,10 @@ flex-wrap: wrap;
 }
 }
 /* Resource Detail CSS */
+
+
+/* About US */
+.our-story-heading{
+line-height: 50px !important;
+} 
+/* About US */
