@@ -11783,7 +11783,7 @@ ________________________________ */
 
 @media (min-width: 992px) {
   .feature-area--l2__content__heading {
-    font-size: 58px;
+    font-size: 50px;
   }
 }
 
@@ -15070,7 +15070,9 @@ ________________________________ */
   }
 }
 
-.about-us__image,
+.about-us__image{
+  width: 100%;
+}
 .video-box {
   position: relative;
 }
@@ -18892,6 +18894,11 @@ flex-wrap: wrap;
 .our-story-heading{
 line-height: 50px !important;
 } 
+.about-us-start-now{
+  background-color: black;
+  background: url(../image/home-1/aboutus-map-img.png);
+  padding-top: 100px;
+}
 /* About US */
 
 .join-workplace{
