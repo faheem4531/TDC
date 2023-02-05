@@ -2,10 +2,24 @@
 <html lang="en">
 
 <script>
+  function toastMessage(e) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = 'snackbar' }, 3000);
+    return false
+  }
+
   function toastMessagetwo(e) {
     var x = document.getElementById("snackbar1");
     x.className = "show1";
     setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+
+  function toastMessagethree(e) {
+    var x = document.getElementById("snackbar2");
+    x.className = "show2";
+    setTimeout(function () { x.className = 'snackbar2' }, 3000);
     return false
   }
 </script>
@@ -14,7 +28,6 @@
   <META NAME="robots" CONTENT="noindex,nofollow">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
     The Dev Corporate
@@ -40,7 +53,7 @@
   <div class="site-wrapper overflow-hidden ">
     <div id="loading">
       <!-- <img src="image/fev-icon.svg" alt=""> -->
-      <video wwidth="80%" height="80%" autoplay muted>
+      <video width="80%" height="80%" autoplay muted>
         <source src="./image/tdc_animation.mp4" type="video/mp4">
       </video>
     </div>
@@ -71,7 +84,7 @@
               </div>
               <ul class="site-menu-main">
                 <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger active-link hover-link">Home
+                  <a href="Index.html" class="nav-link-item drop-trigger  hover-link">Home
                   </a>
                 </li>
 
@@ -93,8 +106,9 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item nav-item-has-children ">
-                  <a href="ResourcesScreen.html" class="nav-link-item drop-trigger hover-link">Engineers
+                  <a href="ResourcesScreen.html" class="nav-link-item drop-trigger active-link hover-link">Engineers
                   </a>
                 </li>
 
@@ -140,8 +154,8 @@
                     </li> -->
                   </ul>
                 </li>
-<!-- 
-                <li class="nav-item nav-item-has-children">
+
+                <!-- <li class="nav-item nav-item-has-children">
                   <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
                   </a>
                 </li> -->
@@ -167,6 +181,7 @@
         </nav>
       </div>
     </header>
+    <!-- Header -->
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -218,101 +233,227 @@
     </div>
   </div>
   <!-- Modal -->
-  <!-- Header -->
 
-  <!-- Content Start -->
-  <div class="portfolio-details-area bg-default-3">
-    <div class="container">
-      <div class="banner-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-        <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-13.png" alt="">
-      </div>
-      <div class="portfolio-details">
-        <div class="row align-items-start">
-          <div class="col-xxl-7 col-xl-8 col-lg-7">
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">PROJECT INFORMATION</h2>
-              <p class="portfolio-content-box__text">
-                Focus on Ophthalmology provides a comprehensive and extensive review of retinal diseases with support
-                for diagnosis and management. Even with quick access to medical information, consolidating your
-                knowledge is an important step in comprehensive learning.
-              </p>
-            </div>
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">Requirements</h2>
-              <p class="portfolio-content-box__text">
-                The client's requirements were simple, they wanted an app that could identify retinal diseases,
-                through an optimized algorithm that could accumulate and provide relevant information.
-              </p>
-            </div>
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">Solutions</h2>
-              <p class="portfolio-content-box__text">
-                After acquiring the client's approach and idea, the development team identified that the application
-                required a robust algorithm and logical reasoning to process in the most effective manner to provide
-                the best result to the user regarding their queries.
-                They decided to use React Native, Express, Node JS, and MongoDB to create a mixture of an efficiently
-                integrated software system. React Native was used especially for its front end and Node was used as a
-                backend technology. For data handling, MongoDB was rendered as the best choice.
-              </p>
-            </div>
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">Results</h2>
-              <p class="portfolio-content-box__text">
-                The final app product with its cutting-edge design and processing was rendered a success and praised
-                by the clients profusely.
-                The user experience, information processing, and handling were very illusive and comprehensible.
-                The client greatly admired the efforts and execution of their requirements in the most commendable
-                manner.
-              </p>
-            </div>
-          </div>
-          <div class="col-xxl-4 offset-xxl-1 col-xl-4 col-lg-5">
-            <div class="portfolio-content-box__list" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
-              <h3>Technologies Used</h3>
-              <ul class="list-unstyled mt-5">
-                <li><span>React Native</span></li>
-                <li><span>Node JS</span></li>
-                <li><span>MongoDB</span></li>
-              </ul>
-            </div>
-
-            <div class="portfolio-content-box__list mt-7" data-aos="fade-left" data-aos-duration="500"
-              data-aos-once="false">
-              <h3>Project Link</h3>
-              <ul class="list-unstyled mt-3">
-                <li><a href="https://apps.apple.com/eg/app/focus-on-ophthalmology/id1495386780"
-                    target="blank"><span>Click to open the link</span></a></li>
-              </ul>
-            </div>
-          </div>
-
+  <!-- Content -->
+  <div class="container resources-detail-container">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center  flex-column">
+        <div class="resources-detail-img-container">
+          <img class='resources-detail-img' src="./image/home-1/dev-profile-img.png" />
         </div>
+        <h3 class="resource-detail-name">Shina Akram</h3>
+        <p class="resource-detail-domain">Full Stack Engineer</p>
+        <!-- <div class="resource-detail-icons-container">
+          <img class="resource-detail-icons" src="./image/svg/resource-detail-mail-icon.svg" />
+          <div class="resource-detail-text">abdullah1.tdc@gmail.com</div>
+        </div> -->
+        <!-- <div class="resource-detail-icons-container">
+          <img class="resource-detail-icons" src="./image/svg/resource-detail-gitlab-icon.svg" />
+          <div class="resource-detail-text">abdullah1.tdc</div>
+        </div> -->
+        <!-- <div class="resource-detail-icons-container">
+          <img class="resource-detail-icons" src="./image/svg/resource-detail-user-icon.svg" />
+          <div class="resource-detail-text">Abdullah Mohsin</div>
+        </div> -->
+        <a href="ContactUsScreen.html">
+          <button class="download-resume-button">
+            Hire Now
+          </button>
+        </a>
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <h3 class="professional-summary-heading mt-xs-7 mt-lg-0">Professional Summary</h3>
+        <p class="professional-summary-description">I am an experienced Full Stack Developer and Tech Lead with a
+          background in software development. Over the last 5+ years my work has focused on developing and architecting
+          applications whilst adhering to the software principles and design patterns.. I have complete expertise with
+          developing a simple to complex database driven functionality rich web applications. I work at fast pace to
+          meet tight deadlines and an Enthusiastic team player ready to contribute to company success.</p>
+        <h3 class="professional-summary-heading technologies">Tools & Technologies</h3>
+
+
+
+        <div class="technologies-tabs-container">
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="400" data-aos-once="false">
+            NodeJS(ExpressJS, NestJS)</div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="600" data-aos-once="false">
+            MongoDB
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="800" data-aos-once="false">
+            Firebase
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="700" data-aos-once="false">
+            Laravel
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">SQL
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Redis</div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            TypeORM
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            OpenAPI
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            ReactJS
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">HTML
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">CSS
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Bootstrap
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Sass
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Docker
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">AWS
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Git(version control)
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Jira
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Jest
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">e2e
+            testing
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Microservices
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Monolithic
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            JavaScript
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Typescript
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">PHP
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Wordpress
+          </div>
+        </div>
+
+        <h3 class="professional-summary-heading technologies" data-aos="fade-up" data-aos-duration="500"
+          data-aos-delay="500" data-aos-once="false">Work Experience</h3>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">APEXE</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Web App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">
+              Apexe is blockchain technology based project where you can connect your binance, karaken, coinbase and
+              your respective balances from these exchanges will be available on your account at this platform.User can
+              all multiple ethereum wallets and can check the aggregated balance. User can add multiple Solana wallets
+              and can check aggregated balance for all wallets and can check each token/coin in each wallet. User can
+              check the balance summary where he/she’ll be able to check all the tokens collective balance from
+              exchange, wallets and the total balance.
+              I worked on this project as Backend-developer.
+              I worked on authentication module of the project and integrated multiple exchanges APIs. Worked on
+              implementation of aggregated balance of exchanges balances, fetching markets data.
+              I integrated Ethereum and Solana wallets. Worked on fetching the wallets tokens and their balances and
+              then worked on aggragated balance of wallets.
+              Tech stack: Typescript, NestJS, Redis, Microservices Architecture, Keycloak Identity Provider, PostgreSql,
+              Websockets.
+            </div>
+          </div>
+        </div>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">Task Tracker</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Web App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">
+              Task tracker is a project management tool where you can create multiple projects and assign multiple tasks
+              to each project. User can assign a task to multiple people. Time tracker for each task is available. you
+              can have google docs, github and google sheets integrated here for managing documentation, reports and
+              projects versioning. In-app chat feature is also available.
+              I have worked on front-end development of this project.
+              I also worked on creating multiple modules and then creating dependency of each module with the other one.
+              I Have worked on Project, User, Task, Feature module.
+              I Have worked on wrapper classes for these modules for interacting with localstorage and server at the
+              same time and also implemented In-app chat feature.
+              Tech Stack: Custom JS framework ACE framework, ACIs (application Component Interfaces), bootstrap 5.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">Kronolizer</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Mobile App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">
+              Kronolizer is a mobile application that allows businesses to track their employee’s work activities and
+              hours.
+              I’ve worked on the back-end development of this project using NodeJs/ExpressJs.
+              Built databases and table structures for web applications.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">Fearless Trails</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Web App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">
+              Fearless Trails is a map-based platform where users can register themselves and uplaod their stories in
+              text form or audio form at a particular location. So A new user can check the stores of other users about
+              a particular location and then user can upload his stories for that location as well.
+              I worked as a Lead frontend developer and managed the project as well.
+              I worked on Map module of this project, Stories module, Rating Module of this project. Instead of
+              Navigation bar, Swapping concept was implemented for navigating to different modules.
+              Tech Stack: Custom JS framework ACE framework, ACIs (application Component Interfaces), bootstrap 5
+              Project
+              Management tool: Jira Versioning control: Gitlab.
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
-  <!-- Content Start -->
-
-  <!-- promo Area -->
-  <div class="promo-area promo-area--inner-2 bg-default">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-12">
-          <div class="pormo--l4-content pormo--l7 dark-mode-texts">
-            <div class="section-title section-title--l7 text-center">
-              <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-                Discuss a new project</h2>
-              <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Don’t miss out the potential visitors and sales for the<br
-                  class="d-none d-sm-block"> absence of your digital presence.</p>
-              <a class="btn btn--lg-2 btn-readical-red text-white rounded-50 mt-2" href="ContactUsScreen.html"
-                data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">Contact us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ .promo Area -->
+  <!-- Content -->
 
   <!-- FOOTER START -->
   <div class="footer-area footer-inner-1 bg-default-3">
@@ -322,7 +463,7 @@
           <div class="col-lg-3 col-md-7 col-xs-9">
             <div class="footer-widgets footer-widgets--l7">
               <!-- Brand Logo-->
-              <div class="d-flex justify-content-start">
+              <div class="d-flex justify-content-start ">
                 <div class="brand-logo mt-1">
                   <a href="#">
                     <!-- light version logo (logo must be black)-->
@@ -333,8 +474,8 @@
                 </div>
               </div>
               <p class="footer-widgets__text mt-5">
-                We will bring your idea into its digital creation the way you want it to be.</p>
-              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                Resource augmentation company to simplify your tech hiring process.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4 d-flex ">
                 <li>
                   <a href="https://www.facebook.com/thedevcorporate">
                     <i class="fab fa-facebook-square"></i>
@@ -386,7 +527,7 @@
                         <span class="d-block gr-text-hover-decoration-none"> Email:
                         </span>hr@thedevcorporate.com</a>
                     </li>
-                  </ul>
+                  </ul>`
                 </div>
               </div>
               <div class="col-md-4 col-xs-6">
@@ -434,6 +575,23 @@
   </div>
   <!-- FOOTER END -->
 
+  <script src="plugins/type-js/typed.min.js"></script>
+  <script>
+    var strings = ["Easier", "Faster", "Cheaper"];
+    for (var i = 0; i < strings.length; i++) {
+      strings[i] = `${strings[i]}<span><div class="dot"/></span>`
+    }
+    var typed = new Typed('.highlight-text', {
+      strings: strings,
+      typeSpeed: 80,
+      backSpeed: 80,
+      cursorChar: '',
+      shuffle: true,
+      smartBackspace: false,
+      loop: true
+    });
+  </script>
+
   </div>
   <!-- Plugin's Scripts -->
   <script src="plugins/jquery/jquery.min.js"></script>
@@ -451,6 +609,7 @@
   <!-- Activation Script -->
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
+
 </body>
 
 </html>

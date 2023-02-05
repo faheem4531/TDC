@@ -3000,28 +3000,6 @@ div#loading {
   background-color: #fff;
 }
 
-div#loading img {
-  z-index: 9999;
-  width: 25%;
-}
-
-@media (min-width: 576px) {
-  div#loading img {
-    width: 17%;
-  }
-}
-
-@media (min-width: 768px) {
-  div#loading img {
-    width: 15%;
-  }
-}
-
-@media (min-width: 992px) {
-  div#loading img {
-    width: 7%;
-  }
-}
 
 .preloader {
   display: flex;
@@ -11826,7 +11804,7 @@ ________________________________ */
 }
 
 .about-brand-logo-container{
-  margin: 20px 0 20px 0;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -14982,7 +14960,7 @@ ________________________________ */
 }
 
 .about-us__vector, .about-us__vector2, .about-us__vector3{
-    width: 172px;
+width: 172px;
   display: none;
 }
 
@@ -17579,6 +17557,7 @@ mark[data-aos="highlight-text"].aos-animate {
   border: 1px solid #f9f9f9;
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .user-input-container:hover {
@@ -17637,6 +17616,7 @@ mark[data-aos="highlight-text"].aos-animate {
   font-size: 17px;
   font-weight: 400;
   color: #727171;
+  z-index: 2;
 }
 
 .user-custom-select .list {
@@ -17662,6 +17642,7 @@ mark[data-aos="highlight-text"].aos-animate {
   font-size: 17px;
   font-weight: 400;
   color: #727171;
+  z-index: 2;
 }
 
 .user-custom-select-two .list {
@@ -18359,7 +18340,7 @@ margin-top: 20px;
 
 /* Resources CSS */
 .resources-wrapper{
-  padding: 130px 0px 70px 20px;
+  padding: 130px 15px 70px 20px;
 }
 .resources-heading{
   font-size: 60px;
@@ -18704,7 +18685,6 @@ flex-direction: column;
   letter-spacing: 0em;
   width: 241px;
   height: 50px;
-  margin-top: 34px;
 }
 .professional-summary-heading{
   font-size: 50px;
@@ -18725,6 +18705,7 @@ flex-direction: column;
 }
 .technologies{
   margin-top: 60px;
+  margin-bottom: 40px;
 }
 .technologies-tabs-container{
 margin-top: 20px;
@@ -18770,11 +18751,11 @@ flex-wrap: wrap;
 .experience-detail-location-text{
   font-size: 15px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
   color: #AEABC9;
-  margin-right: 30px;
+  margin-left: 5px;
 }
 .experience-detail-date-text{
     font-size: 15px;
@@ -18792,13 +18773,12 @@ flex-wrap: wrap;
   justify-content: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   color: rgba(38, 39, 41, 0.7);
   cursor: pointer;
   width: 90px;
   padding: 5px;
-  margin-bottom: 10px;
 }
 .senior-developer-heading{
   font-size: 30px;
@@ -18807,13 +18787,8 @@ flex-wrap: wrap;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(38, 39, 41, 0.7);
-  margin-bottom: 10px;
 }
-.full-time{
-  display: flex;
- align-items: flex-end;
-  flex-direction: column;
-}
+
 @media only screen and (max-width:992px){
   .resource-detail-name{
     font-size: 26px;
@@ -18851,10 +18826,7 @@ flex-wrap: wrap;
   .experience-detail-date-text{
     font-size: 13px;
   }
-  .full-time-tab{
-    font-size: 12px;
-    width: 80px;
-  }
+
 }
 @media only screen and (max-width:768px){
   .resources-detail-container{
@@ -18886,13 +18858,8 @@ flex-wrap: wrap;
  align-items: flex-start;
  padding-bottom: 10px;
 }
-.full-time-tab{
-  margin-top: 10px;
-}
-.full-time{
-  align-items: flex-start;
-   flex-direction: column-reverse;
- }
+
+
 .download-resume-button {
   width: 180px;
   font-size: 13px;
@@ -18914,6 +18881,22 @@ flex-wrap: wrap;
 .senior-developer-heading {
   font-size: 18px;
 }
+}
+
+.project-details-container{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+.senior-designer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.professional-summary-container{
+border-bottom: 1px solid lightgray;
+padding-bottom: 25px;
+margin-bottom: 20px;
 }
 /* Resource Detail CSS */
 
@@ -18940,7 +18923,6 @@ line-height: 50px !important;
   background: url(../image/home-1/aboutus-map-img.png);
   z-index: -1;
 }
-
 
 /* About US */
 

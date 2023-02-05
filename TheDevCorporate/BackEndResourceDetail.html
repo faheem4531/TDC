@@ -2,10 +2,24 @@
 <html lang="en">
 
 <script>
+  function toastMessage(e) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = 'snackbar' }, 3000);
+    return false
+  }
+
   function toastMessagetwo(e) {
     var x = document.getElementById("snackbar1");
     x.className = "show1";
     setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+
+  function toastMessagethree(e) {
+    var x = document.getElementById("snackbar2");
+    x.className = "show2";
+    setTimeout(function () { x.className = 'snackbar2' }, 3000);
     return false
   }
 </script>
@@ -14,7 +28,6 @@
   <META NAME="robots" CONTENT="noindex,nofollow">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
     The Dev Corporate
@@ -40,7 +53,7 @@
   <div class="site-wrapper overflow-hidden ">
     <div id="loading">
       <!-- <img src="image/fev-icon.svg" alt=""> -->
-      <video wwidth="80%" height="80%" autoplay muted>
+      <video width="80%" height="80%" autoplay muted>
         <source src="./image/tdc_animation.mp4" type="video/mp4">
       </video>
     </div>
@@ -71,7 +84,7 @@
               </div>
               <ul class="site-menu-main">
                 <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger active-link hover-link">Home
+                  <a href="Index.html" class="nav-link-item drop-trigger  hover-link">Home
                   </a>
                 </li>
 
@@ -93,8 +106,9 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item nav-item-has-children ">
-                  <a href="ResourcesScreen.html" class="nav-link-item drop-trigger hover-link">Engineers
+                  <a href="ResourcesScreen.html" class="nav-link-item drop-trigger active-link hover-link">Engineers
                   </a>
                 </li>
 
@@ -140,8 +154,8 @@
                     </li> -->
                   </ul>
                 </li>
-<!-- 
-                <li class="nav-item nav-item-has-children">
+
+                <!-- <li class="nav-item nav-item-has-children">
                   <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
                   </a>
                 </li> -->
@@ -167,6 +181,7 @@
         </nav>
       </div>
     </header>
+    <!-- Header -->
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -218,101 +233,169 @@
     </div>
   </div>
   <!-- Modal -->
-  <!-- Header -->
 
-  <!-- Content Start -->
-  <div class="portfolio-details-area bg-default-3">
-    <div class="container">
-      <div class="banner-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-        <img class="w-100 rounded-10" src="image/png/portfolio-detail-img-13.png" alt="">
-      </div>
-      <div class="portfolio-details">
-        <div class="row align-items-start">
-          <div class="col-xxl-7 col-xl-8 col-lg-7">
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">PROJECT INFORMATION</h2>
-              <p class="portfolio-content-box__text">
-                Focus on Ophthalmology provides a comprehensive and extensive review of retinal diseases with support
-                for diagnosis and management. Even with quick access to medical information, consolidating your
-                knowledge is an important step in comprehensive learning.
-              </p>
-            </div>
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">Requirements</h2>
-              <p class="portfolio-content-box__text">
-                The client's requirements were simple, they wanted an app that could identify retinal diseases,
-                through an optimized algorithm that could accumulate and provide relevant information.
-              </p>
-            </div>
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">Solutions</h2>
-              <p class="portfolio-content-box__text">
-                After acquiring the client's approach and idea, the development team identified that the application
-                required a robust algorithm and logical reasoning to process in the most effective manner to provide
-                the best result to the user regarding their queries.
-                They decided to use React Native, Express, Node JS, and MongoDB to create a mixture of an efficiently
-                integrated software system. React Native was used especially for its front end and Node was used as a
-                backend technology. For data handling, MongoDB was rendered as the best choice.
-              </p>
-            </div>
-            <div class="portfolio-content-box-box" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              <h2 class="portfolio-content-box__heading">Results</h2>
-              <p class="portfolio-content-box__text">
-                The final app product with its cutting-edge design and processing was rendered a success and praised
-                by the clients profusely.
-                The user experience, information processing, and handling were very illusive and comprehensible.
-                The client greatly admired the efforts and execution of their requirements in the most commendable
-                manner.
-              </p>
-            </div>
-          </div>
-          <div class="col-xxl-4 offset-xxl-1 col-xl-4 col-lg-5">
-            <div class="portfolio-content-box__list" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
-              <h3>Technologies Used</h3>
-              <ul class="list-unstyled mt-5">
-                <li><span>React Native</span></li>
-                <li><span>Node JS</span></li>
-                <li><span>MongoDB</span></li>
-              </ul>
-            </div>
-
-            <div class="portfolio-content-box__list mt-7" data-aos="fade-left" data-aos-duration="500"
-              data-aos-once="false">
-              <h3>Project Link</h3>
-              <ul class="list-unstyled mt-3">
-                <li><a href="https://apps.apple.com/eg/app/focus-on-ophthalmology/id1495386780"
-                    target="blank"><span>Click to open the link</span></a></li>
-              </ul>
-            </div>
-          </div>
-
+  <!-- Content -->
+  <div class="container resources-detail-container">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center  flex-column">
+        <div class="resources-detail-img-container">
+          <img class='resources-detail-img' src="./image/home-1/dev-profile-img.png" />
         </div>
+        <h3 class="resource-detail-name">Ali Tahir</h3>
+        <p class="resource-detail-domain">Back-End Developer</p>
+        <!-- <div class="resource-detail-icons-container">
+          <img class="resource-detail-icons" src="./image/svg/resource-detail-mail-icon.svg" />
+          <div class="resource-detail-text">abdullah1.tdc@gmail.com</div>
+        </div> -->
+        <!-- <div class="resource-detail-icons-container">
+          <img class="resource-detail-icons" src="./image/svg/resource-detail-gitlab-icon.svg" />
+          <div class="resource-detail-text">abdullah1.tdc</div>
+        </div> -->
+        <!-- <div class="resource-detail-icons-container">
+          <img class="resource-detail-icons" src="./image/svg/resource-detail-user-icon.svg" />
+          <div class="resource-detail-text">Abdullah Mohsin</div>
+        </div> -->
+        <a href="ContactUsScreen.html">
+          <button class="download-resume-button">
+            Hire Now
+          </button>
+        </a>
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <h3 class="professional-summary-heading mt-xs-7 mt-lg-0">Professional Summary</h3>
+        <p class="professional-summary-description">Highly motivated individual with 5 years of professional work
+          experience in challenging environments. A quick learner who adapts to
+          extraneous assignments and exploring new dimensions while solving development problems.</p>
+        <h3 class="professional-summary-heading technologies">Tools & Technologies</h3>
+
+
+        <div class="technologies-tabs-container">
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="400" data-aos-once="false">AWS
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="600" data-aos-once="false">AWS
+            Cognito
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="800" data-aos-once="false">AWS
+            EC2
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="700" data-aos-once="false">AWS
+            Elastic Bean Stack
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">AWS
+            Amplify
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            AWS S3</div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Docker
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Kubernetes
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Node
+            JS
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">Next
+            JS
+          </div>
+          <div class="technologies-tabs" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false">
+            Express
+          </div>
+        </div>
+
+        <h3 class="professional-summary-heading technologies" data-aos="fade-up" data-aos-duration="500"
+          data-aos-delay="500" data-aos-once="false">Work Experience</h3>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">SWVL</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Mobile App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">Working as a dedicated back end developer, doing full stack
+              development in React Native and Node, Express JS, Microservices,
+              MySQL, MongoDB, GCP, Kubernetes, and Jenkins.
+              Working on the tracking system using Amplitude to track every action of the customers with the help of
+              collaborative analytics.
+              Helping automate fresh chat for the customers to reduce agent involvement using a fresh chatbot.</div>
+          </div>
+        </div>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">Northbay Solutions</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Web App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">Working as a dedicated back end developer, doing full stack
+              development in React Native and Node, Express JS, Microservices,
+              MySQL, MongoDB, GCP, Kubernetes, and Jenkinsl.
+              Working on the tracking system using Amplitude to track every action of the customers with the help of
+              collaborative analyticsl
+              Helping automate fresh chat for the customers to reduce agent involvement using a fresh chatbot.</div>
+          </div>
+        </div>
+
+        <div class="professional-summary-container">
+          <div class="senior-designer-container">
+            <div class="senior-developer-heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+              data-aos-once="false">Numtra LLC</div>
+            <div class="full-time">
+              <div class="full-time-tab" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                data-aos-once="false">Web App</div>
+            </div>
+          </div>
+          <div class="project-details-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+            data-aos-once="false">
+            <img class="experience-icons" src="./image/svg/resource-detail-tdc-icon.svg" />
+            <div class="experience-detail-location-text">
+              Developed frontend of Big Data and Machine Learning platform using Angular, JointJS, Node JS, and MongoDB.
+              This platform
+              enables users to
+              solve business level problems by just drag and drop, having multiple data sources, operations,
+              transformations,
+              data dumps, and visualization
+              of data in multiple formatsl
+              Created RESTful services and CRUD operations in Node JS, Express JS and MongoDBl
+              Implemented visualization, drag and drop using Angular and Joint JS.
+              Implemented complete role based authentication and authorization using Passport JS, JWT in Node JS and
+              Angular.
+              Used Microsoft Azure for deployment and Azure Databricks as data source.
+              Worked on a Record processing system using AngularJS and Node JS. It enables users to compare records
+              coming from
+              different files having
+              different structures and from Oracle. After that apply different rules and operations to the records and
+              storing them in MongoDB.
+              Implemented schema mapping to read files dynamically having different schema.
+              Worked on a peer to peer car repair service provider app (similar to Uber) backend. Created RESTful
+              services in Node JS,
+              Express JS and MongoDB. Performed CRUD operations and searching using geospatial Elasticsearch queries.
+              Designed and developed a web app to predict fire in the jungles of California. Integrated web app with
+              Machine Learning APIs
+              that predicted the data. Provided visualization on the maps. Built maps using Leaflet JS to show areas
+              having power grids, natural gas pipelines and areas to
+              more likely go on fire
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
-  <!-- Content Start -->
-
-  <!-- promo Area -->
-  <div class="promo-area promo-area--inner-2 bg-default">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-12">
-          <div class="pormo--l4-content pormo--l7 dark-mode-texts">
-            <div class="section-title section-title--l7 text-center">
-              <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-                Discuss a new project</h2>
-              <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Don’t miss out the potential visitors and sales for the<br
-                  class="d-none d-sm-block"> absence of your digital presence.</p>
-              <a class="btn btn--lg-2 btn-readical-red text-white rounded-50 mt-2" href="ContactUsScreen.html"
-                data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">Contact us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ .promo Area -->
+  <!-- Content -->
 
   <!-- FOOTER START -->
   <div class="footer-area footer-inner-1 bg-default-3">
@@ -322,7 +405,7 @@
           <div class="col-lg-3 col-md-7 col-xs-9">
             <div class="footer-widgets footer-widgets--l7">
               <!-- Brand Logo-->
-              <div class="d-flex justify-content-start">
+              <div class="d-flex justify-content-start ">
                 <div class="brand-logo mt-1">
                   <a href="#">
                     <!-- light version logo (logo must be black)-->
@@ -333,8 +416,8 @@
                 </div>
               </div>
               <p class="footer-widgets__text mt-5">
-                We will bring your idea into its digital creation the way you want it to be.</p>
-              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                Resource augmentation company to simplify your tech hiring process.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4 d-flex ">
                 <li>
                   <a href="https://www.facebook.com/thedevcorporate">
                     <i class="fab fa-facebook-square"></i>
@@ -386,7 +469,7 @@
                         <span class="d-block gr-text-hover-decoration-none"> Email:
                         </span>hr@thedevcorporate.com</a>
                     </li>
-                  </ul>
+                  </ul>`
                 </div>
               </div>
               <div class="col-md-4 col-xs-6">
@@ -434,6 +517,23 @@
   </div>
   <!-- FOOTER END -->
 
+  <script src="plugins/type-js/typed.min.js"></script>
+  <script>
+    var strings = ["Easier", "Faster", "Cheaper"];
+    for (var i = 0; i < strings.length; i++) {
+      strings[i] = `${strings[i]}<span><div class="dot"/></span>`
+    }
+    var typed = new Typed('.highlight-text', {
+      strings: strings,
+      typeSpeed: 80,
+      backSpeed: 80,
+      cursorChar: '',
+      shuffle: true,
+      smartBackspace: false,
+      loop: true
+    });
+  </script>
+
   </div>
   <!-- Plugin's Scripts -->
   <script src="plugins/jquery/jquery.min.js"></script>
@@ -451,6 +551,7 @@
   <!-- Activation Script -->
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
+
 </body>
 
 </html>
