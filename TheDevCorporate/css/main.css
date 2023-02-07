@@ -17616,7 +17616,7 @@ mark[data-aos="highlight-text"].aos-animate {
   font-size: 17px;
   font-weight: 400;
   color: #727171;
-  z-index: 2;
+  z-index: 3;
 }
 
 .user-custom-select .list {
@@ -17792,7 +17792,7 @@ mark[data-aos="highlight-text"].aos-animate {
   padding: 20px;
   position: fixed;
   z-index: 1;
-  bottom: 30px;
+  bottom: -90px;
   font-size: 18px;
 }
 
@@ -17830,7 +17830,7 @@ mark[data-aos="highlight-text"].aos-animate {
     right: 15px;
   }
   #snackbar2 {
-    bottom: -50px !important;
+    bottom: -100px !important;
     left: 15px;
     right: 15px;
   }
@@ -17838,7 +17838,7 @@ mark[data-aos="highlight-text"].aos-animate {
 
 @media only screen and (max-width: 992px) {
   #snackbar2 {
-    bottom: -40px;
+    bottom: -80px;
   }
 }
 
@@ -18679,12 +18679,13 @@ flex-direction: column;
   align-items: center;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0em;
   width: 241px;
   height: 50px;
+  margin-top: 10px;
 }
 .professional-summary-heading{
   font-size: 50px;
@@ -18773,12 +18774,11 @@ flex-wrap: wrap;
   justify-content: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   color: rgba(38, 39, 41, 0.7);
   cursor: pointer;
-  width: 90px;
-  padding: 5px;
+  padding: 5px 12px 5px 12px;
 }
 .senior-developer-heading{
   font-size: 30px;
@@ -18922,6 +18922,7 @@ line-height: 50px !important;
   width: 100%;
   background: url(../image/home-1/aboutus-map-img.png);
   z-index: -1;
+  background-repeat: round;
 }
 
 /* About US */
@@ -18935,4 +18936,20 @@ color: #757575;
 }
 .terms-Conditions-link:hover{
   color: #757575;
+  }
+
+  .loader-icon{
+    width: 12%;
+  }
+
+  @media only screen and (max-width:768px){
+    .loader-icon{
+      width: 20%;
+    }
+  }
+
+  @media only screen and (max-width:500px){
+    .loader-icon{
+      width: 25%;
+    }
   }
