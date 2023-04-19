@@ -10,15 +10,15 @@
   }
 
   function modalToastMessage(e) {
-  var x = document.getElementById("showModalMessage");
-  x.className = "showModal";
-  setTimeout(function () { x.className = 'showModalMessage' }, 3000);
-  return false
-}
+    var x = document.getElementById("showModalMessage");
+    x.className = "showModal";
+    setTimeout(function () { x.className = 'showModalMessage' }, 3000);
+    return false
+  }
 </script>
 
 <head>
-  <META NAME="robots" CONTENT="noindex,nofollow">
+  <!-- <META NAME="robots" CONTENT="noindex,nofollow"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -146,10 +146,10 @@
                   </ul> -->
                 </li>
 
-                <!-- <li class="nav-item nav-item-has-children">
+                <li class="nav-item nav-item-has-children">
                   <a href="BlogScreen.html" class="nav-link-item hover-link active-link ">Blog</i>
                   </a>
-                </li> -->
+                </li>
 
                 <li class="nav-item nav-item-has-children">
                   <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
@@ -159,7 +159,7 @@
             </nav>
           </div>
           <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"  
+            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"
               data-bs-target="#exampleModal">
               Hire Now
             </button>
@@ -176,7 +176,8 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable position-relative">
-        <form class="modal-content custom-border-none" id="hire-modal"  method="post" action="" onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)" >
+        <form class="modal-content custom-border-none" id="hire-modal" method="post" action=""
+          onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)">
           <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
           <div class="modal-body home-modal">
             <div class="d-flex justify-content-end">
@@ -229,158 +230,124 @@
   <!-- Conteny Start -->
   <div class="blogs-area blogs-area--right-sidebar bg-default-6">
     <div class="container">
-      <div class="row justify-content-center">
+      <!-- <div class="row justify-content-center">
         <div class="col-xl-7">
           <div class="section-title section-title--innerpage text-center">
             <h5 class="section-title__sub-heading text-electric-violet-2">Latest posts</h5>
-            <h2 class="section-title__heading">Blog left Sidebar</h2>
+            <h2 class="section-title__heading">Blog</h2>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="row justify-content-center">
-        <div class="col-xl-8 col-lg-7 order-lg-2">
+        <div class="col-xl-12 ">
           <div class="row justify-content-center">
-            <div class="col-xl-12 col-lg-10">
+            <div class="col-xl-12">
               <div class="blogs-post blogs-post--big">
-                <img class="w-100" src="image/png/blog-post-1.png" alt="">
-                <div class="hover-content">
-                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
-                  </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
-                  <ul class="hover-content__post-meta list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
-                    </li>
-                  </ul>
-                </div>
+                <img class="w-100" src="image/blogs/MAIN (3).png" alt="">
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-9 col-md-7 col-xs-10">
-              <div class="blogs-post blogs-post--small">
-                <img class="w-100" src="image/png/blog-post-2.png" alt="">
-                <div class="hover-content">
-                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
+              <div class="mb-4 ">
+                <div class="card">
+                  <img class="w-100 card-img-top" src="image/blogs/resource.jpg" alt="Resource Augmentatio">
+                  <div class="card-body">
+                    <h4 class="blog-card-title">Insights and Trends: Resource Augmentation in the IT Industry</h4>
+                    <p class="blog-card-text">The IT industry has been rapidly evolving and growing over the years, and one
+                      of the significant trends that have
+                      emerged is the increasing use of resource augmentation and emerging technologies to meet the
+                      growing demand for skilled
+                      professionals.</p>
+                    <!-- <p class="blog-card-text">
+                      Let’s explore some of the industry trends and best practices related to resource augmentation in
+                      this post. But first
+                      let’s review what resource augmentation is.</p> -->
+                    <a href="ResourceAugmentation.html" class=" blog-card-btn">Read More >></a>
                   </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
-                  <ul class="hover-content__post-meta list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-9 col-md-7 col-xs-10">
-              <div class="blogs-post blogs-post--small">
-                <img class="w-100" src="image/png/blog-post-3.png" alt="">
-                <div class="hover-content">
-                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
+            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
+              <div class="mb-4 ">
+                <div class="card">
+                  <img class="w-100 card-img-top" src="image/blogs/develop.jpg" alt="Develop and Enhance ">
+                  <div class="card-body">
+                    <h4 class="blog-card-title">From Strength to Strength: How to Develop and Enhance Your Employees'
+                      Skills</h4>
+                    <p class="blog-card-text">
+                      In today's rapidly evolving business landscape, it's more important than ever to invest in your
+                      employees' skills. By developing and enhancing your workforce's abilities, you can keep your
+                      company competitive, improve performance, and create a more engaged and motivated team. In this
+                      blog post, we'll explore some of the key strategies for developing and enhancing your employees'
+                      skills, so you can take your business from strength to strength.
+                    </p>
+                    <a href="DevelopAndEnhance.html" class=" blog-card-btn">Read More >></a>
                   </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
-                  <ul class="hover-content__post-meta list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-9 col-md-7 col-xs-10">
-              <div class="blogs-post blogs-post--small">
-                <img class="w-100" src="image/png/blog-post-4.png" alt="">
-                <div class="hover-content">
-                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
+            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
+              <div class="mb-4 ">
+                <div class="card">
+                  <img class="w-100 card-img-top" src="image/blogs/stratigies.jpg" alt="Strategies for Managing">
+                  <div class="card-body">
+                    <h4 class="blog-card-title">Staying Agile: Strategies for Managing Unexpected Surges in Workload through Resource Augmentation</h4>
+                    <p class="blog-card-text">In today's business world, change is constant, and businesses must be prepared to adapt quickly to unexpected surges in
+                    workload. Resource augmentation is one strategy that can help businesses stay agile and manage workload surges
+                    effectively using the agile methodology.</p>
+                    <!-- <p class="blog-card-text">
+                      In this blog post, we'll explore some strategies for staying agile, practicing agile project management and managing
+                      workload surges through resource augmentation.
+</p> -->
+                    <a href="" class=" blog-card-btn">Read More >></a>
                   </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
-                  <ul class="hover-content__post-meta list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-9 col-md-7 col-xs-10">
-              <div class="blogs-post blogs-post--small">
-                <img class="w-100" src="image/png/blog-post-5.png" alt="">
-                <div class="hover-content">
-                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
+            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
+              <div class="mb-4 ">
+                <div class="card">
+                  <img class="w-100 card-img-top" src="image/blogs/why-hiring.jpg" alt="Hiring Specialised Experts">
+                  <div class="card-body">
+                    <h4 class="blog-card-title">Why Hiring Specialised Experts Can Take Your Project to the Next Level</h4>
+                    <p class="blog-card-text">In today's competitive business landscape, completing projects efficiently and effectively is crucial for success. Many
+                    companies face challenges when it comes to finding and retaining skilled resources to manage their projects. That's
+                    where hiring specialised experts can make a significant difference.
+.</p>
+                    <!-- <p class="blog-card-text">
+                      Let’s explore some of the industry trends and best practices related to resource augmentation in
+                      this post.
+                      But first
+                      let’s review what resource augmentation is.</p> -->
+                    <a href="" class=" blog-card-btn">Read More >></a>
                   </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
-                  <ul class="hover-content__post-meta list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-9 col-md-7 col-xs-10">
-              <div class="blogs-post blogs-post--small">
-                <img class="w-100" src="image/png/blog-post-6.png" alt="">
-                <div class="hover-content">
-                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
+            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
+              <div class="mb-4 ">
+                <div class="card">
+                  <img class="w-100 card-img-top" src="image/blogs/improving.png" alt="Improving operational efficiency">
+                  <div class="card-body">
+                    <h4 class="blog-card-title">Improving operational efficiency by tapping into external talent pools</h4>
+                    <p class="blog-card-text">In today's fast-paced business environment, operational efficiency is critical to maintaining a competitive edge. One
+                    area that many organisations are exploring to optimise their operations is tapping into external talent pools. By
+                    leveraging external talent, companies can access a diverse range of skills and expertise to complement their existing
+                    workforce, fill skill gaps, and improve overall operational efficiency. In this blog post, we will explore the benefits
+                    of tapping into external talent pools and provide practical tips on how organisations can do so effectively.</p>
+                    <!-- <p class="blog-card-text">
+                                  Let’s explore some of the industry trends and best practices related to resource augmentation in
+                                  this post.
+                                  But first
+                                  let’s review what resource augmentation is.</p> -->
+                    <a href="" class=" blog-card-btn">Read More >></a>
                   </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
-                  <ul class="hover-content__post-meta list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-9 col-md-7 col-xs-10">
+
+            <!-- <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
               <div class="blogs-post blogs-post--small">
                 <img class="w-100" src="image/png/blog-post-7.png" alt="">
                 <div class="hover-content">
@@ -402,131 +369,9 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
-        </div>
-        <div class="col-xl-4 col-lg-5 col-md-7 col-xs-10 mt-5 mt-lg-0 order-lg-1">
-          <div class="sidebar-area">
-            <!-- Single Widgets -->
-            <div class="widget">
-              <h3 class="widget__title">Search</h3>
-              <div class="widget__search">
-                <form action="#">
-                  <i class="fa fa-search text-royal-blue"></i>
-                  <input type="text" placeholder="Type to search">
-                </form>
-              </div>
-            </div>
-            <!--/ .Single Widgets -->
-            <!-- Single Widgets -->
-            <div class="widget">
-              <h3 class="widget__title">Recent Posts</h3>
-              <ul class="widget__recent-post list-unstyled mb-0 pb-0">
-                <li class="widget__recent-post__single">
-                  <a href="#">
-                    <h4 class="widget__recent-post__title">How To Blow Through Capital At An Incredible Rate</h4>
-                    <p class="widget__recent-post__date">Jan 14, 2020</p>
-                  </a>
-                </li>
-                <li class="widget__recent-post__single">
-                  <a href="#">
-                    <h4 class="widget__recent-post__title">Design Studios That Everyone Should Know About?</h4>
-                    <p class="widget__recent-post__date">Jan 14, 2020</p>
-                  </a>
-                </li>
-                <li class="widget__recent-post__single">
-                  <a href="#">
-                    <h4 class="widget__recent-post__title">How did we get 1M+ visitors in 30 days without anything!
-                    </h4>
-                    <p class="widget__recent-post__date">Jan 14, 2020</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!--/ .Single Widgets -->
-            <!-- Single Widgets -->
-            <div class="widget">
-              <h3 class="widget__title">Recent Tweets</h3>
-              <ul class="widget__tweets list-unstyled">
-                <li>
-                  <a class="widget__tweets__single" href="#">
-                    <span>@Smith,</span> the master-builder of human happiness. No one rejects, dislikes, or avoids
-                    pleasure
-                  </a>
-                </li>
-                <li>
-                  <a class="widget__tweets__single" href="#">
-                    <span>@Maurice,</span> the master-builder of human happiness. No one rejects, dislikes, or avoids
-                    pleasure
-                  </a>
-                </li>
-                <li>
-                  <a class="widget__tweets__single" href="#">
-                    <span>@Stella,</span> the master-builder of human happiness. No one rejects, dislikes, or avoids
-                    pleasure
-                  </a>
-                </li>
-                <li>
-                  <a class="widget__tweets__single" href="#">
-                    <span>@Howard,</span> the master-builder of human happiness. No one rejects, dislikes, or avoids
-                    pleasure
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!--/ .Single Widgets -->
-            <!-- Single Widgets -->
-            <div class="widget">
-              <h3 class="widget__title">Categories</h3>
-              <div class="widget__category">
-                <ul class="list-unstyled">
-                  <li>
-                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
-                      <h4 class="mb-0">Technology:</h4>
-                      <span>20 posts</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
-                      <h4 class="mb-0">Freelancing:</h4>
-                      <span>07 posts</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
-                      <h4 class="mb-0">Writing:</h4>
-                      <span>16 posts</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
-                      <h4 class="mb-0">Marketing:</h4>
-                      <span>11 posts</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
-                      <h4 class="mb-0">Business:</h4>
-                      <span>35 posts</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
-                      <h4 class="mb-0">Education:</h4>
-                      <span>14 posts</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--/ .Single Widgets -->
-            <!-- Single Widgets -->
-            <div class="sidebar__ads">
-              <a href="#"><img class="w-100" src="image/png/ads-img.png" alt=""></a>
-            </div>
-          </div>
-          <!--/ .Single Widgets -->
         </div>
       </div>
     </div>
@@ -633,7 +478,8 @@
                   <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
                   <!-- Newsletter -->
                   <div class="newsletter newsletter--l7">
-                    <form class="form2" id="hire-now-form1" action="" method="post" onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
+                    <form class="form2" id="hire-now-form1" action="" method="post"
+                      onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
                       <input type="email" id="footerInput" placeholder="Enter Your Email" required>
                       <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
                       <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
