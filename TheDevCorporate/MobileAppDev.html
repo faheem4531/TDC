@@ -8,10 +8,24 @@
     setTimeout(function () { x.className = 'snackbar1' }, 3000);
     return false
   }
+
+  function toastMessagethree(e) {
+  var x = document.getElementById("snackbar2");
+  x.className = "show2";
+  setTimeout(function () { x.className = 'snackbar2' }, 3000);
+  return false
+}
+
+function modalToastMessage(e) {
+  var x = document.getElementById("showModalMessage");
+  x.className = "showModal";
+  setTimeout(function () { x.className = 'showModalMessage' }, 3000);
+  return false
+}
 </script>
 
 <head>
-  <META NAME="robots" CONTENT="noindex,nofollow">
+  <!-- <META NAME="robots" CONTENT="noindex,nofollow"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -38,8 +52,7 @@
 <body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden ">
     <div id="loading">
-      <!-- <img src="image/fev-icon.svg" alt=""> -->
-      <video width="80%" height="80%"  autoplay muted>
+      <video width="80%" height="80%" muted autoplay playsinline>
         <source src="./image/tdc_animation.mp4" type="video/mp4">
       </video>
     </div>
@@ -84,17 +97,17 @@
                     <li class="sub-menu--item">
                       <a href="CareerScreen.html">Careers</a>
                     </li>
-                    <li class="sub-menu--item">
+                    <!-- <li class="sub-menu--item">
                       <a href="FaqScreen.html">FAQ</a>
-                    </li>
+                    </li> -->
                     <li class="sub-menu--item">
                       <a href="TermsAndConditions.html">Terms & Conditions</a>
                     </li>
                   </ul>
                 </li>
 
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger disable">Developers
+                <li class="nav-item nav-item-has-children ">
+                  <a href="ResourcesScreen.html" class="nav-link-item drop-trigger hover-link">Engineers
                   </a>
                 </li>
 
@@ -123,22 +136,22 @@
                   </ul>
                 </li>
 
-                <li class="nav-item nav-item-has-children">
+                <!-- <li class="nav-item nav-item-has-children">
                   <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
                   </a>
-                </li>
+                </li> -->
 
                 <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Portfolio<i class="fas fa-angle-down"></i>
+                  <a href="PortfolioScreen.html" class="nav-link-item drop-trigger hover-link">Portfolio
                   </a>
-                  <ul class="sub-menu" id="submenu-2">
+                  <!-- <ul class="sub-menu" id="submenu-2">
                     <li class="sub-menu--item">
-                      <a href="PortfolioScreen.html">Jobs Done</a>
+                      <a href="#">Jobs Done</a>
                     </li>
                     <li class="sub-menu--item">
                       <a href="TestimonialScreen.html">Happy Clients</a>
                     </li>
-                  </ul>
+                  </ul> -->
                 </li>
 
                 <li class="nav-item nav-item-has-children">
@@ -154,7 +167,7 @@
             </nav>
           </div>
           <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
+            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto" data-bs-toggle="modal"
               data-bs-target="#exampleModal">
               Hire Now
             </button>
@@ -171,7 +184,7 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable position-relative">
-        <form class="modal-content custom-border-none">
+        <form class="modal-content custom-border-none" id="hire-modal"  method="post" action="" onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)" >
           <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
           <div class="modal-body home-modal">
             <div class="d-flex justify-content-end">
@@ -181,37 +194,38 @@
             <div class="modal-field-container gap-sm-4">
               <div class="user-input-container">
                 <img src="image/user_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Name" required />
+                <input type="text" class="user-inputs" id="username" placeholder="Name" required />
               </div>
               <div class="user-input-container">
                 <img src="image/company_icon.svg" />
-                <input type="text" class="user-inputs" placeholder="Company Name" required />
+                <input type="text" class="user-inputs" id="company" placeholder="Company Name" required />
               </div>
             </div>
 
             <div class="modal-field-container gap-sm-4">
               <div class="user-input-container">
                 <img src="image/email_icon.svg" />
-                <input type="email" class="user-inputs" placeholder="Email Address" required />
+                <input type="email" class="user-inputs" id="email" placeholder="Email Address" required />
               </div>
-              <select class="user-custom-select form-select form-select-sm" required>
+              <select class="user-custom-select form-select form-select-sm" id="experience" required>
                 <option disabled selected value="">Experience</option>
-                <option value="1">1-3 years</option>
-                <option value="2">3-5 years</option>
-                <option value="3">5++ years</option>
+                <option value="1-3">1-3 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="5+">5+ years</option>
               </select>
             </div>
 
-            <select class="user-custom-select-two form-select form-select-sm" required>
+            <select class="user-custom-select-two form-select form-select-sm" id="position" required>
               <option disabled selected value="">Hiring Position</option>
-              <option value="1">Front-end</option>
-              <option value="2">Back-end</option>
-              <option value="3">QA's</option>
-              <option value="3">DevOps</option>
-              <option value="3">Full-Stack</option>
-              <option value="3">Tech-Stack</option>
+              <option value="Front-end">Front-end</option>
+              <option value="Back-end">Back-end</option>
+              <option value="QA's">QA's</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Full-Stack">Full-Stack</option>
+              <option value="Tech-Stack">Tech-Stack</option>
             </select>
             <button type="submit" class="modal-button">Submit</button>
+            <div id="showModalMessage">We've received your mail. We'll contact you soon.</div>
         </form>
         <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
       </div>
@@ -227,19 +241,17 @@
         <!-- Welcome content Area -->
         <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
           <div class="welcome-content welcome-content--l8">
-            <h3 class="welcome-content--l8__sub-title active-link" data-aos="fade-up" data-aos-duration="500"
-              data-aos-once="false">Get Started</h3>
-            <h1 class="welcome-content--l8__title" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-              data-aos-once="false">Your fitness advisor <br class="d-none d-xs-block d-lg-none d-xl-block">AIl in one
-              place</h1>
+            <!-- <h3 class="welcome-content--l8__sub-title active-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Get Started</h3> -->
+            <h1 class="welcome-content--l8__title mt-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="false">Transform your business with the power of mobile app development.</h1>
             <p class="welcome-content--l8__descriptions" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
-              data-aos-once="false">When, while lovely valley teems with vapour around
-              meand <br class="d-none d-md-block">
-              meridian sun strikes the upper impenetroble.</p>
+              data-aos-once="false">As mobile devices become increasingly integrated into our lives, a well-designed and 
+              a functional mobile app can provide a competitive edge and take your business to the next level.
+              </p>
             <div class="welcome-btn-group--l8">
-              <a class="btn btn--lg-2  me-3 bg-blue-ribbon text-white rounded-50 me-3"
-                href="ContactUsScreen.html" data-aos="fade-up" data-aos-duration="500"
-                data-aos-delay="700" data-aos-once="false">Contact Us</a>
+              <a class="btn btn--lg-2  me-3 bg-blue-ribbon text-white rounded-50 me-3" href="ContactUsScreen.html"
+                data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="false">Contact Us</a>
             </div>
           </div>
         </div>
@@ -270,8 +282,8 @@
         <div class="col-xl-8">
           <!-- Section Title -->
           <div class="section-title section-title--l8 text-center">
-            <h6 class="section-title__sub-heading active-link" data-aos="fade-up" data-aos-duration="500"
-              data-aos-once="false">Our Services</h6>
+            <!-- <h6 class="section-title__sub-heading active-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Our Services</h6> -->
             <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
               data-aos-once="false">Provided Feafalses</h2>
           </div>
@@ -284,54 +296,85 @@
         <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
           <div class="card card--services-l6 text-center card-hover__bittersweet">
             <div class="card--services-l6__icon bg-op1__bittersweet mx-auto">
-              <i class="text-bittersweet fas fa-bell"></i>
+              <!-- <i class="text-bittersweet fas fa-bell"></i> -->
+              <i class="text-bittersweet fas fa-solid fa-book"></i>
             </div>
-            <h3 class="card--services-l6__heading">Team Accounts</h3>
-            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-              of Lorem
-              lpsum<br class="d-none d-xs-block"> available for use</p>
+            <h3 class="card--services-l6__heading">Requirements gathering and analysis</h3>
+            <p class="card--services-l6__content">Understanding your business requirements and goals for the app.
+            </p>
           </div>
         </div>
         <!--/ .Single Services -->
+
         <!-- Single Services -->
         <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
           <div class="card card--services-l6 text-center card-hover__niagara">
             <div class="card--services-l6__icon bg-op1__niagara mx-auto">
-              <i class="text-niagara fas fa-layer-group"></i>
+              <!-- <i class="text-niagara fas fa-layer-group"></i> -->
+              <i class="text-niagara fas fa-solid fa-pen-nib"></i>
             </div>
-            <h3 class="card--services-l6__heading">Digital Agency</h3>
-            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-              of Lorem
-              lpsum<br class="d-none d-xs-block"> available for use</p>
+            <h3 class="card--services-l6__heading">User Experience (UX) and User Interface (UI) Design</h3>
+            <p class="card--services-l6__content">Creating a user-friendly, visually appealing, and functional app design.
+            </p>
           </div>
         </div>
         <!--/ .Single Services -->
+
         <!-- Single Services -->
         <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
           <div class="card card--services-l6 text-center card-hover__coral">
             <div class="card--services-l6__icon bg-op1__coral mx-auto">
-              <i class="text-coral fas fa-envelope"></i>
+              <!-- <i class="text-coral fas fa-envelope"></i> -->
+              <i class="text-coral fas fa-solid fa-code"></i>
             </div>
-            <h3 class="card--services-l6__heading">Email Marketing</h3>
-            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-              of Lorem
-              lpsum<br class="d-none d-xs-block"> available for use</p>
+            <h3 class="card--services-l6__heading">Development</h3>
+            <p class="card--services-l6__content"> Writing the code and building the app, integrating any necessary APIs and third-party tools.
+            </p>
           </div>
         </div>
         <!--/ .Single Services -->
+
         <!-- Single Services -->
         <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
           <div class="card card--services-l6 text-center card-hover__lavender">
             <div class="card--services-l6__icon bg-op1__lavender mx-auto">
               <i class="text-lavender fas fa-chart-pie"></i>
             </div>
-            <h3 class="card--services-l6__heading">API Reference</h3>
-            <p class="card--services-l6__content">There are many variations and<br class="d-none d-xs-block"> passages
-              of Lorem
-              lpsum<br class="d-none d-xs-block"> available for use</p>
+            <h3 class="card--services-l6__heading">Testing</h3>
+            <p class="card--services-l6__content">Conducting thorough testing and quality assurance to ensure the app is free of bugs and errors.
+            </p>
           </div>
         </div>
         <!--/ .Single Services -->
+
+          <!-- Single Services -->
+          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+            <div class="card card--services-l6 text-center card-hover__bittersweet">
+              <div class="card--services-l6__icon bg-op1__bittersweet mx-auto">
+                <!-- <i class="text-bittersweet fas fa-bell"></i> -->
+                <i class="text-bittersweet fas fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="card--services-l6__heading">Deployment</h3>
+              <p class="card--services-l6__content"> Launching the app and deploying it to the App Store or Google Play Store.
+              </p>
+            </div>
+          </div>
+          <!--/ .Single Services -->
+          
+          <!-- Single Services -->
+          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+            <div class="card card--services-l6 text-center card-hover__niagara">
+              <div class="card--services-l6__icon bg-op1__niagara mx-auto">
+                <!-- <i class="text-niagara fas fa-layer-group"></i> -->
+                <i class="text-niagara fa-solid fas fa-wrench"></i>
+              </div>
+              <h3 class="card--services-l6__heading">Maintenance and Support</h3>
+              <p class="card--services-l6__content"> Ongoing support and maintenance to keep the app up-to-date, secure, and functional.
+              </p>
+            </div>
+          </div>
+          <!--/ .Single Services -->
+
       </div>
     </div>
   </div>
@@ -344,10 +387,10 @@
         <div class="col-xl-6 col-lg-8 col-md-9 col-xs-10">
           <!-- Section Title -->
           <div class="section-title section-title--l8 mt-4 mt-md-0 text-center">
-            <h6 class="section-title__sub-heading active-link" data-aos="fade-up" data-aos-duration="500"
-              data-aos-once="false">About Lupinus Group</h6>
+            <!-- <h6 class="section-title__sub-heading active-link" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">About Lupinus Group</h6> -->
             <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-              data-aos-once="false">Innovative Building With New Materials</h2>
+              data-aos-once="false">Unlock the full potential of your business with our exceptional mobile app design and development services.</h2>
           </div>
           <!--/ .Section Title -->
         </div>
@@ -363,7 +406,7 @@
               </div>
               <div class="widgets__content">
                 <h5 class="widgets__title">Optimal Choice</h5>
-                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+                <p class="widgets__text">Choose the right solution for your business with our comprehensive and optimal mobile app development services.</p>
               </div>
             </div>
             <!--/ .Single Services -->
@@ -373,8 +416,8 @@
                 <i class="fa fa-chart-pie"></i>
               </div>
               <div class="widgets__content">
-                <h5 class="widgets__title">Financial advice</h5>
-                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+                <h5 class="widgets__title">User Experience</h5>
+                <p class="widgets__text">Creating seamless and intuitive user experiences through exceptional mobile app development.</p>
               </div>
             </div>
             <!--/ .Single Services -->
@@ -384,8 +427,8 @@
                 <i class="fa fa-cog"></i>
               </div>
               <div class="widgets__content">
-                <h5 class="widgets__title">Innovative solutions</h5>
-                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+                <h5 class="widgets__title">Testing</h5>
+                <p class="widgets__text">Ensuring quality and reliability with thorough testing services.</p>
               </div>
             </div>
             <!--/ .Single Services -->
@@ -409,8 +452,8 @@
                 <i class="fa fa-bookmark"></i>
               </div>
               <div class="widgets__content">
-                <h5 class="widgets__title">Optimal Choice</h5>
-                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+                <h5 class="widgets__title">Maintenance & support</h5>
+                <p class="widgets__text">Maintaining and enhancing your mobile app  with comprehensive maintenance and support services.</p>
               </div>
             </div>
             <!--/ .Single Services -->
@@ -421,7 +464,7 @@
               </div>
               <div class="widgets__content">
                 <h5 class="widgets__title">Business strategy</h5>
-                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+                <p class="widgets__text">Leveraging your online presence to drive business growth with our strategic development solutions.</p>
               </div>
             </div>
             <!--/ .Single Services -->
@@ -431,8 +474,8 @@
                 <i class="fa fa-bell"></i>
               </div>
               <div class="widgets__content">
-                <h5 class="widgets__title">Marketing outline</h5>
-                <p class="widgets__text">The White iphone smartphone mockup counterclockwise </p>
+                <h5 class="widgets__title">Development</h5>
+                <p class="widgets__text">Building powerful and innovative mobile app solutions through expert development services.</p>
               </div>
             </div>
             <!--/ .Single Services -->
@@ -451,14 +494,12 @@
         <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-10 order-2 orde-lg-1">
           <div class="about-us-right mt-4 mt-lg-0">
             <div class="section-title section-title--l8">
-              <h6 class="section-title__sub-heading  active-link" data-aos="fade-up" data-aos-duration="500"
-                data-aos-once="false">About Lupinus Group</h6>
+              <!-- <h6 class="section-title__sub-heading  active-link" data-aos="fade-up" data-aos-duration="500"
+                data-aos-once="false">About Lupinus Group</h6> -->
               <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-                data-aos-once="false">Present your app in a beautiful and elegant way.</h2>
+                data-aos-once="false">Enhance your online representation with a mobile app that exudes beauty and sophistication.</h2>
               <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
-                data-aos-once="false">White iPhone Mockup Templates. A collection of three mockups showing<br
-                  class="d-none d-xl-block"> an iPhone on a dark leather seat. High resolution PSD files, each
-                coming<br class="d-none d-xl-block"> with a smart object.</p>
+                data-aos-once="false">Elevate your online presence with our beautifully crafted and elegantly designed mobile apps. Let us help you create an app that perfectly reflects your brand and showcases your business to the world. </p>
             </div>
           </div>
           <div class="widgets widgets-content--l8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
@@ -470,8 +511,7 @@
                     <i class="far fa-envelope"></i>
                   </div>
                   <h4 class="widget--content-l6__title">Minimal Design</h4>
-                  <p class="widget--content-l6__text">Generate Lorem Ipsum place holder<br class="d-none d-xl-block">
-                    text for use in your Explore</p>
+                  <p class="widget--content-l6__text">Simplify and elevate your online presence with our minimalist mobile app design services.</p>
                 </div>
               </div>
               <div class="col-lg-6 col-xs-6">
@@ -480,8 +520,7 @@
                     <i class="fa fa-layer-group"></i>
                   </div>
                   <h4 class="widget--content-l6__title">Best Material</h4>
-                  <p class="widget--content-l6__text">Generate Lorem Ipsum place holder<br class="d-none d-xl-block">
-                    text for use in your Explore</p>
+                  <p class="widget--content-l6__text">building mobile apps with the best materials for optimal performance and user experience.</p>
                 </div>
               </div>
             </div>
@@ -504,8 +543,8 @@
   </div>
   <!--/ .Content One Area -->
 
-  <!-- Testimonial Area -->
-  <div class="testimonial-section testimonial-section--l8 bg-default-5">
+  <!-- Testimonial Slider Area -->
+  <!-- <div class="testimonial-section testimonial-section--l8 bg-default-5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-8 col-xl-9 col-xxl-7">
@@ -634,33 +673,41 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--/ .Testimonial Area -->
+  </div> -->
+  <!--/ .Testimonial Slider Area -->
 
-  <!-- CTA Area -->
-  <div class="cta-area cta-area--l8 bg-default">
+
+  <!-- Content Area -->
+  <div class="about-us-start-now text-white dark-mode-texts">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-10 col-md-11">
-          <div class="section-title section-title--l4 text-center">
-            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-              App Is Available For Free On Google Play & App Store</h2>
-            <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
-              data-aos-once="false">We’ll help you achieve your marketing & business goals</p>
-            <!-- <div class="button-group">
-              <a class="btn btn--lg btn-bittersweet shadow--bittersweet-2 text-white rounded-50 with-icon-2" href="#"
-                data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false"><i
-                  class="fab fa-apple"></i>Apple Store</a>
-              <a class="btn btn--lg btn-niagara shadow--niagara-2 text-white rounded-50 with-icon-2" href="#"
-                data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="false"><i
-                  class="fab fa-google-play"></i>Google Play</a>
-            </div> -->
+        <div class="col-lg-7 col-md-8">
+          <div class="section-title text-center">
+            <h2 data-aos="fade-up" data-aos-duration="900" data-aos-once="false" class="section-title__heading">
+              Hiring with TDC is
+              <br class="d-none d-xs-block"> Risk-Free!
+              <span style="color: #FFB700;">
+                Start Now.
+              </span>
+            </h2>
+            <!-- Newsletter -->
+            <div data-aos="fade-up" data-aos-duration="900" data-aos-once="false" class="newsletter-form  mx-auto newsletter--l1-2">
+              <form class="form2" id="hire-now-form1" method="post" action="" onsubmit="return submitForm(toastMessagethree, null, null, 'startFreeInput', null, null, null, null, null, null, )">
+                <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
+                  <input class="form-control" id="startFreeInput" type="email" placeholder="Enter your email" required>
+                  <button class=" btn btn--lg bg-white h-70" type="submit" style="color: #2B59FF;">Start For
+                    Free</button>
+                  <div id="snackbar2">We've received your mail. We'll contact you soon.</div>
+                </div>
+              </form>
+            </div>
+            <!--/ .Newsletter -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--/ .CTA Area -->
+  <!-- Content Area -->
 
 
   <!-- FOOTER START -->
@@ -671,7 +718,7 @@
           <div class="col-lg-3 col-md-7 col-xs-9">
             <div class="footer-widgets footer-widgets--l7">
               <!-- Brand Logo-->
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-start">
                 <div class="brand-logo mt-1">
                   <a href="#">
                     <!-- light version logo (logo must be black)-->
@@ -725,7 +772,7 @@
                       <i class="fa fa-phone-alt active-link"></i>
                       <div class="list-content">
                         <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
-                        <a href="#">+92 322 6761800</a>
+                        <a href="#">+92 315 8098431</a>
                       </div>
                     </li>
                     <li>
@@ -751,9 +798,9 @@
                     <li>
                       <a href="ContactUsScreen.html">Contact</a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a href="ServicesScreen.html">Services</a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -763,8 +810,8 @@
                   <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
                   <!-- Newsletter -->
                   <div class="newsletter newsletter--l7">
-                    <form class="form2" id="hire-now-form1" action="" onsubmit="return toastMessagetwo()">
-                      <input type="email" placeholder="Enter Your Email" required>
+                    <form class="form2" id="hire-now-form1" action="" method="post" onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
+                      <input type="email" id="footerInput" placeholder="Enter Your Email" required>
                       <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
                       <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
                     </form>
@@ -800,6 +847,7 @@
   <!-- Activation Script -->
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
