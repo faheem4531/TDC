@@ -66,17 +66,9 @@
     tp('register', 'MWT1S2wyXqL1vcG4');
   </script>
 
-<script> 
-	document.addEventListener('DOMContentLoaded', function() {
-		const trustpilot_invitation = {
-   			recipientEmail: 'john@gmail.com',
-   			recipientName: 'John',
-   			referenceId: 'Order_123',
-   			source: 'InvitationScript',
-  		};
-  		tp('createInvitation', trustpilot_invitation);
-	});
-</script>
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+  <!-- End TrustBox script -->
 
 </head>
 
@@ -124,22 +116,22 @@
                   </a>
                   <ul class="sub-menu" id="submenu-3">
                     <li class="sub-menu--item">
-                      <a href="AboutUsScreen.html">About Us</a>
+                      <a href="about.html">About Us</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="CareerScreen.html">Careers</a>
+                      <a href="career-with-tdc.html">Careers</a>
                     </li>
                     <!-- <li class="sub-menu--item">
-                    <a href="FaqScreen.html">FAQ</a>
+                    <a href="faqs.html">FAQ</a>
                   </li> -->
                     <li class="sub-menu--item">
-                      <a href="TermsAndConditions.html">Terms & Conditions</a>
+                      <a href="terms-and-conditions.html">Terms & Conditions</a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="nav-item nav-item-has-children ">
-                  <a href="ResourcesScreen.html" class="nav-link-item drop-trigger hover-link">Engineers
+                  <a href="resources.html" class="nav-link-item drop-trigger hover-link">Engineers
                   </a>
                 </li>
 
@@ -148,19 +140,19 @@
                   </a>
                   <ul class="sub-menu" id="submenu-1">
                     <li class="sub-menu--item">
-                      <a href="ProjectManagementScreen.html">Project Management</a>
+                      <a href="project-management.html">Project Management</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="WebAppDevScreen.html">Web App Development</a>
+                      <a href="web-app-development.html">Web App Development</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="MobileAppDev.html">Mobile App Development</a>
+                      <a href="mobile-app-development.html">Mobile App Development</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="DigitalAgencyScreen.html">Digital Marketing</a>
+                      <a href="digital-marketing.html">Digital Marketing</a>
                     </li>
                     <!-- <li class="sub-menu--item">
-                      <a href="ItServicesScreen.html">IT Services</a>
+                      <a href="it-services.html">IT Services</a>
                     </li> -->
                     <!-- <li class="sub-menu--item">
                       <a href="ServicesScreen.html">Services</a>
@@ -169,31 +161,31 @@
                 </li>
 
                 <!-- <li class="nav-item nav-item-has-children">
-                <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
+                <a href="tecnologies.html" class="nav-link-item drop-trigger hover-link">Technologies
                 </a>
               </li> -->
 
 
                 <li class="nav-item nav-item-has-children">
-                  <a href="PortfolioScreen.html" class="nav-link-item drop-trigger hover-link">Portfolio
+                  <a href="portfolio.html" class="nav-link-item drop-trigger hover-link">Portfolio
                   </a>
                   <!-- <ul class="sub-menu" id="submenu-2">
                   <li class="sub-menu--item">
                     <a href="#">Jobs Done</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="TestimonialScreen.html">Happy Clients</a>
+                    <a href="testimonial.html">Happy Clients</a>
                   </li>
                 </ul> -->
                 </li>
 
                 <li class="nav-item nav-item-has-children">
-                  <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
+                  <a href="blogs.html" class="nav-link-item hover-link">Blog</i>
                   </a>
                 </li>
 
                 <li class="nav-item nav-item-has-children">
-                  <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
+                  <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
                   </a>
                 </li>
               </ul>
@@ -349,7 +341,7 @@
             </div>
             <button type="button" class=" bg-blue-ribbon col-2 btn btn--lg ms-7" data-bs-toggle="modal"
               data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="false"><a
-                href="AboutUsScreen.html" class="text-white">
+                href="about.html" class="text-white">
                 About Us
               </a>
             </button>
@@ -872,7 +864,17 @@
                         <span class="d-block gr-text-hover-decoration-none"> Email:
                         </span>hr@thedevcorporate.com</a>
                     </li>
-                  </ul>`
+                    <li>
+                      <!-- TrustBox widget - Micro Review Count -->
+                      <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
+                        data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+                        data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+                        <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
+                          rel="noopener">Trustpilot</a>
+                      </div>
+                      <!-- End TrustBox widget -->
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div class="col-md-4 col-xs-6">
@@ -880,13 +882,13 @@
                   <h4 class="footer-widgets__title">Company</h4>
                   <ul class="footer-widgets__list">
                     <li>
-                      <a href="AboutUsScreen.html">About us</a>
+                      <a href="about.html">About us</a>
                     </li>
                     <li>
-                      <a href="PortfolioScreen.html">Portfolios</a>
+                      <a href="portfolio.html">Portfolios</a>
                     </li>
                     <li>
-                      <a href="ContactUsScreen.html">Contact</a>
+                      <a href="contact.html">Contact</a>
                     </li>
                     <!-- <li>
                       <a href="ServicesScreen.html">Services</a>

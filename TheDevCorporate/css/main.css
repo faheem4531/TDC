@@ -19053,3 +19053,10 @@ color: #757575;
       width: 25%;
     }
   }
+
+
+  .trustpilot-widget{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -7px;
+  }
