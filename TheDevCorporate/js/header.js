@@ -38,16 +38,16 @@ class Header extends HTMLElement {
                     </a>
                     <ul class="sub-menu" id="submenu-3">
                       <li class="sub-menu--item">
-                        <a href="AboutUsScreen.html">About Us</a>
+                        <a href="about.html">About Us</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="CareerScreen.html">Careers</a>
+                        <a href="career-with-tdc.html">Careers</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="FaqScreen.html">FAQ</a>
+                        <a href="faqs.html">FAQ</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="TermsAndConditions.html">Terms & Conditions</a>
+                        <a href="terms-and-conditions.html">Terms & Conditions</a>
                       </li>
                     </ul>
                   </li>
@@ -62,19 +62,19 @@ class Header extends HTMLElement {
                     </a>
                     <ul class="sub-menu" id="submenu-1">
                       <li class="sub-menu--item">
-                        <a href="ProjectManagementScreen.html">Project Management</a>
+                        <a href="project-management.html">Project Management</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="WebAppDevScreen.html">Web App Development</a>
+                        <a href="web-app-development.html">Web App Development</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="MobileAppDev.html">Mobile App Development</a>
+                        <a href="mobile-app-development.html">Mobile App Development</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="DigitalAgencyScreen.html">Digital Marketing</a>
+                        <a href="digital-marketing.html">Digital Marketing</a>
                       </li>
                       <!-- <li class="sub-menu--item">
-                        <a href="ItServicesScreen.html">IT Services</a>
+                        <a href="it-services.html">IT Services</a>
                       </li> -->
                       <!-- <li class="sub-menu--item">
                         <a href="ServicesScreen.html">Services</a>
@@ -83,7 +83,7 @@ class Header extends HTMLElement {
                   </li>
   
                   <li class="nav-item nav-item-has-children">
-                    <a href="TecnologiesScreen.html" class="nav-link-item drop-trigger hover-link">Technologies
+                    <a href="tecnologies.html" class="nav-link-item drop-trigger hover-link">Technologies
                     </a>
                   </li>
   
@@ -92,21 +92,21 @@ class Header extends HTMLElement {
                     </a>
                     <ul class="sub-menu" id="submenu-2">
                       <li class="sub-menu--item">
-                        <a href="PortfolioScreen.html">Jobs Done</a>
+                        <a href="portfolio.html">Jobs Done</a>
                       </li>
                       <li class="sub-menu--item">
-                        <a href="TestimonialScreen.html">Happy Clients</a>
+                        <a href="testimonial.html">Happy Clients</a>
                       </li>
                     </ul>
                   </li>
   
                   <li class="nav-item nav-item-has-children">
-                    <a href="BlogScreen.html" class="nav-link-item hover-link">Blog</i>
+                    <a href="blogs.html" class="nav-link-item hover-link">Blog</i>
                     </a>
                   </li>
   
                   <li class="nav-item nav-item-has-children">
-                    <a href="ContactUsScreen.html" class="nav-link-item hover-link">Contact Us</i>
+                    <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
                     </a>
                   </li>
                 </ul>
