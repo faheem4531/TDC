@@ -16447,7 +16447,7 @@ width: 172px;
 }
 
 .blogs-post .hover-content__title:hover {
-  color: #2b59ff;
+  color: #fff;
 }
 
 .blogs-post .hover-content__post-meta li a {
@@ -16462,7 +16462,7 @@ width: 172px;
 }
 
 .blogs-post .hover-content__post-meta li a:hover {
-  color: #2b59ff;
+  color: #fff;
 }
 
 .blogs-post .hover-content__post-meta li a:before {

@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- Custom stylesheet -->
 
-    <script>
+  <script>
     (function (w, d, s, r, n) {
       w.TrustpilotObject = n; w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) };
       a = d.createElement(s); a.async = 1; a.src = r; a.type = 'text/java' + s; f = d.getElementsByTagName(s)[0];
@@ -53,455 +53,702 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
   <!-- End TrustBox script -->
-
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden ">
-    <div id="loading">
-      <video width="80%" height="80%" muted autoplay playsinline>
-        <source src="./image/tdc_animation.mp4" type="video/mp4">
-      </video>
-    </div>
+    <div class="site-wrapper overflow-hidden ">
+      <div id="loading">
+        <video width="80%" height="80%" muted autoplay playsinline>
+          <source src="./image/tdc_animation.mp4" type="video/mp4">
+        </video>
+      </div>
 
-    <!-- Hedaer -->
-    <header
-      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
-      <div class="container">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="Index.html">
-              <!-- light version logo (logo must be black)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper  ms-lg-7">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
+      <!-- Hedaer -->
+      <header
+        class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
+        <div class="container">
+          <nav class="navbar site-navbar">
+            <!-- Brand Logo-->
+            <div class="brand-logo">
+              <a href="Index.html">
+                <!-- light version logo (logo must be black)-->
+                <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
+                <!-- Dark version logo (logo must be White)-->
+                <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
+              </a>
+            </div>
+            <div class="menu-block-wrapper  ms-lg-7">
+              <div class="menu-overlay"></div>
+              <nav class="menu-block" id="append-menu-header">
+                <div class="mobile-menu-head">
+                  <div class="go-back">
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="current-menu-title"></div>
+                  <div class="mobile-menu-close">&times;</div>
                 </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
-                  </a>
-                </li>
+                <ul class="site-menu-main">
+                  <li class="nav-item nav-item-has-children">
+                    <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
+                    </a>
+                  </li>
 
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-3">
-                    <li class="sub-menu--item">
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="career-with-tdc.html">Careers</a>
-                    </li>
-                    <!-- <li class="sub-menu--item">
-                      <a href="faqs.html">FAQ</a>
-                    </li> -->
-                    <li class="sub-menu--item">
-                      <a href="terms-and-conditions.html">Terms & Conditions</a>
-                    </li>
-                  </ul>
-                </li>
-               
+                  <li class="nav-item nav-item-has-children ">
+                    <a href="about.html" class="nav-link-item drop-trigger hover-link">About Us
+                    </a>
+                  </li>
 
-                <li class="nav-item nav-item-has-children ">
-                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
-                  </a>
-                  <ul class="sub-menu" id="submenu-1">
-                    <li class="sub-menu--item">
-                      <a href="project-management.html">Project Management</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="web-app-development.html">Web App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="mobile-app-development.html">Mobile App Development</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="digital-marketing.html">Digital Marketing</a>
-                    </li>
-                    <!-- <li class="sub-menu--item">
-                    <a href="it-services.html">IT Services</a>
-                  </li> -->
-                    <!-- <li class="sub-menu--item">
-                    <a href="ServicesScreen.html">Services</a>
-                  </li> -->
-                  </ul>
-                </li>
+                  <li class="nav-item nav-item-has-children">
+                    <a href="portfolio.html" class="nav-link-item drop-trigger hover-link">Portfolio
+                    </a>
+                  </li>
 
-                <!-- <li class="nav-item nav-item-has-children">
-                  <a href="tecnologies.html" class="nav-link-item drop-trigger hover-link">Technologies
-                  </a>
-                </li> -->
+                  <li class="nav-item nav-item-has-children">
+                    <a href="blogs.html" class="nav-link-item hover-link active-link ">Blog</i>
+                    </a>
+                  </li>
 
-                <li class="nav-item nav-item-has-children">
-                  <a href="portfolio.html" class="nav-link-item drop-trigger hover-link">Portfolio
-                  </a>
-                  <!-- <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="#">Jobs Done</a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="testimonial.html">Happy Clients</a>
-                    </li>
-                  </ul> -->
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="blogs.html" class="nav-link-item hover-link active-link ">Blog</i>
-                  </a>
-                </li>
-
-                <li class="nav-item nav-item-has-children">
-                  <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"
-              data-bs-target="#exampleModal">
-              Hire Now
-            </button>
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable position-relative">
-        <form class="modal-content custom-border-none" id="hire-modal" method="post" action=""
-          onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)">
-          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
-          <div class="modal-body home-modal">
-            <div class="d-flex justify-content-end">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <li class="nav-item nav-item-has-children">
+                    <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/user_icon.svg" />
-                <input type="text" class="user-inputs" id="username" placeholder="Name" required />
-              </div>
-              <div class="user-input-container">
-                <img src="image/company_icon.svg" />
-                <input type="text" class="user-inputs" id="company" placeholder="Company Name" required />
-              </div>
+            <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+              <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"
+                data-bs-target="#exampleModal">
+                Hire Now
+              </button>
             </div>
-
-            <div class="modal-field-container gap-sm-4">
-              <div class="user-input-container">
-                <img src="image/email_icon.svg" />
-                <input type="email" class="user-inputs" id="email" placeholder="Email Address" required />
-              </div>
-              <select class="user-custom-select form-select form-select-sm" id="experience" required>
-                <option disabled selected value="">Experience</option>
-                <option value="1-3">1-3 years</option>
-                <option value="3-5">3-5 years</option>
-                <option value="5+">5+ years</option>
-              </select>
+            <!-- mobile menu trigger -->
+            <div class="mobile-menu-trigger">
+              <span></span>
             </div>
-
-            <select class="user-custom-select-two form-select form-select-sm" id="position" required>
-              <option disabled selected value="">Hiring Position</option>
-              <option value="Front-end">Front-end</option>
-              <option value="Back-end">Back-end</option>
-              <option value="QA's">QA's</option>
-              <option value="DevOps">DevOps</option>
-              <option value="Full-Stack">Full-Stack</option>
-              <option value="Tech-Stack">Tech-Stack</option>
-            </select>
-            <button type="submit" class="modal-button">Submit</button>
-            <div id="showModalMessage">We've received your mail. We'll contact you soon.</div>
-        </form>
-        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <!-- Hedaer -->
-
-  <!-- Conteny Start -->
-  <div class="blogs-area blogs-area--right-sidebar bg-default-6">
-    <div class="container">
-      <!-- <div class="row justify-content-center">
-        <div class="col-xl-7">
-          <div class="section-title section-title--innerpage text-center">
-            <h5 class="section-title__sub-heading text-electric-violet-2">Latest posts</h5>
-            <h2 class="section-title__heading">Blog</h2>
-          </div>
+            <!--/.Mobile Menu Hamburger Ends-->
+          </nav>
         </div>
-      </div> -->
-      <div class="row justify-content-center">
-        <div class="col-xl-12 ">
-          <div class="row justify-content-center">
-            <div class="col-xl-12">
+      </header>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable position-relative">
+          <form class="modal-content custom-border-none" id="hire-modal" method="post" action=""
+            onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)">
+            <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
+            <div class="modal-body home-modal">
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
+              <div class="modal-field-container gap-sm-4">
+                <div class="user-input-container">
+                  <img src="image/user_icon.svg" />
+                  <input type="text" class="user-inputs" id="username" placeholder="Name" required />
+                </div>
+                <div class="user-input-container">
+                  <img src="image/company_icon.svg" />
+                  <input type="text" class="user-inputs" id="company" placeholder="Company Name" required />
+                </div>
+              </div>
+
+              <div class="modal-field-container gap-sm-4">
+                <div class="user-input-container">
+                  <img src="image/email_icon.svg" />
+                  <input type="email" class="user-inputs" id="email" placeholder="Email Address" required />
+                </div>
+                <select class="user-custom-select form-select form-select-sm" id="experience" required>
+                  <option disabled selected value="">Experience</option>
+                  <option value="1-3">1-3 years</option>
+                  <option value="3-5">3-5 years</option>
+                  <option value="5+">5+ years</option>
+                </select>
+              </div>
+
+              <select class="user-custom-select-two form-select form-select-sm" id="position" required>
+                <option disabled selected value="">Hiring Position</option>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="QA's">QA's</option>
+                <option value="DevOps">DevOps</option>
+                <option value="Full-Stack">Full-Stack</option>
+                <option value="Tech-Stack">Tech-Stack</option>
+              </select>
+              <button type="submit" class="modal-button">Submit</button>
+              <div id="showModalMessage">We've received your mail. We'll contact you soon.</div>
+          </form>
+          <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Hedaer -->
+
+    <!-- Content -->
+    <div class="blog-area blog-area--reguler bg-default-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-lg-10">
+            <a href="resource-augmentation-in-the-it-industry.html">
               <div class="blogs-post blogs-post--big">
-                <img class="w-100" src="image/blogs/MAIN (3).png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-lg-start">
-            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
-              <div class="mb-4 ">
-                <div class="card">
-                  <img class="w-100 card-img-top" src="image/blogs/resource.jpg" alt="Resource Augmentatio">
-                  <div class="card-body">
-                    <h4 class="blog-card-title">Insights and Trends: Resource Augmentation in the IT Industry</h4>
-                    <p class="blog-card-text">The IT industry has been rapidly evolving and growing over the years, and one
-                      of the significant trends that have
-                      emerged is the increasing use of resource augmentation and emerging technologies to meet the
-                      growing demand for skilled
-                      professionals.</p>
-                    <!-- <p class="blog-card-text">
-                      Let’s explore some of the industry trends and best practices related to resource augmentation in
-                      this post. But first
-                      let’s review what resource augmentation is.</p> -->
-                    <a href="resource-augmentation-in-the-it-industry.html" class=" blog-card-btn">Read More >></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
-              <div class="mb-4 ">
-                <div class="card">
-                  <img class="w-100 card-img-top" src="image/blogs/develop.jpg" alt="Develop and Enhance ">
-                  <div class="card-body">
-                    <h4 class="blog-card-title">From Strength to Strength: How to Develop and Enhance Your Employees'
-                      Skills</h4>
-                    <p class="blog-card-text">
-                      In today's rapidly evolving business landscape, it's more important than ever to invest in your
-                      employees' skills. By developing and enhancing your workforce's abilities, you can keep your
-                      company competitive, improve performance, and create a more engaged and motivated team. In this
-                      blog post, we'll explore some of the key strategies for developing and enhancing your employees'
-                      skills, so you can take your business from strength to strength.
-                    </p>
-                    <a href=" develop-and-enhance-your-employees-skills.html" class=" blog-card-btn">Read More >></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
-              <!-- <div class="mb-4 ">
-                <div class="card">
-                  <img class="w-100 card-img-top" src="image/blogs/stratigies.jpg" alt="Strategies for Managing">
-                  <div class="card-body">
-                    <h4 class="blog-card-title">Staying Agile: Strategies for Managing Unexpected Surges in Workload through Resource Augmentation</h4>
-                    <p class="blog-card-text">In today's business world, change is constant, and businesses must be prepared to adapt quickly to unexpected surges in
-                    workload. Resource augmentation is one strategy that can help businesses stay agile and manage workload surges
-                    effectively using the agile methodology.</p>
-                    <a href="" class=" blog-card-btn">Read More >></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
-              <div class="mb-4 ">
-                <div class="card">
-                  <img class="w-100 card-img-top" src="image/blogs/why-hiring.jpg" alt="Hiring Specialised Experts">
-                  <div class="card-body">
-                    <h4 class="blog-card-title">Why Hiring Specialised Experts Can Take Your Project to the Next Level</h4>
-                    <p class="blog-card-text">In today's competitive business landscape, completing projects efficiently and effectively is crucial for success. Many
-                    companies face challenges when it comes to finding and retaining skilled resources to manage their projects. That's
-                    where hiring specialised experts can make a significant difference.</p>
-                    <a href="" class=" blog-card-btn">Read More >></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
-              <div class="mb-4 ">
-                <div class="card">
-                  <img class="w-100 card-img-top" src="image/blogs/improving.png" alt="Improving operational efficiency">
-                  <div class="card-body">
-                    <h4 class="blog-card-title">Improving operational efficiency by tapping into external talent pools</h4>
-                    <p class="blog-card-text">In today's fast-paced business environment, operational efficiency is critical to maintaining a competitive edge. One
-                    area that many organisations are exploring to optimise their operations is tapping into external talent pools. By
-                    leveraging external talent, companies can access a diverse range of skills and expertise to complement their existing
-                    workforce, fill skill gaps, and improve overall operational efficiency. In this blog post, we will explore the benefits
-                    of tapping into external talent pools and provide practical tips on how organisations can do so effectively.</p>
-
-                    <a href="" class=" blog-card-btn">Read More >></a>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-xs-10">
-              <div class="blogs-post blogs-post--small">
-                <img class="w-100" src="image/png/blog-post-7.png" alt="">
+                <img class="w-100" src="image/blogs/resource-augmentation.png" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="#" class="hover-content__badge badge bg-secondary">Gadgets</a>
-                    <a href="#" class="hover-content__date">01 June, 2020</a>
+                    <a href="resource-augmentation-in-the-it-industry.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+
                   </div>
-                  <a href="#" class="hover-content__title">We can blend colors multiple ways, the most
-                    common</a>
+                  <a href="resource-augmentation-in-the-it-industry.html" class="hover-content__title">Insights and
+                    Trends: Resource Augmentation in
+                    the IT Industry.</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="#">
+                      <a>
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="#">
-                        <i class="fa fa-heart"></i>21K</a>
-                      <a href="#">
-                        <i class="fa fa-comments"></i>305</a>
+                      <!-- <a href="blog-details.html">
+                    <i class="fa fa-heart"></i>21K</a>
+                  <a href="blog-details.html">
+                    <i class="fa fa-comments"></i>305</a> -->
+                      <a class="hover-content__date">01 June, 2020</a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div> -->
-
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="develop-and-enhance-your-employees-skills.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/skills.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="" class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="develop-and-enhance-your-employees-skills.html" class="hover-content__title">From Strength to
+                    Strength: How to <br />
+                    Develop and Enhance Your Employees' Skills.</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+                    <i class="fa fa-heart"></i>21K</a>
+                  <a href="blog-details.html">
+                    <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="staying-agile.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/agile.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="staying-agile.html" class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="staying-agile.html" class="hover-content__title">Staying Agile: Strategies for Managing
+                    Unexpected Surges in Workload through Resource Augmentation</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+                      <i class="fa fa-heart"></i>21K</a>
+                    <a href="blog-details.html">
+                      <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="why-hiring-speciallized-experts.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/expert.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="why-hiring-speciallized-experts.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="why-hiring-speciallized-experts.html" class="hover-content__title">Why Hiring Specialized
+                    Experts Can Take Your
+                    Project to the Next Level</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+                      <i class="fa fa-heart"></i>21K</a>
+                    <a href="blog-details.html">
+                      <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="improving-operational-efficiency.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/develop-skills.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="improving-operational-efficiency.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="improving-operational-efficiency.html" class="hover-content__title">Improving operational
+                    efficiency by <br />
+                    tapping into external talent pools</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="reducing-labour-costs.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/cost.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="reducing-labour-costs.html" class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="reducing-labour-costs.html" class="hover-content__title">Reducing labour costs by avoiding
+                    long-term
+                    hiring commitments</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="maintaining-business-continuity.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/business.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="maintaining-business-continuity.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="maintaining-business-continuity.html" class="hover-content__title">Maintaining business
+                    continuity during employee
+                    absences or turnover</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+                <i class="fa fa-heart"></i>21K</a>
+              <a href="blog-details.html">
+                <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="Digital-transformation-how-technology-is-revolutionising.html.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/technology.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="Digital-transformation-how-technology-is-revolutionising.html.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="Digital-transformation-how-technology-is-revolutionising.html.html"
+                    class="hover-content__title">Digital Transformation: How Technology is
+                    Revolutionising Time-to-Market for Businesses</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+                      <i class="fa fa-heart"></i>21K</a>
+                    <a href="blog-details.html">
+                      <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="when-the-market-changes.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/pivot.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="when-the-market-changes.html" class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="when-the-market-changes.html" class="hover-content__title">When the Market Changes: How to
+                    Pivot Your
+                    Business Quickly</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="five-cutting-edge-technologies-for-boosting-your-resources.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/cutting-edge.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="five-cutting-edge-technologies-for-boosting-your-resources.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="five-cutting-edge-technologies-for-boosting-your-resources.html"
+                    class="hover-content__title">5 Cutting-Edge Technologies for Boosting Your
+                    Resource Augmentation Strategy</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="how-ai-is-revolutionizind-resource-augmentation-in-tech.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/ai.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="how-ai-is-revolutionizind-resource-augmentation-in-tech.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="how-ai-is-revolutionizind-resource-augmentation-in-tech.html"
+                    class="hover-content__title">How AI is Revolutionizing Resource Augmentation
+                    in the Tech Industry</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="the-importance-of-security-in-resource-augmentation-for-tech-companies.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/security.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="the-importance-of-security-in-resource-augmentation-for-tech-companies.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="the-importance-of-security-in-resource-augmentation-for-tech-companies.html"
+                    class="hover-content__title">The Importance of Security in Resource
+                    Augmentation for Tech Companies</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="unlocking-your-teams-hidden-potential.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/teams-hidden-potential.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="unlocking-your-teams-hidden-potential.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="unlocking-your-teams-hidden-potential.html" class="hover-content__title">Unlocking Your
+                    Team's Hidden Potential: Our
+                    Unique Solutions</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="building-a-stronger-team.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/stronger-team.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="building-a-stronger-team.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="building-a-stronger-team.html" class="hover-content__title">Building a Stronger Team: Our
+                    Comprehensive HR
+                    Solutions</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="meeting-your-bussiness-needs.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/business-needs.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="meeting-your-bussiness-needs.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="meeting-your-bussiness-needs.html" class="hover-content__title">Meeting Your Business Needs:
+                    Our Tailored
+                    Approach to Talent Acquisition</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
+            <a href="amplifying-your-productivity.html">
+              <div class="blogs-post blogs-post--small">
+                <img class="w-100" src="image/blogs/amplifying-productivity.png" alt="">
+                <div class="hover-content">
+                  <div class="hover-content__top d-flex align-items-center dark-mode-texts">
+                    <a href="amplifying-your-productivity.html"
+                      class="hover-content__badge badge bg-blue-ribbon">Gadgets</a>
+                  </div>
+                  <a href="amplifying-your-productivity.html" class="hover-content__title">Amplifying Your Productivity:
+                    Our Innovative
+                    Business Support Services</a>
+                  <ul class="hover-content__post-meta list-unstyled">
+                    <li>
+                      <a>
+                        <i class="fa fa-user"></i>George Lee</a>
+                      <a class="hover-content__date">01 June, 2020</a>
+                      <!-- <a href="blog-details.html">
+            <i class="fa fa-heart"></i>21K</a>
+          <a href="blog-details.html">
+            <i class="fa fa-comments"></i>305</a> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Conteny End -->
+    <!-- Content -->
 
-  <!-- FOOTER START -->
-  <div class="footer-area footer-inner-1 bg-default-3">
-    <div class="container">
-      <footer class="footer-top">
-        <div class="row">
-          <div class="col-lg-3 col-md-7 col-xs-9">
-            <div class="footer-widgets footer-widgets--l7">
-              <!-- Brand Logo-->
-              <div class="d-flex justify-content-start">
-                <div class="brand-logo mt-1">
-                  <a href="#">
-                    <!-- light version logo (logo must be black)-->
-                    <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
-                    <!-- Dark version logo (logo must be White)-->
-                    <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
-                  </a>
-                </div>
-              </div>
-              <p class="footer-widgets__text mt-5">
-                We will bring your idea into its digital creation the way you want it to be.</p>
-              <ul class="footer-social-share footer-social-share--rounded mt-4">
-                <li>
-                  <a href="https://www.facebook.com/thedevcorporate">
-                    <i class="fab fa-facebook-square"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/thedevcorporate/">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="row">
-              <div class="col-md-4 col-xs-6">
-                <div class="footer-widgets footer-widgets--l7">
-                  <h4 class="footer-widgets__title">Contact Details</h4>
-                  <ul class="footer-widgets__list footer-widgets--address">
-                    <li>
-                      <i class="fa fa-map-marker-alt active-link"></i>
-                    <span>Address: <br class="d-block">
-                        4445 Corporation Ln.<br class="d-block">
-                        STE 264 Virginia Beach VA 23462 USA</span>
-                    </li>
-                    <li>
-                      <i class="fa fa-phone-alt active-link"></i>
-                      <div class="list-content">
-                        <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
-                        <a href="#">+92 315 8098431</a>
-                      </div>
-                    </li>
-                    <li>
-                      <i class="fa fa-envelope active-link"></i>
-                      <a class="heading-default-color gr-text-hover-underline text-break"
-                        href="mailto:hr@thedevcorporate.com">
-                        <span class="d-block gr-text-hover-decoration-none"> Email:
-                        </span>hr@thedevcorporate.com</a>
-                    </li>
-  
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-6">
-                <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
-                  <h4 class="footer-widgets__title">Company</h4>
-                  <ul class="footer-widgets__list">
-                    <li>
-                      <a href="about.html">About us</a>
-                    </li>
-                    <li>
-                      <a href="portfolio.html">Portfolios</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                    <!-- <li>
-                      <a href="ServicesScreen.html">Services</a>
-                    </li> -->
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-5 col-xs-9">
-                <div class="footer-widgets footer-widgets--l7">
-                  <h4 class="footer-widgets__title">Newsletter</h4>
-                  <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
-                  <!-- Newsletter -->
-                  <div class="newsletter newsletter--l7">
-                    <form class="form2" id="hire-now-form1" action="" method="post"
-                      onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
-                      <input type="email" id="footerInput" placeholder="Enter Your Email" required>
-                      <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
-                      <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
-                    </form>
+    <!-- FOOTER START -->
+    <div class="footer-area footer-inner-1 bg-default-3">
+      <div class="container">
+        <footer class="footer-top">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-xs-9">
+              <div class="footer-widgets footer-widgets--l7">
+                <!-- Brand Logo-->
+                <div class="d-flex justify-content-start">
+                  <div class="brand-logo mt-1">
+                    <a href="#">
+                      <!-- light version logo (logo must be black)-->
+                      <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
+                      <!-- Dark version logo (logo must be White)-->
+                      <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
+                    </a>
                   </div>
-                  <!--/ .Newsletter -->
                 </div>
-                <h4 class="trusted-by">Trusted by</h4>
-                <!-- TrustBox widget - Micro Review Count -->
-                <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
-                  data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
-                  data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
-                  <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
-                    rel="noopener">Trustpilot</a>
+                <p class="footer-widgets__text mt-5">
+                  We will bring your idea into its digital creation the way you want it to be.</p>
+                <ul class="footer-social-share footer-social-share--rounded mt-4">
+                  <li>
+                    <a href="https://www.facebook.com/thedevcorporate">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/thedevcorporate/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-md-4 col-xs-6">
+                  <div class="footer-widgets footer-widgets--l7">
+                    <h4 class="footer-widgets__title">Contact Details</h4>
+                    <ul class="footer-widgets__list footer-widgets--address">
+                      <li>
+                        <i class="fa fa-map-marker-alt active-link"></i>
+                        <span>Address: <br class="d-block">
+                          4445 Corporation Ln.<br class="d-block">
+                          STE 264 Virginia Beach <br /> VA 23462 USA</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-phone-alt active-link"></i>
+                        <div class="list-content">
+                          <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                          <a href="#">+92 315 8098431</a>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope active-link"></i>
+                        <a class="heading-default-color gr-text-hover-underline text-break"
+                          href="mailto:hr@thedevcorporate.com">
+                          <span class="d-block gr-text-hover-decoration-none"> Email:
+                          </span>hr@thedevcorporate.com</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <!-- End TrustBox widget -->
+                <div class="col-md-3 col-xs-6">
+                  <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
+                    <h4 class="footer-widgets__title">Company</h4>
+                    <ul class="footer-widgets__list">
+                      <li>
+                        <a href="about.html">About us</a>
+                      </li>
+                      <li>
+                        <a href="portfolio.html">Portfolios</a>
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact</a>
+                      </li>
+                      <!-- <li>
+                        <a href="ServicesScreen.html">Services</a>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5 col-xs-9">
+                  <div class="footer-widgets footer-widgets--l7">
+                    <h4 class="footer-widgets__title">Newsletter</h4>
+                    <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
+                    <!-- Newsletter -->
+                    <div class="newsletter newsletter--l7">
+                      <form class="form2" id="hire-now-form1" action="" method="post"
+                        onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
+                        <input type="email" id="footerInput" placeholder="Enter Your Email" required>
+                        <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
+                        <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                      </form>
+                    </div>
+                    <!--/ .Newsletter -->
+                  </div>
+                  <h4 class="trusted-by">Trusted by</h4>
+                  <!-- TrustBox widget - Micro Review Count -->
+                  <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
+                    data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+                    data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+                    <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
+                      rel="noopener">Trustpilot</a>
+                  </div>
+                  <!-- End TrustBox widget -->
+                </div>
               </div>
             </div>
           </div>
-        </div>
+      </div>
+      </footer>
+      <div class="copyright text-center border-top border-default-color-3">
+        <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+      </div>
     </div>
-    </footer>
-    <div class="copyright text-center border-top border-default-color-3">
-      <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
-    </div>
-  </div>
   </div>
   <!-- FOOTER END -->
 
@@ -522,7 +769,6 @@
   <!-- Activation Script -->
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/modal.js"></script>
 </body>
 
 </html>
