@@ -16116,7 +16116,7 @@ width: 172px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 32px;
+  line-height: 30px;
   margin-bottom: 30px;
 }
 
@@ -16157,10 +16157,10 @@ width: 172px;
 
 @media (min-width: 992px) {
   .blog-title__heading {
-    font-size: 48px;
+    font-size: 40px;
   }
   .blog-content__heading {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 50px;
 }
 .blog-content__heading-small{
