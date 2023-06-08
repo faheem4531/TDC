@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  function toastMessagetwo(e) {
+    var x = document.getElementById("snackbar1");
+    x.className = "show1";
+    setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+
+  function modalToastMessage(e) {
+    var x = document.getElementById("showModalMessage");
+    x.className = "showModal";
+    setTimeout(function () { x.className = 'showModalMessage' }, 3000);
+    return false
+  }
+</script>
+
+<head>
+  <!-- <META NAME="robots" CONTENT="noindex,nofollow"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    The Dev Corporate
+  </title>
+  <link rel="shortcut icon" href="image/tdc_circle_logo.svg" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+
+  <script>
+    (function (w, d, s, r, n) {
+      w.TrustpilotObject = n; w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) };
+      a = d.createElement(s); a.async = 1; a.src = r; a.type = 'text/java' + s; f = d.getElementsByTagName(s)[0];
+      f.parentNode.insertBefore(a, f)
+    })(window, document, 'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+    tp('register', 'MWT1S2wyXqL1vcG4');
+  </script>
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden ">
+    <div id="loading">
+      <video width="80%" height="80%" muted autoplay playsinline>
+        <source src="./image/tdc_animation.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Hedaer -->
+    <header
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="Index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper  ms-lg-7">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="career-with-tdc.html">Careers</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                          <a href="faqs.html">FAQ</a>
+                        </li> -->
+                    <li class="sub-menu--item">
+                      <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li class="nav-item nav-item-has-children ">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="project-management.html">Project Management</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="web-app-development.html">Web App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="mobile-app-development.html">Mobile App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="digital-marketing.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                        <a href="it-services.html">IT Services</a>
+                      </li> -->
+                    <!-- <li class="sub-menu--item">
+                        <a href="ServicesScreen.html">Services</a>
+                      </li> -->
+                  </ul>
+                </li>
+
+                <!-- <li class="nav-item nav-item-has-children">
+                      <a href="tecnologies.html" class="nav-link-item drop-trigger hover-link">Technologies
+                      </a>
+                    </li> -->
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="portfolio.html" class="nav-link-item drop-trigger hover-link">Portfolio
+                  </a>
+                  <!-- <ul class="sub-menu" id="submenu-2">
+                        <li class="sub-menu--item">
+                          <a href="#">Jobs Done</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="testimonial.html">Happy Clients</a>
+                        </li>
+                      </ul> -->
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="blogs.html" class="nav-link-item hover-link active-link ">Blog</i>
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"
+              data-bs-target="#exampleModal">
+              Hire Now
+            </button>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable position-relative">
+        <form class="modal-content custom-border-none" id="hire-modal" method="post" action=""
+          onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)">
+          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
+          <div class="modal-body home-modal">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/user_icon.svg" />
+                <input type="text" class="user-inputs" id="username" placeholder="Name" required />
+              </div>
+              <div class="user-input-container">
+                <img src="image/company_icon.svg" />
+                <input type="text" class="user-inputs" id="company" placeholder="Company Name" required />
+              </div>
+            </div>
+
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/email_icon.svg" />
+                <input type="email" class="user-inputs" id="email" placeholder="Email Address" required />
+              </div>
+              <select class="user-custom-select form-select form-select-sm" id="experience" required>
+                <option disabled selected value="">Experience</option>
+                <option value="1-3">1-3 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="5+">5+ years</option>
+              </select>
+            </div>
+
+            <select class="user-custom-select-two form-select form-select-sm" id="position" required>
+              <option disabled selected value="">Hiring Position</option>
+              <option value="Front-end">Front-end</option>
+              <option value="Back-end">Back-end</option>
+              <option value="QA's">QA's</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Full-Stack">Full-Stack</option>
+              <option value="Tech-Stack">Tech-Stack</option>
+            </select>
+            <button type="submit" class="modal-button">Submit</button>
+            <div id="showModalMessage">We've received your mail. We'll contact you soon.</div>
+        </form>
+        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
+      </div>
+    </div>
+  </div>
+  <!-- navbar- -->
+  <!--/ .Header Area -->
+
+  <!-- Blog Details Area -->
+  <div class="blog-details bg-default-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="blog-title">
+            <h1 class="blog-title__heading mt-5 mt-lg-0">
+              Digital Transformation: How Technology is
+              Revolutionising Time-to-Market for Businesses
+            </h1>
+            <!-- <div class="blog__metainfo">
+                <a href="#" class="blog__metainfo__author-name">By David Jones</a>
+                <a href="#" class="blog__metainfo__date">Jan 14, 2021</a>
+              </div> -->
+          </div>
+          <div class="blog-content">
+            <div class="blog-content__img">
+              <img class="w-100" src="image/blogs/technology-details.png" alt="Resource Augmentation">
+            </div>
+            <p class="blog-content__text">
+              In today's fast-paced business world, time-to-market is critical for success. It is the period from
+              product or service development to its launch in the market. In the past, this process could take years to
+              accomplish, but with the rise of technology, businesses can now speed up their time-to-market through
+              digital transformation.
+            </p>
+            <p class="blog-content__text">
+              Digital transformation refers to the integration of digital technology into all areas of a business,
+              resulting in fundamental changes to how businesses operate and deliver value to customers. Digital
+              transformation enables companies to be more innovative, agile, and responsive to customer needs, leading
+              to a competitive advantage in the market. In this blog post, we will explore how technology is
+              revolutionizing time-to-market for businesses.
+            </p>
+            <div class="blog-content__box">
+              <h2 class="blog-content__heading">Innovation and Agility</h2>
+              <p class="blog-content__text">
+                Digital transformation can enable businesses to become more innovative and agile by breaking down silos,
+                encouraging collaboration, and creating a culture of experimentation and continuous improvement. By
+                leveraging digital tools and platforms, businesses can foster a more agile approach to innovation,
+                enabling them to rapidly prototype, test, and iterate new ideas.
+              </p>
+              <p class="blog-content__text">
+                Agile methodology is a popular approach that can help businesses to become more nimble and responsive.
+                Agile methodology involves breaking down complex projects into smaller, more manageable tasks that can
+                be completed quickly and iteratively. This approach enables businesses to respond more quickly to
+                changes in the market, customer needs, and emerging technologies, enabling them to launch new products
+                and services more quickly.
+              </p>
+              <p class="blog-content__text">
+                Digital transformation can also help businesses to become more innovative by leveraging emerging
+                technologies like blockchain, augmented reality, virtual reality, and 3D printing. These technologies
+                can enable businesses to create new products and services that were previously impossible or too costly
+                to produce. For example, augmented reality can enable businesses to provide customers with an immersive
+                shopping experience, while blockchain can enable secure and transparent transactions.
+              </p>
+              <p class="blog-content__text">
+                Innovation and agility require a mindset shift within the organisation. Businesses must be willing to
+                experiment, take risks, and fail fast in order to learn and iterate quickly. This requires leadership
+                support, a culture of innovation, and a willingness to embrace new ways of working.
+              </p>
+
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Define the skills required for each role</h3>
+                <p class="blog-content__text">To identify skills gaps, you need to have a clear
+                  understanding of the skills required for each role in your
+                  organization. This involves analyzing job descriptions and identifying the essential
+                  skills needed to perform each role
+                  effectively.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Automation</h3>
+                <p class="blog-content__text">
+                  Another crucial aspect of digital transformation is the ability to automate manual processes, enabling
+                  businesses to increase efficiency, reduce costs, and improve accuracy. Automation can be applied to a
+                  wide range of business processes, from data entry and document processing to customer service and
+                  supply chain management.
+                </p>
+                <p class="blog-content__text">
+                  By automating routine tasks, businesses can free up employees to focus on higher-value tasks that
+                  require human expertise, such as strategic planning, innovation, and customer service. This can help
+                  to improve employee engagement and job satisfaction, while also enabling businesses to achieve more
+                  with fewer resources.
+                </p>
+                <p class="blog-content__text">
+                  Automation can also help businesses to improve the customer experience by providing faster, more
+                  accurate, and more personalized service. For example, chatbots and virtual assistants can provide 24/7
+                  customer support, while machine learning algorithms can analyze customer data to identify trends and
+                  provide personalized recommendations.
+                </p>
+                <p class="blog-content__text">
+                  Cloud computing, big data, artificial intelligence, machine learning, and the internet of things (IoT)
+                  are all technologies that can enable businesses to automate processes and gain new insights into their
+                  operations. Cloud computing enables businesses to store and access data from anywhere, while big data
+                  and machine learning can help businesses to analyze large volumes of data and identify patterns and
+                  insights. Artificial intelligence and the IoT can enable businesses to automate processes and gather
+                  real-time data from sensors and other connected devices.
+                </p>
+                <p class="blog-content__text">
+                  However, it is important for businesses to approach automation strategically and consider the
+                  potential impact on employees, customers, and other stakeholders. Automation can lead to job losses,
+                  and businesses must be prepared to retrain and reskill employees to take on new roles that require
+                  higher-level skills. It is also important to ensure that automated processes do not compromise data
+                  privacy, security, or compliance with regulatory requirements.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Customer Experience</h3>
+                <p class="blog-content__text">
+                  Digital transformation can have a significant impact on the customer experience by enabling businesses
+                  to deliver faster, more personalized, and more convenient service. Digital tools and platforms can
+                  help businesses to better understand customer needs and preferences, and tailor their products and
+                  services accordingly.
+                </p>
+                <p class="blog-content__text">
+                  For example, big data and machine learning can help businesses to analyze customer data and identify
+                  patterns and insights that can inform product development and marketing strategies. Artificial
+                  intelligence and chatbots can provide 24/7 customer support, while virtual and augmented reality can
+                  provide immersive and engaging experiences.
+                </p>
+                <p class="blog-content__text">
+                  Cloud computing can also enable businesses to provide faster and more convenient service by enabling
+                  customers to access products and services from anywhere, at any time. This can help to increase
+                  customer satisfaction and loyalty, while also reducing costs and improving operational efficiency.
+                </p>
+                <p class="blog-content__text">
+                  However, it is important for businesses to balance automation and personalization, and ensure that the
+                  customer experience remains human-centred. While automation can help to improve efficiency and reduce
+                  costs, it is important to maintain a human touch and ensure that customers feel valued and heard.
+                </p>
+                <p class="blog-content__text">
+                  Moreover, businesses should ensure that they have the right digital infrastructure in place to support
+                  a seamless customer experience. This includes investing in digital technologies like cloud computing,
+                  big data, and the internet of things, as well as adopting an agile approach to innovation and
+                  continuous improvement.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Cloud Computing</h3>
+                <p class="blog-content__text">Cloud computing is a key technology in digital transformation that can
+                  enable businesses to transform their operations and gain new competitive advantages. Cloud computing
+                  involves the delivery of computing resources, including servers, storage, databases, and software,
+                  over the internet.
+                </p>
+                <p class="blog-content__text">One of the key benefits of cloud computing is its flexibility and
+                  scalability. Businesses can easily scale up or down their computing resources as needed, without the
+                  need to invest in additional hardware or infrastructure. This can help businesses to reduce costs,
+                  improve operational efficiency, and respond quickly to changing market conditions.
+                </p>
+                <p class="blog-content__text">Cloud computing also enables businesses to store and access data from
+                  anywhere, at any time, using any device. This can help to improve collaboration and productivity, as
+                  employees can work together in real-time, regardless of their location. Cloud-based applications and
+                  services can also be accessed by customers and partners, enabling businesses to provide faster and
+                  more convenient service.
+                </p>
+                <p class="blog-content__text">Another benefit of cloud computing is its security and reliability. Cloud
+                  service providers typically have robust security measures in place to protect data and prevent
+                  unauthorized access. Cloud services are also often backed up by multiple servers and data centers,
+                  ensuring that data is always available, even in the event of a system failure or outage.
+                </p>
+                <p class="blog-content__text">There are several types of cloud computing, including public cloud,
+                  private cloud, and hybrid cloud. Public cloud services are provided by third-party providers and can
+                  be accessed by anyone with an internet connection. Private cloud services are used exclusively by a
+                  single organization, and can be located on-premises or hosted by a third-party provider. Hybrid cloud
+                  services combine elements of public and private cloud services, enabling businesses to leverage the
+                  benefits of both.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Big Data and Analytics</h3>
+                <p class="blog-content__text">
+                  Big data and analytics are essential tools for businesses seeking to take advantage of digital
+                  transformation. Big data refers to the large and complex datasets generated by digital technologies,
+                  such as customer data, transactional data, and social media data. Analytics involves the use of
+                  statistical and machine learning techniques to extract insights and value from these datasets.
+                </p>
+                <p class="blog-content__text">
+                  Businesses can use big data and analytics to gain insights into customer behavior, preferences, and
+                  needs, enabling them to develop more targeted and personalized products and services. They can also
+                  use big data to monitor trends and identify opportunities for innovation and growth.
+                </p>
+                <p class="blog-content__text">
+                  Cloud computing and the internet of things are enabling businesses to collect and store vast amounts
+                  of data, providing a rich source of information for analytics. Moreover, the increasing availability
+                  of open-source software and big data platforms is making it easier and more affordable for businesses
+                  to analyze their data.
+                </p>
+                <p class="blog-content__text">
+                  Machine learning, a form of artificial intelligence, is also increasingly being used for big data
+                  analytics. Machine learning algorithms can help businesses to identify patterns and insights in their
+                  data that might be difficult or impossible for humans to detect. This can help businesses to make more
+                  informed decisions and gain a competitive advantage.
+                </p>
+                <p class="blog-content__text">
+                  Agile methodology is also important for big data and analytics, as it enables businesses to experiment
+                  and iterate quickly, and respond to changing market conditions. By adopting an agile approach to
+                  analytics, businesses can quickly test and validate hypotheses, and identify new opportunities for
+                  innovation and growth.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Artificial Intelligence and Machine Learning
+                </h3>
+                <p class="blog-content__text">
+                  Artificial intelligence (AI) and machine learning (ML) are two technologies that are transforming how
+                  businesses operate and deliver value to customers. AI and ML enable businesses to automate repetitive
+                  and time-consuming tasks, improve customer experience, and gain valuable insights into market trends.
+                  For instance, businesses can use AI-powered chatbots to provide instant support to customers, freeing
+                  up customer service agents to focus on more complex queries. AI and ML can also be used to analyze
+                  customer data, enabling businesses to develop personalised products and services that meet their
+                  specific needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-content__box">
+              <h2 class="blog-content__heading">Internet of Things (IoT)</h2>
+              <p class="blog-content__text">
+                The Internet of Things (IoT) is another technology that is revolutionizing time-to-market for
+                businesses. IoT enables businesses to collect and analyze data from a wide range of sources, including
+                sensors, wearables, and other connected
+                devices. This data can then be used to improve product design, reduce maintenance costs, and enhance
+                customer experience. For instance, a smart home device that is connected to the internet can monitor
+                energy usage, adjust temperature settings, and even order groceries based on usage patterns, improving
+                efficiency and convenience for the user.
+              </p>
+            </div>
+            <div class="blog-content__box">
+              <h2 class="blog-content__heading">Agile Methodology</h2>
+              <p class="blog-content__text">
+                Agile methodology is an approach to project management that emphasizes flexibility, collaboration, and
+                continuous improvement. Agile methodology is well-suited to digital transformation because it allows
+                businesses to adapt to changing market conditions and customer needs quickly. By breaking down large
+                projects into smaller, more manageable tasks, businesses can iterate and improve their products and
+                services more quickly, reducing their time-to-market and increasing their chances of success in the
+                market.
+              </p>
+
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Digital Strategy</h3>
+                <p class="blog-content__text">
+                  A digital strategy is a roadmap that outlines how a business will use technology to achieve its goals
+                  and objectives. A digital strategy is essential for businesses that want to leverage digital
+                  transformation to speed up their time-to-market. A digital strategy should be aligned with the
+                  business's overall goals and objectives and should include clear targets, timelines, and metrics for
+                  success. A well-designed digital strategy can help businesses stay focused, prioritize their
+                  resources, and improve their chances of success in the market.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Digitalization</h3>
+                <p class="blog-content__text">
+                  Digitalization refers to the process of transforming physical assets, processes, and systems into
+                  digital ones. Digitalization is critical for businesses that want to speed up their time-to-market
+                  because it enables them to leverage technology to automate and streamline their operations. By
+                  digitizing their processes and systems, businesses can reduce their manual workload, improve their
+                  productivity, and enhance their customer experience.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Competitive Advantage</h3>
+                <p class="blog-content__text">
+                  Digital transformation can give businesses a significant competitive advantage in the market. By
+                  leveraging technology to speed up their time-to-market, businesses can get ahead of their competitors
+                  and capture market share. Digital transformation can also enable businesses to differentiate
+                  themselves from their competitors by offering unique products and services that meet customer needs
+                  and preferences.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Digital Innovation</h3>
+                <p class="blog-content__text">
+                  Digital innovation refers to the process of creating new digital products and services that meet
+                  customer needs and preferences. Digital innovation is critical for businesses that want to stay ahead
+                  of the competition and speed up their time-to-market. By leveraging technologies such as AI, ML, IoT,
+                  and big data analytics, businesses can identify new market opportunities and design innovative
+                  products and services that meet customer needs.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Digital Disruption</h3>
+                <p class="blog-content__text">
+                  Digital disruption refers to the process of using digital technology to disrupt traditional business
+                  models and markets. Digital disruption can be both a threat and an opportunity for businesses. On the
+                  one hand, digital disruption can pose a significant threat to businesses that fail to adapt to
+                  changing market conditions and customer needs. On the other hand, digital disruption can be an
+                  opportunity for businesses that can leverage technology to disrupt their competitors and capture
+                  market share.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Digital Capabilities</h3>
+                <p class="blog-content__text">
+                  Digital capabilities refer to the skills, knowledge, and expertise needed to leverage technology
+                  effectively. Digital capabilities are critical for businesses that want to speed up their
+                  time-to-market through digital transformation. Digital capabilities can be developed through training,
+                  hiring, and partnering with experts in digital technology.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h2 class="blog-content__heading">Digital Infrastructure</h2>
+                <p class="blog-content__text">
+                  Digital infrastructure refers to the physical and virtual resources needed to support digital
+                  transformation. Digital infrastructure includes hardware, software, networks, and cloud computing
+                  services. Digital infrastructure is critical for businesses that want to leverage technology to speed
+                  up their time-to-market because it enables them to access the resources they need to develop and
+                  launch new products and services quickly.
+                </p>
+                <p class="blog-content__text">
+                  In conclusion, digital transformation is the key to revolutionising time-to-market for businesses. By
+                  embracing digitalization, adopting agile methodologies, and investing in digital capabilities and
+                  infrastructure, businesses can innovate faster, deliver better customer experiences, and gain a
+                  significant competitive advantage in the market.
+                </p>
+                <p class="blog-content__text text-blue-ribbon">
+                  So, what are you waiting for? Take the first step towards digital transformation and propel your
+                  business towards success in the digital age!
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4 offset-xl-1 col-lg-5 mt-5 mt-lg-0">
+          <div class="sidebar-area">
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Search</h3>
+              <div class="widget__search">
+                <form action="https://finestdevs.com/demos/fastland-html/">
+                  <i class="fa fa-search text-royal-blue"></i>
+                  <input type="text" placeholder="Type to search">
+                </form>
+              </div>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Recent Posts</h3>
+              <ul class="widget__recent-post list-unstyled mb-0 pb-0">
+                <li class="widget__recent-post__single">
+                  <a href="#">
+                    <h4 class="widget__recent-post__title">How To Blow Through Capital At An
+                      Incredible Rate</h4>
+                    <p class="widget__recent-post__date">Jan 14, 2020</p>
+                  </a>
+                </li>
+                <li class="widget__recent-post__single">
+                  <a href="#">
+                    <h4 class="widget__recent-post__title">Design Studios That Everyone Should Know
+                      About?</h4>
+                    <p class="widget__recent-post__date">Jan 14, 2020</p>
+                  </a>
+                </li>
+                <li class="widget__recent-post__single">
+                  <a href="#">
+                    <h4 class="widget__recent-post__title">How did we get 1M+ visitors in 30 days
+                      without anything!</h4>
+                    <p class="widget__recent-post__date">Jan 14, 2020</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Recent Tweets</h3>
+              <ul class="widget__tweets list-unstyled">
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Smith,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Maurice,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Stella,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Howard,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Categories</h3>
+              <div class="widget__category">
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Technology:</h4>
+                      <span>20 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Freelancing:</h4>
+                      <span>07 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Writing:</h4>
+                      <span>16 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Marketing:</h4>
+                      <span>11 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Business:</h4>
+                      <span>35 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Education:</h4>
+                      <span>14 posts</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+          </div>
+          <!--/ .Single Widgets -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ .Blog Details Area -->
+
+  <!-- Footer Area -->
+  <div class="footer-area footer-inner-1 bg-default-3">
+    <div class="container">
+      <footer class="footer-top">
+        <div class="row">
+          <div class="col-lg-3 col-md-7 col-xs-9">
+            <div class="footer-widgets footer-widgets--l7">
+              <!-- Brand Logo-->
+              <div class="d-flex justify-content-start">
+                <div class="brand-logo mt-1">
+                  <a href="#">
+                    <!-- light version logo (logo must be black)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
+                    <!-- Dark version logo (logo must be White)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
+                  </a>
+                </div>
+              </div>
+              <p class="footer-widgets__text mt-5">
+                We will bring your idea into its digital creation the way you want it to be.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                <li>
+                  <a href="https://www.facebook.com/thedevcorporate">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/thedevcorporate/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Contact Details</h4>
+                  <ul class="footer-widgets__list footer-widgets--address">
+                    <li>
+                      <i class="fa fa-map-marker-alt active-link"></i>
+                      <span>Address: <br class="d-block">
+                        4445 Corporation Ln.<br class="d-block">
+                        STE 264 Virginia Beach VA 23462 USA</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone-alt active-link"></i>
+                      <div class="list-content">
+                        <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                        <a href="#">+92 315 8098431</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope active-link"></i>
+                      <a class="heading-default-color gr-text-hover-underline text-break"
+                        href="mailto:hr@thedevcorporate.com">
+                        <span class="d-block gr-text-hover-decoration-none"> Email:
+                        </span>hr@thedevcorporate.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
+                  <h4 class="footer-widgets__title">Company</h4>
+                  <ul class="footer-widgets__list">
+                    <li>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html">Portfolios</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <!-- <li>
+                      <a href="ServicesScreen.html">Services</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-xs-9">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Newsletter</h4>
+                  <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
+                  <!-- Newsletter -->
+                  <div class="newsletter newsletter--l7">
+                    <form class="form2" id="hire-now-form1" action="" method="post"
+                      onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
+                      <input type="email" id="footerInput" placeholder="Enter Your Email" required>
+                      <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
+                      <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                    </form>
+                  </div>
+                  <!--/ .Newsletter -->
+                </div>
+                <h4 class="trusted-by">Trusted by</h4>
+                <!-- TrustBox widget - Micro Review Count -->
+                <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
+                  data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+                  data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+                  <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
+                    rel="noopener">Trustpilot</a>
+                </div>
+                <!-- End TrustBox widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright text-center border-top border-default-color-3">
+      <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+    </div>
+  </div>
+  <!--/ .Footer Area -->
+
+  </div>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/counter-up/waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+  <!-- Activation Script -->
+  <script src="js/menu.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>

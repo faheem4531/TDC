@@ -30,7 +30,6 @@
     return false
   }
 
-
 </script>
 
 <head>
@@ -52,6 +51,8 @@
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
   <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- Vendor stylesheets  -->
   <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
   <link rel="stylesheet" href="css/main.css">
@@ -79,7 +80,6 @@
         <source src="./image/tdc_animation.mp4" type="video/mp4">
       </video>
     </div>
-
 
     <!-- Header -->
     <header
@@ -128,11 +128,6 @@
                       <a href="terms-and-conditions.html">Terms & Conditions</a>
                     </li>
                   </ul>
-                </li>
-
-                <li class="nav-item nav-item-has-children ">
-                  <a href="resources.html" class="nav-link-item drop-trigger hover-link">Engineers
-                  </a>
                 </li>
 
                 <li class="nav-item nav-item-has-children ">
@@ -260,22 +255,22 @@
   <!-- Modal -->
 
   <!-- Hero Area -->
-  <div class="welcome-area  welcome-area--l1 position-relative bg-default">
+  <div class="welcome-area hero-section-bg position-relative bg-default">
     <div class="container welcome-area--l1Container">
       <div class="row welcome-area--l1Row">
-        <div class="col-xl-6 col-lg-7 col-md-8 col-xs-11 order-2 order-lg-1" data-aos="fade-right"
-          data-aos-duration="500" data-aos-once="false">
-          <div class="welcome-content welcome-content--l1">
-            <div class="welcome-area--l1-shape-2 bg-blue-ribbon">
-            </div>
-            <h1 class="welcome-content__title text-white">
+        <div class="col-lg-6  col-md-9 col-xs-11 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="00"
+          data-aos-once="false">
+          <div class="welcome-content hero-content">
+            <!-- <div class="welcome-area--l1-shape-2 bg-blue-ribbon">
+            </div> -->
+            <h1 class="welcome-content__title" style="color:#ffb700;">
               Hiring Global
               <br />
               tech teams Made
               <!-- <br/> -->
               <span class="text-highlight highlight-text d-inline-block"></span>
             </h1>
-            <p class="welcome-content__descriptions text-white">Rigorously pre-vetted remote engineers,
+            <p class="welcome-content__descriptions text-black">Rigorously pre-vetted remote engineers,
               <br class="d-none d-xs-block">ready to join your team within 24 hours.
             </p>
             <!-- Newsletter -->
@@ -285,142 +280,627 @@
                 <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
                   <input class="form-control" id="heroSectionInput" type="email" placeholder="Enter your email"
                     required>
-                  <button class=" bg-blue-ribbon text-white btn btn--lg" type="submit">Hire Now</button>
+                  <button class="bg-blue-ribbon text-white btn btn--lg" type="submit">Hire Now</button>
                   <div id="snackbar">We've received your mail. We'll contact you soon.</div>
                 </div>
               </form>
             </div>
           </div>
         </div>
+        <div class="col-lg-6  col-md-12 col-xs-12 order-1 order-lg-2 d-lg-flex justify-content-lg-end ">
+          <img src="./image/home-1/new-hero-img.png" class="new-hero-img">
+        </div>
       </div>
     </div>
   </div>
   <!--Hero Area -->
 
-  <!--Section intro-->
-  <div class="section-intro">
+  <!-- Tabs Area -->
+  <div class="feature-area feature-area--l2  bg-blue-ribbon dark-mode-texts">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-6 col-12 d-flex align-self-center" data-aos="fade-right" data-aos-duration="500"
-          data-aos-once="false">
-          <div class="section-intro__image-container text-center">
-            <img src="./image/home-bg.png" class="section-intro__image">
+      <div class="feature--l2-tab">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="feature-area--l2__tab" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+              <ul class="nav nav-tabs nav-tab--feature-2" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#it-staff" role="tab"
+                    aria-controls="home" aria-selected="false">IT Staff Augmentation</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#software-development" role="tab"
+                    aria-controls="profile" aria-selected="false">Software Development </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#services-for-startup" role="tab"
+                    aria-controls="contact" aria-selected="false">Services For Startups</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-5 col-12" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+        <div class="tab-content tab-content--feature-l2" id="myTabContent" data-aos="fade-up" data-aos-duration="00"
+          data-aos-delay="300" data-aos-once="false">
+          <div class="tab-pane fade show active" id="it-staff" role="tabpanel" aria-labelledby="home-tab">
+            <p class="widget--feature-2__content description">Gain entry to the finest engineering professionals that
+              you require. Our specialists will fully integrate themselves into your organization's culture, allowing
+              you to expedite your project without making any sacrifices.
+            </p>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-6 col-lg-6 col-md-5 col-xs-10">
+                <div class="feature-area--l2__image-group">
+                  <img class="free-trial-img" src="image/home-1/free-trial-img.svg" alt="">
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-6 col-md-7 col-xs-10">
+                <div class="feature-area--l2__content">
+                  <!-- Feature widgets -->
+                  <div class="feature-area--l2-widgets">
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon" style="background-color: #ffb700;">
+                        <img src="image/home-1/team-fill.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">IT Staff Augmentation</h4>
+                        <p class="widget--feature-2__content">Our remote-first approach helps us to attract the best
+                          talent in Asia and scale your team on demand.
+                        </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon bg-purple-heart">
+                        <img src="image/home-1/expert-engineers.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">Data Engineering Experts</h4>
+                        <p class="widget--feature-2__content">Looking for Data engineers to augment in your team? We’ll
+                          seamlessly join your next projects and deliver efficient & fast.
+                        </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon  bg-readical-red">
+                        <img src="image/home-1/technology.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">AI/ML Specialists</h4>
+                        <p class="widget--feature-2__content">Leverage the power of Artificial Intelligence and Machine
+                          Learning with our team of experienced specialists, dedicated to delivering innovative
+                          solutions that can help your business stay ahead in the rapidly evolving digital landscape.
+                        </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                  </div>
+                  <!--/ .Feature widgets -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="software-development" role="tabpanel" aria-labelledby="profile-tab">
+            <p class="widget--feature-2__content description">With a skilled team of engineers, designers, and product
+              leaders who comprehend the significance of achieving tangible results, expedite the process of converting
+              your concepts into software solutions.
+            </p>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-6 col-lg-6 col-md-5 col-xs-10">
+                <div>
+                  <img class="w-100" src="image/home-1/software-development.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-6 col-md-7 col-xs-10">
+                <div class="feature-area--l2__content">
+                  <!-- Feature widgets -->
+                  <div class="feature-area--l2-widgets">
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon" style="background-color: #ffb700;">
+                        <img src="image/home-1/ui-ux.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">UX/UI Design Services</h4>
+                        <p class="widget--feature-2__content">Enhance your enterprise by providing an immersive UX.
+                          Construct a digital product that fulfills user requirements and offers an exceptional
+                          experience.
+                        </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon bg-purple-heart">
+                        <img src="image/home-1/application-web.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">Custom Web App Development</h4>
+                        <p class="widget--feature-2__content">Utilize the potential of software to gain a competitive
+                          advantage. Create and develop a sturdy custom application within a matter of weeks instead of
+                          months.
+                        </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon bg-readical-red">
+                        <img src="image/home-1/application-mobile.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">Custom Mobile App Developmen</h4>
+                        <p class="widget--feature-2__content">Our leaders in product and engineering will assist you in
+                          creating applications that are user-focused and cost-efficient while also aligning with your
+                          objectives.
+                        </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                  </div>
+                  <!--/ .Feature widgets -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="services-for-startup" role="tabpanel" aria-labelledby="contact-tab">
+            <p class="widget--feature-2__content description">We have tailored our MVP development procedure to cater
+              specifically to startups, enabling you to promptly transform your product concept into a functional
+              software product that is prepared for your initial users and defines potential to investors.
+            </p>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-6 col-lg-6 col-md-5 col-xs-10">
+                <div class="feature-area--l2__image-group">
+                  <img class="w-100" src="image/home-1/services-for-startups.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-6 col-md-7 col-xs-10">
+                <div class="feature-area--l2__content">
+                  <!-- Feature widgets -->
+                  <div class="feature-area--l2-widgets">
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon" style="background-color: #ffb700;">
+                        <img src="image/home-1/development.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">MVP Development for Startups </h4>
+                        <p class="widget--feature-2__content">Our streamlined MVP product development approach expedites
+                          the time it takes for your startup concept to enter the market, ultimately saving you both
+                          time and money. </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon bg-purple-heart">
+                        <img src="image/home-1/saas-software.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">SAAS Application Development Services</h4>
+                        <p class="widget--feature-2__content">Rely on SaaS development professionals to construct a
+                          successful product in a shorter timeframe and at a lower cost. These experts prioritize
+                          providing value right from the outset. </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                    <!-- Single Feature Widgets -->
+                    <div class="widget widget--feature-2">
+                      <div class="widget--feature-2__icon bg-readical-red">
+                        <img src="image/home-1/cto-services.svg" alt="">
+                      </div>
+                      <div class="widget--feature-2__body">
+                        <h4 class="widget--feature-2__title">CTO as a Service</h4>
+                        <p class="widget--feature-2__content">Obtain tech leadership as needed, which encompasses the
+                          entirety of the development process, ranging from product design to the establishment of
+                          engineering standards. </p>
+                      </div>
+                    </div>
+                    <!--/ .Single Feature Widgets -->
+                  </div>
+                  <!--/ .Feature widgets -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Tabs Area -->
+
+  <!-- Tech Area -->
+  <div class="service-area service-area--l4 bg-default-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-6 col-xl-7 col-md-9 col-sm-10">
+          <div class="section-title section-title--l4 text-center">
+            <h4 class="section-title__sub-heading text-blue-ribbon" data-aos="fade-up" data-aos-duration="00"
+              data-aos-once="false">Tech Stack</h4>
+            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Provided
+              Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 ">
+          <!-- Single Services -->
+          <div class="card card--services-l4 text-start" data-aos="fade-up" data-aos-duration="00"
+            data-aos-once="false">
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <img class="technologies-logo" src="image/home-1/typescript-icon.svg" />
+              <img class="technologies-logo" src="image/home-1/react-icon.svg" />
+              <img class="technologies-logo" src="image/home-1/next-js.svg" />
+              <img class="technologies-logo" src="image/home-1/angular-icon.png" />
+            </div>
+            <h3 class="card--services-l4__heading text-start">Front-end Development</h3>
+            <p class="card--services-l4__content text-start">Develop powerful and immensely interactive web applications
+              with exceptional quality standards in a prompt and efficient manner. </p>
+            <!-- <a class="btn-link  hover-text--blue-ribbon-2 mb-2" href="#">Learn More <i
+                class="fa fa-angle-right"></i></a> -->
+          </div>
+          <!--/ .Single Services -->
+          <!-- Single Services -->
+          <div class="card card--services-l4 text-center" data-aos="fade-up" data-aos-duration="00"
+            data-aos-once="false">
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <img class="technologies-logo" src="image/home-1/kubernets.svg" />
+              <img class="technologies-logo" src="image/home-1/google-cloud.svg" />
+              <img class="technologies-logo" src="image/home-1/docker-icon.svg" />
+              <img class="technologies-logo" src="image/home-1/amazon-web-services.svg" />
+            </div>
+            <h3 class="card--services-l4__heading text-start">DevOps Consulting</h3>
+            <p class="card--services-l4__content text-start">Improve your software delivery speed and stability while
+              ensuring reliable infrastructure with our expert DevOps consulting services, designed to help your
+              business stay ahead in the competitive market. </p>
+            <!-- <a class="btn-link  hover-text--blue-ribbon-2 mb-2" href="#">Learn More <i
+                class="fa fa-angle-right"></i></a> -->
+          </div>
+          <!--/ .Single Services -->
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 mt-xl-7">
+          <!-- Single Services -->
+          <div class="card card--services-l4 text-center" data-aos="fade-up" data-aos-duration="00"
+            data-aos-once="false">
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <div class="bg-op1__bluelight rounded technologies-logo">
+                <img class="technologies-logo" src="image/home-1/mysql-logo.svg" />
+              </div>
+              <img class="technologies-logo" src="image/home-1/nestjs.svg" />
+              <img class="technologies-logo" src="image/home-1/nodejs-icon.svg" />
+              <img class="technologies-logo" style="margin-left: -10px;" src="image/home-1/java.svg" />
+            </div>
+            <h3 class="card--services-l4__heading text-start">Back-end Development</h3>
+            <p class="card--services-l4__content text-start">Empower your digital ecosystem with our expert back-end
+              development services, ensuring seamless performance and security.</p>
+            <!-- <a class="btn-link  hover-text--blue-ribbon-2 mb-2" href="#">Learn More <i
+                class="fa fa-angle-right"></i></a> -->
+          </div>
+          <!--/ .Single Services -->
+          <!-- Single Services -->
+          <div class="card card--services-l4 text-center" data-aos="fade-up" data-aos-duration="00"
+            data-aos-once="false">
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <img class="technologies-logo" src="image/home-1/apache-airflow.png" />
+              <img class="technologies-logo" src="image/home-1/python-icon.png" />
+              <img class="technologies-logo" src="image/home-1/apache-spark-5.png" />
+              <img class="technologies-logo" src="image/home-1/kafka.svg" />
+            </div>
+            <h3 class="card--services-l4__heading text-start">Data Engineering Experts </h3>
+            <p class="card--services-l4__content text-start">Unlock the full potential of your data with our team of
+              expert data engineering specialists, who can help you design and implement robust data pipelines and
+              analytics solutions that drive business growth and success.</p>
+            <!-- <a class="btn-link  hover-text--blue-ribbon-2 mb-2" href="#">Learn More <i
+                class="fa fa-angle-right"></i></a> -->
+          </div>
+          <!--/ .Single Services -->
+        </div>
+        <div class="col-xl-4 col-md-12  col-sm-9 col-xs-10">
           <div class="row">
-            <div class="section-intro__heading section-title__heading mb-7 mt-7 mt-lg-0">
-              Who Are We?
-            </div>
-            <div class="intro-para-container mb-5">
-              <div class="section-intro__para section-title__description d-flex" data-aos="fade-up"
-                data-aos-duration="500" data-aos-delay="600" data-aos-once="false">
-                <div class="section-intro__bg me-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
-                  data-aos-once="false"><span class="section-intro__num">1</span></div> The Dev Corporate or TDC as we
-                lovingly call it is an advanced resource augmentation company.
+            <!-- Single Services -->
+            <div class="col-xl-12 col-md-6">
+              <div class="card card--services-l4 text-center" data-aos="fade-up" data-aos-duration="00"
+                data-aos-once="false">
+                <div class="d-flex align-items-center gap-4 mb-4">
+                  <img class="technologies-logo" src="image/home-1/adobe_photoshop.png" />
+                  <img class="technologies-logo" src="image/home-1/adobe-ai-icon.png" />
+                  <img class="technologies-logo" src="image/home-1/adobe-xd-2.svg" />
+                  <img class="figma-logo" src="image/home-1/figma-icon.svg" />
+                </div>
+                <h3 class="card--services-l4__heading text-start">Graphic Designing</h3>
+                <p class="card--services-l4__content text-start">With our professional graphic designing services, we
+                  can help optimize your online presence for search engines, making it more visually appealing and
+                  easier to find for your target audience. </p>
+                <!-- <a class="btn-link  hover-text--blue-ribbon-2 mb-2" href="#">Learn More <i
+                    class="fa fa-angle-right"></i></a> -->
               </div>
             </div>
-            <div class="intro-para-container mb-5">
-              <div class="section-intro__para section-title__description d-flex" data-aos="fade-up"
-                data-aos-duration="500" data-aos-delay="600" data-aos-once="false">
-                <div class="section-intro__bg me-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
-                  data-aos-once="false"><span class="section-intro__num">2</span></div> Hiring tech engineers is a
-                cumbersome process. Even when you’re done with it, you are never sure of how well the engineer will
-                perform. You spend money, time and energy, and the results are often far from desired.
+            <!--/ .Single Services -->
+            <!-- Single Services -->
+            <div class="col-xl-12 col-md-6">
+              <div class="card card--services-l4 text-center" data-aos="fade-up" data-aos-duration="00"
+                data-aos-once="false">
+                <div class="d-flex align-items-center gap-4 mb-4">
+                  <div class="bg-default-3 rounded technologies-logo">
+                    <img class="technologies-logo" src="image/home-1/selenium-icon.png" />
+                  </div>
+                  <img class="technologies-logo" src="image/home-1/clickup-icon.png" />
+                  <img class="technologies-logo" src="image/home-1/asana-logo.svg" />
+                  <img class="technologies-logo" src="image/home-1/jira-1.svg" />
+                </div>
+                <h3 class="card--services-l4__heading text-start">QA & PM Services</h3>
+                <p class="card--services-l4__content text-start">Ensure seamless project delivery and high-quality
+                  software with our comprehensive QA/PM services, designed to streamline the development process and
+                  optimize your product's performance, reliability, and user experience.</p>
+                <!-- <a class="btn-link  hover-text--blue-ribbon-2 mb-2" href="#">Learn More <i
+                    class="fa fa-angle-right"></i></a> -->
               </div>
+              <!--/ .Single Services -->
             </div>
-            <div class="intro-para-container mb-5">
-              <div class="section-intro__para section-title__description d-flex" data-aos="fade-up" data-aos-delay="600"
-                data-aos-duration="500" data-aos-once="false">
-                <div class="section-intro__bg me-3" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500"
-                  data-aos-once="false"><span class="section-intro__num">3</span></div> Let’s help you change the
-                dynamics. We exist to simplify your tech hiring process. With TDC, you will get the best and experienced
-                tech engineers and developers to skyrocket your growth.
-              </div>
-            </div>
-            <button type="button" class=" bg-blue-ribbon col-2 btn btn--lg ms-7" data-bs-toggle="modal"
-              data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="false"><a href="about.html"
-                class="text-white">
-                About Us
-              </a>
-            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--Section intro-->
+  <!-- Tech Area -->
 
-  <!-- Services Area -->
-  <div class="service-area--l1 border-top border-default-color-2 bg-default bg-blue-ribbon mt-8">
+  <!-- Who we are Area -->
+  <div class="about-us-section about-us-section--l4 bg-default">
     <div class="container">
-      <!-- Section Title -->
-      <div class="row align-items-center justify-content-lg-between justify-content-start">
-
-        <div class="col-lg-6 col-md-12 col-xs-10 order-1 order-lg-0 d-flex justify-content-start" data-aos="fade-right"
-          data-aos-duration="500" data-aos-once="false">
-          <div class="trial-img-container">
-            <img class="free-trial-img" src="image/home-1/free-trial-img.png" />
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-12 col-xs-10 order-2 order-lg-0">
-          <div class="section-title section-title__heading-container text-center text-md-center" data-aos="fade-left"
-            data-aos-duration="500" data-aos-once="false">
-            <h2 class="section-title__heading-first text-start text-white free-trial">Free Trial For 14-Days</h2>
-          </div>
-          <div class="section-title text-start" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-            <p class="section-title__description text-white">TDC will find, test and deliver the best engineering and
-              development
-              talent for your company. With a 14-day trial option, you don’t have to pay us a dime if our engineers
-              don’t meet your needs.
-            </p>
-            <p class="section-title__description  text-white">But we are positive they’ll only exceed your expectations.
-            </p>
-          </div>
-          <div class="btn-container mt-6">
-            <button type="button" class=" btn-header-btns btn-link-water active-link btn btn--lg "
-              data-bs-toggle="modal" id="hire-now-btn" closeHireNowForm data-bs-target="#exampleModal"
-              data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-              Book a call now
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!--/ .Services Area -->
-
-  <!--/ .Section Title -->
-  <div class="service-items">
-    <div class="container">
-      <div class="row justify-content-center ">
-        <!-- Single Service -->
-        <div class="col-lg-9">
-          <div class="widget widget--service text-lg-center">
-            <div class="widget__body">
-              <h6 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">Hiring
-                Tech Resources Made Quick, Smooth & Painless</h6>
-              <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
-                Turbocharge your growth in the tech world by leveraging the talent
-                of the finest developers without putting yourself through the pain of assessing
-                , hiring and training tech engineers.<br class="d-none d-md-block"></p>
+      <!-- about-us Content -->
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-xs-8" data-aos="fade-right" data-aos-duration="00"
+          data-aos-once="false">
+          <div class="about-us__image-group-l4">
+            <img class="w-100" src="image/home-4/about-us-image-l4-1.png" alt="" />
+            <div class="about-us__image-group-l4__img-1">
+              <img class="w-100" src="image/home-4/about-us-image-l4-2.png" alt="" />
             </div>
           </div>
-          <div class="text-lg-center">
-            <button type="button" id="hire-now-btn" closeHireNowForm
-              class=" bg-blue-ribbon text-white mt-7 btn btn--190" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="false">
-              Hire Now
-            </button>
+        </div>
+        <div class="col-xl-5 offset-xl-2 col-lg-6 col-md-9 col-sm-11">
+          <div class="about-us-right">
+            <div class="section-title section-title--l4">
+              <h6 class="section-title__sub-heading text-blue-ribbon" data-aos="fade-up" data-aos-duration="00"
+                data-aos-once="false">Who Are We</h6>
+              <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Speed up development and innovation with us</h2>
+              <p class="section-title__description" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Start-ups and SMEs enlist our services to execute software projects or supplement their teams with
+                business and technology leaders. We assist them in designing and constructing data-oriented cloud-based
+                software solutions, from the conceptualization stage to the finished product.
+              </p>
+            </div>
+            <!--Counter Bar -->
+            <div class="about-us-counter about-us-counter--l4">
+              <div class="counter-widgets">
+                <div class="counter-widgets__single counter-content text-center text-md-start">
+                  <h2 class="counter-content__heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                    <span class="counter">50</span>+
+                  </h2>
+                  <p class="counter-content__text text-blue-ribbon" data-aos="fade-up" data-aos-duration="00"
+                    data-aos-once="false">
+                    <span style="color: black;">happy</span> clients
+                  </p>
+                </div>
+                <div class="counter-widgets__single counter-content text-center">
+                  <h2 class="counter-content__heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                    <span class="counter">40</span>+
+                  </h2>
+                  <p class="counter-content__text text-blue-ribbon" data-aos="fade-up" data-aos-duration="00"
+                    data-aos-once="false"><span style="color: black;">IT</span>
+                    professionals</p>
+                </div>
+                <div class="counter-widgets__single counter-content text-center  text-md-end">
+                  <h2 class="counter-content__heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                    <span class="counter">20</span><span style="font-size: small;margin-left: 2px;">Days</span>
+                  </h2>
+                  <p class="counter-content__text text-blue-ribbon" data-aos="fade-up" data-aos-duration="00"
+                    data-aos-once="false">
+                    <span style="color: black;">to</span>
+                    launch a team
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/ .Counter Bar -->
+          </div>
+        </div>
+      </div>
+      <!--/ .about-us Content -->
+    </div>
+    <div class="scroll-container">
+      <div class="scrolling-brands">
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/alayacare.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/chex.ai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/atoms.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/bondai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/it-boost.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/swvl.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/uptok.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/alayacare.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/chex.ai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/atoms.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/bondai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/it-boost.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/swvl.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/uptok.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/alayacare.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/chex.ai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/atoms.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/bondai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/it-boost.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/swvl.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/uptok.png" alt="">
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Who we are Area -->
+
+  <!-- Our Team Area -->
+  <div class="testimonial-section testimonial-section--inner-about-us bg-default-3 d-none">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-6 col-md-8 col-xs-10">
+          <div class="section-title section-title--l5 text-center">
+            <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Our
+              Engineers</h6>
+            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Meet the
+              minds shaping <br class="d-none d-xs-block"> your digital business</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-slider--l7">
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Abdullah.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Abdullah</h4>
+            <p class="card__user-media__cat">UI/UX Designer</p>
+            <p class="card__user-media__cat">5 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Rameez.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Rameez</h4>
+            <p class="card__user-media__cat">Senior Business Developer</p>
+            <p class="card__user-media__cat">2.5 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Marsad.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Marsad</h4>
+            <p class="card__user-media__cat">Senior Mern-Stack Engineer</p>
+            <p class="card__user-media__cat">3 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Fawaz.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Fawaz</h4>
+            <p class="card__user-media__cat">Front-End Engineer</p>
+            <p class="card__user-media__cat">2 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Bakar.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Abu Bakar</h4>
+            <p class="card__user-media__cat">Back-End Engineer</p>
+            <p class="card__user-media__cat">3 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Ali.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Ali</h4>
+            <p class="card__user-media__cat">Senior Full-Stack Engineer</p>
+            <p class="card__user-media__cat">5 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Shina.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Shina</h4>
+            <p class="card__user-media__cat">Full-Stack Engineer</p>
+            <p class="card__user-media__cat">5 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Ahtesham.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Ahtesham</h4>
+            <p class="card__user-media__cat">UI Developer</p>
+            <p class="card__user-media__cat">3 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Suleman.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Suleman</h4>
+            <p class="card__user-media__cat">Senior Full-Stack Engineer</p>
+            <p class="card__user-media__cat">6 years of experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--testimonial-l7" data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
+        <img class="w-100" src="image/home-1/Rubnawaz.png" alt="">
+        <div class="card__hover">
+          <div class="card__user-media">
+            <h4 class="card__user-media__name">Rubnawaz</h4>
+            <p class="card__user-media__cat">Mern Stack Engineer</p>
+            <p class="card__user-media__cat">3 years of experience</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!--/ Our Team Area -->
 
-  <!-- Feature Area -->
+  <!-- Variety of Contracting Models. Area -->
   <div class="feature-section feature-section--l1 variety-contract-section">
     <!-- Section Shape -->
     <div class="feature-section--l1__shape-group">
@@ -446,7 +926,7 @@
         <div class="row justify-content-center align-items-center justify-content-md-start">
           <div class="col-lg-3 col-md-12 col-xs-6 col-8">
             <div class="nav nav-tab--feature row ms-0 me-0" id="v-pills-tab" role="tablist" aria-orientation="vertical"
-              data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+              data-aos="fade-left" data-aos-duration="00" data-aos-once="false">
               <a class="widget widget--feature nav-item col-lg-12 col-md-4 col-xs-6 col-8 me-md-3 me-lg-0 active"
                 data-bs-toggle="pill" id="v-pills-home-tab" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
                 aria-selected="true">
@@ -469,7 +949,7 @@
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                 aria-labelledby="v-pills-home-tab">
                 <div class="row align-items-center">
-                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500"
+                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="00"
                     data-aos-once="false">
                     <div class="features-content__item tabs-container">
                       <h2 class="features-content__item__count">01.</h2>
@@ -477,7 +957,7 @@
                         contractors, and set your own terms as you like.</p>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500"
+                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="00"
                     data-aos-delay="300" data-aos-once="false">
                     <div class="features-content__item  tabs-container">
                       <h2 class="features-content__item__count">02.</h2>
@@ -489,7 +969,7 @@
               </div>
               <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                 <div class="row">
-                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500"
+                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="00"
                     data-aos-once="false">
                     <div class="features-content__item  tabs-container">
                       <h2 class="features-content__item__count">01.</h2>
@@ -497,7 +977,7 @@
                         dedicated team, and enjoy the freedom you’ve always wanted.</p>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500"
+                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="00"
                     data-aos-delay="300" data-aos-once="false">
                     <div class="features-content__item  tabs-container">
                       <h2 class="features-content__item__count">02.</h2>
@@ -510,7 +990,7 @@
               </div>
               <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                 <div class="row">
-                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500"
+                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="00"
                     data-aos-once="false">
                     <div class="features-content__item  tabs-container">
                       <h2 class="features-content__item__count">01.</h2>
@@ -519,7 +999,7 @@
                         where you drive the resource.</p>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500"
+                  <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="00"
                     data-aos-delay="300" data-aos-once="false">
                     <div class="features-content__item  tabs-container">
                       <h2 class="features-content__item__count">02.</h2>
@@ -537,255 +1017,578 @@
       <div class="d-flex justify-content-center mt-5">
         <button type="button" id="hire-now-btn" closeHireNowForm
           class=" btn-header-btns btn-link-water active-link btn btn--lg " data-bs-toggle="modal"
-          data-bs-target="#exampleModal" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500"
+          data-bs-target="#exampleModal" data-aos="fade-up" data-aos-delay="200" data-aos-duration="00"
           data-aos-once="false">
           Hire Now
         </button>
       </div>
     </div>
   </div>
-  <!--/ .Feature Area -->
+  <!--/ Variety of Contracting Models. Area -->
 
-  <!-- Content One Area -->
-  <div class="content-section content-section--l1-1 bg-default">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-xs-7">
-          <!-- Content Image Wrap -->
-          <div class="content-image-group content-image-group--l1_1">
-            <!-- Content Image -->
-            <img class="graph-iamge w-100" src="image/business-growth-graph.jpg" alt="" data-aos="fade-right"
-              data-aos-duration="500" data-aos-once="false">
-            <!-- Content Image -->
-            <div class="content-image-group__image content-image-group__image-1" data-aos="fade-bottom"
-              data-aos-duration="500" data-aos-delay="300" data-aos-once="false">
-              <img class="w-100" src="image/home-1/purple-dots.png" alt="">
-            </div>
-            <!-- Content Image -->
-            <div class="content-image-group__image content-image-group__image-2" data-aos="fade-left"
-              data-aos-duration="500" data-aos-delay="400" data-aos-once="false">
-              <img class="w-100" src="image/home-1/l1-hero-shape-1rot.png" alt="">
-            </div>
-            <!-- Content Image -->
-            <div class="content-image-group__image content-image-group__image-3" data-aos="fade-left"
-              data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
-              <img class="w-100" src="image/home-1/l1-full-circle-shape.png" alt="">
-            </div>
-            <!-- Content Image -->
-            <div class="content-image-group__image content-image-group__image-4" data-aos="fade-up"
-              data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
-              <!-- Card Section -->
-              <div class="card card--content card--content-container bg-blue-ribbon dark-mode-texts">
-                <div class="card-head d-flex align-items-end">
-                  <h2 class="card-head__count text-white">68%</h2>
-                  <span class="card-head__icon">
-                    <i class="fa fa-arrow-up"></i>
-                  </span>
-                </div>
-                <div class="card-body p-0">
-                  <p class="card-body__description">Extra growth for your company.</p>
-                </div>
-              </div>
-              <!--/ .Card Section -->
-            </div>
-          </div>
-          <!--/ .Content Image Wrap -->
+  <!-- New Slider -->
+  <div class="container" style="margin-top: 80px;">
+    <div class="row justify-content-center">
+      <div class="col-xxl-6 col-md-8 col-xs-10">
+        <div class="section-title section-title--l5 text-center">
+          <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Our
+            Engineers</h6>
+          <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Meet the
+            minds shaping <br class="d-none d-xs-block">your digital business</h2>
         </div>
-        <!-- Content Widgets -->
-        <div class="col-xxl-5 col-xl-5 offset-xl-1 col-lg-6 col-xs-12">
-          <div class="content-texts content-texts--l1-1">
-            <h2 class="content__heading mt-7 mt-lg-0" data-aos="fade-left" data-aos-duration="500" data-aos-once="false"
-              data-aos-delay="400">Instant & Exponential <br> Growth for<br>Your Business.</h2>
-            <p class="content__description" data-aos="fade-left" data-aos-duration="500" data-aos-once="false"
-              data-aos-delay="400">Your vision knows no borders. So why should your teams?
-              We provide expert, pre-vetted engineers ready to join your team in less than 24 hours (and ready to
-              deliver ofcourse).With a seamless and efficient tech hiring process and the best engineers on your team,
-              you stay ahead of your time and grow faster.
-
-            </p>
-            <button type="button" id="hire-now-btn" closeHireNowForm class=" bg-blue-ribbon text-white btn btn--lg"
-              data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="fade-up" data-aos-duration="500"
-              data-aos-once="false" data-aos-delay="400">
-              Hire Now
-            </button>
-          </div>
-        </div>
-
-        <!--/ .Content Widgets -->
       </div>
     </div>
   </div>
-  <!--/ .Content One Area -->
+  <div class="position-relative margin-class">
+    <div class="carousel-container" data-flickity='{ "wrapAround": true }'>
+      <div class="profile-containers marsad-profile">
+        <div class="centent">
+          <div class="developer-name">Marsad</div>
+          <div class="developer-stack">Mern-Stack Engineer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">5</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">React, React-Native, NextJS, JavaScript, Redux, Android studio,
+              Git,
+              Node JS,
+              Express JS,
+              Nest JS</div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="senior-mern-stack-engineer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers rubnawaz-profile">
+        <div class="centent">
+          <div class="developer-name">Rubnawaz</div>
+          <div class="developer-stack">Front-end Developer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">4</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">React, React-Native, NextJS, JavaScript, Redux, GraphQL
+              Nest JS,
+              Redis,
+              Redis Pub/Sub,
+              </div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="experienced-react-developer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers suleman-prifile">
+        <div class="centent">
+          <div class="developer-name">Suleman</div>
+          <div class="developer-stack">Full-Stack Engineer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">6</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">React, React-Native, NextJS, Express.js, Redux, Asp.Net Core, VueJS,
+              Angular</div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="senior-fullstack-engineer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers shina-profile">
+        <div class="centent">
+          <div class="developer-name">Shina</div>
+          <div class="developer-stack">Mean-Stack Engineer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">5</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">MongoDB, Express, Angular, JavaScript, NextJS, Docker
+              AWS,
+              Git(version control),
+              Jira,
+              Jest,
+              </div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="experienced-meanstack-engineer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers sham-profile">
+        <div class="centent">
+          <div class="developer-name">Ahtesham</div>
+          <div class="developer-stack">UI Developer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">3</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">HTML,
+              CSS,
+              Bootstrap,
+              Flexbox
+              React,
+              React-native,
+              JavaScript,</div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="ui-developer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers abdullah-profile">
+        <div class="centent">
+          <div class="developer-name">Abdullah</div>
+          <div class="developer-stack">UI/UX Designer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">5</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">User Interface,
+              User Experience,
+              Web and Mobile App Design,
+              Creativity
+            </div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="ui-ux-designer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers ali-profile">
+        <div class="centent">
+          <div class="developer-name">Ali</div>
+          <div class="developer-stack">Full-Stack Engineer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">6</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">AWS,
+              AWS Cognito,
+              AWS EC2,
+              AWS Amplify,
+              AWS S3,
+              Docker,
+              Kubernetes,
+              Node JS</div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="experienced-fullstack-engineer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers rameez-profile">
+        <div class="centent">
+          <div class="developer-name">Rameez</div>
+          <div class="developer-stack">Business Developer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">3</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">Strategic thinking,
+              Sales and negotiation,
+              Networking,
+              Market research,
+              Financial acumen
+            </div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="senior-business-developer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers fawaz-profile">
+        <div class="centent">
+          <div class="developer-name">Fawaz</div>
+          <div class="developer-stack">Front-end Developer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">3</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">React, React-Native, NextJS, JavaScript, Redux, StoryBook,
+              VS Code,
+              Android studio,
+              GraphQL
+              </div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="senior-react-developer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="profile-containers bakar-profile">
+        <div class="centent">
+          <div class="developer-name">Abu bakar</div>
+          <div class="developer-stack">Front-end Developer</div>
+          <div class="d-flex align-items-center mt-3">
+            <div class="developer-experience">3</div>
+            <div class="developer-experience-des">years' experience</div>
+          </div>
+          <div class="developer-summary">Summary</div>
+          <div class="w-50">
+            <div class="developer-technologies">React, React-Native, NextJS, JavaScript, Redux, Typescript
+              Jira,
+              VS Code,
+              VS,
+              Android studio,
+              Git</div>
+          </div>
+          <a class="btn-link-water  hover-text--blue-ribbon-2 mb-2" href="frontend-react-native-developer.html">View Profile <i
+              class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-container"></div>
+  </div>
+  <!-- New Slider -->
 
   <!-- Testimonial Area -->
-  <div class="testimonial-area bg-default">
+  <div class="testimonial-section testimonial-section--l4 bg-default">
     <div class="container">
-      <div class="section-title text-start" data-aos="fade-right" data-aos-duration="500" data-aos-once="false">
-        <h2 class="section-title__heading mb-7 ">With Love, <br /> From Our Clients.</h2>
+      <div class="row">
+        <div class="col-12 ">
+          <div class="section-title section-title--l4">
+            <h6 class="section-title__sub-heading text-blue-ribbon text-center" data-aos="fade-up"
+              data-aos-duration="500" data-aos-once="false">Client Value & Trust</h6>
+            <h2 class="section-title__heading mb-4 text-center" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Don’t Just Take Our Words For It</h2>
+          </div>
+        </div>
       </div>
-      <div class="testimonial-slider testimonial-slider--l1" data-aos="fade-up" data-aos-duration="300"
+    </div>
+    <div>
+      <div class="row justify-content-center testimonial-slider--l4" data-aos="fade-left" data-aos-duration="500"
         data-aos-once="false">
-        <div class="testimonial-slider__single-slide">
-          <div class="widget widget--testimonial">
-            <div class="review-star">
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-            </div>
-            <p class="widget--testimonial__description">We were looking for someone who would collaborate with us and
-              provide us exactly what we needed. TDC did exactly that!</p>
-            <div class="d-flex align-items-center">
-              <div class="client-profile-container">
-                <img class="client-img" src="image/home-1/client-img.png" />
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-4/user-img-1.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Charles Patterson</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
-              <div>
-                <div class="client-name">Joseph Cole</div>
-                <div class="client-domain">Recruiting Officer</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-slider__single-slide">
-          <div class="widget widget--testimonial">
-            <div class="review-star">
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-            </div>
-            <p class="widget--testimonial__description">Enterprises everywhere will want to have them on their side.
-            </p>
-            <div class="d-flex align-items-center">
-              <div class="client-profile-container">
-                <img class="client-img" src="image/home-1/client-img.png" />
-              </div>
-              <div>
-                <div class="client-name">Joseph Cole</div>
-                <div class="client-domain">Recruiting Officer</div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="testimonial-slider__single-slide">
-          <div class="widget widget--testimonial">
-            <div class="review-star">
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-              <a class="review-star__single" href="#">
-                <i class="fa fa-star"></i>
-              </a>
-            </div>
-            <p class="widget--testimonial__description">Their workflow was flawless. TDC provided insightful clarity
-              and results in record time.</p>
-            <div class="d-flex align-items-center">
-              <div class="client-profile-container">
-                <img class="client-img" src="image/home-1/client-img.png" />
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-1.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">John Doe</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
               </div>
-              <div>
-                <div class="client-name">Joseph Cole</div>
-                <div class="client-domain">Recruiting Officer</div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-2.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Tiana Dokidis</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-3.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Tiana Dokidis</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-1.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Talan Bergson</h3>
+                    <p class="card-text--ext">CEO, Greener</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!--/ .Testimonial Area -->
 
-  <!-- Content Area -->
-  <!-- <div class="cta-section cta-section--l1 bg-blue-ribbon text-white dark-mode-texts">
+  <!-- Contact Us Area -->
+  <div class="content-section content-section--l3-2 bg-default-3">
     <div class="container">
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="300" data-aos-once="false">
-        <div class="col-lg-7 col-md-8">
-          <div class="section-title text-center">
-            <h2 class="section-title__heading">
-              Hiring with TDC is
-              <br class="d-none d-xs-block"> Risk-Free! Start Now.
-            </h2>
-            <div class="newsletter-form  mx-auto newsletter--l1-2">
-              <form class="form2" id="hire-now-form1" action="" onsubmit="return toastMessagethree()">
-                <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
-                  <input class="form-control " type="email" placeholder="Enter your email" required>
-                  <button class=" btn btn--lg bg-white h-70" type="submit" style="color: #2B59FF;">Start For
-                    Free</button>
-                  <div id="snackbar2">We've received your mail. We'll contact you soon.</div>
-                </div>
-              </form>
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title section-title--l3 text-center">
+            <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+              Contact Us</h6>
+            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+              Digital system for your company</h2>
+          </div>
+        </div>
+      </div>
+      <div class="widgets widgets-content--l3">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2
+                  class="widget--content-l3__circle-content bg-blue-ribbon shadow--blue-ribbon-2 shadow--blue-ribbon-2 dark-mode-texts">
+                  1</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Describe your needs</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Tell
+                us your technology requirements and describe your project using
+                our contact form.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2 class="widget--content-l3__circle-content shadow--icon-yellow shadow--icon-yellow dark-mode-texts"
+                  style="background-color: #FFB700;">
+                  2</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Schedule meeting to align on goals</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">No
+                one-size-fits-all. We alwayscreate a unique team augmentation
+                startegy.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2
+                  class="widget--content-l3__circle-content  bg-blue-ribbon shadow--blue-ribbon-2 shadow--blue-ribbon-2 dark-mode-texts">
+                  3</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Approve your team</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">Our
+                HR and tach leaders provide you CVs. You approve each candidate
+                who will join your team.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2
+                  class="widget--content-l3__circle-content shadow--icon-yellow shadow--icon-yellow shadow--blue-ribbon-2 dark-mode-texts"
+                  style="background-color: #FFB700;">
+                  4</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Start your project with remote talent</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">We
+                seal the deal with a contract and launch your remote team.</p>
             </div>
           </div>
         </div>
       </div>
+      <a href="contact.html" class="d-flex align-items-center justify-content-center mt-6" data-aos="fade-up"
+        data-aos-duration="00" data-aos-once="false">
+        <button type="button" class="bg-blue-ribbon text-white btn btn--lg m-sm-auto">
+          Contact Us
+        </button>
+      </a>
     </div>
-  </div> -->
-  <!-- Content Area -->
+  </div>
+  <!-- Contact Us Area -->
 
-  <!-- Content Area -->
-  <div class="about-us-start-now text-white dark-mode-texts">
+  <!-- Connect With US Area -->
+  <div class="contact-section contact-section--l4 bg-default">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-7 col-md-8">
-          <div class="section-title text-center">
-            <h2 data-aos="fade-up" data-aos-duration="900" data-aos-once="false" class="section-title__heading">
-              Hiring with TDC is
-              <br class="d-none d-xs-block"> Risk-Free!
-              <span style="color: #FFB700;">
-                Start Now.
-              </span>
+        <div class="col-xl-6">
+          <div class="section-title section-title--l4 text-center mb-5 mb-md-7">
+            <h6 class="section-title__sub-heading text-blue-ribbon" data-aos="fade-up" data-aos-duration="00"
+              data-aos-once="false">Connect With Us</h6>
+            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+              Join Our Workplaces Around The World
             </h2>
-            <!-- Newsletter -->
-            <div data-aos="fade-up" data-aos-duration="900" data-aos-once="false"
-              class="newsletter-form  mx-auto newsletter--l1-2">
-              <form class="form2" id="hire-now-form1" method="post" action=""
-                onsubmit="return submitForm(toastMessagethree, null, null, 'startFreeInput', null, null, null, null, null, null, )">
-                <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
-                  <input class="form-control" id="startFreeInput" type="email" placeholder="Enter your email" required>
-                  <button class=" btn btn--lg bg-white h-70" type="submit" style="color: #2B59FF;">Start For
-                    Free</button>
-                  <div id="snackbar2">We've received your mail. We'll contact you soon.</div>
-                </div>
-              </form>
+          </div>
+        </div>
+        <div class="col-xl-10">
+          <div class="footer-map text-center mb-7">
+            <img class="w-100" src="image/home-4/contact-map.png" alt="">
+            <div class="card card--map-1 card--triangle-up bg-blue-ribbon" data-aos="fade-right" data-aos-duration="00"
+              data-aos-once="false">
+              <p>4445 Corporation Ln. STE 264
+                Virginia Beach VA 23462
+                USA</p>
             </div>
-            <!--/ .Newsletter -->
+            <div class="card card--map-2 card--triangle-up bg-blue-ribbon" data-aos="fade-left" data-aos-duration="00"
+              data-aos-once="false">
+              <p>392 F, Johar Town, Lahore Pakistan</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Content Area -->
+  <!--/ Connect With US Area -->
 
   <!-- FOOTER START -->
   <div class="footer-area footer-inner-1 bg-default-3">
@@ -837,17 +1640,17 @@
                 <div class="footer-widgets footer-widgets--l7">
                   <h4 class="footer-widgets__title">Contact Details</h4>
                   <ul class="footer-widgets__list footer-widgets--address">
-                    <li>
-                      <i class="fa fa-map-marker-alt active-link"></i>
+                                        <li>
+                        <i class="fa fa-map-marker-alt active-link"></i>
                       <span>Address: <br class="d-block">
-                        4445 Corporation Ln.<br class="d-block">
-                        STE 264 Virginia Beach VA 23462 USA</span>
-                    </li>
+                          4445 Corporation Ln.<br class="d-block">
+                          STE 264 Virginia Beach <br/> VA 23462 USA</span>
+                      </li>
                     <li>
                       <i class="fa fa-phone-alt active-link"></i>
                       <div class="list-content">
                         <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
-                        <a href="#">+92 315 8098431</a>
+                        <a>+92 315 8098431</a>
                       </div>
                     </li>
                     <li>
@@ -857,20 +1660,10 @@
                         <span class="d-block gr-text-hover-decoration-none"> Email:
                         </span>hr@thedevcorporate.com</a>
                     </li>
-                    <li>
-                      <!-- TrustBox widget - Micro Review Count -->
-                      <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
-                        data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
-                        data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
-                        <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
-                          rel="noopener">Trustpilot</a>
-                      </div>
-                      <!-- End TrustBox widget -->
-                    </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-4 col-xs-6">
+              <div class="col-md-3 col-xs-6">
                 <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
                   <h4 class="footer-widgets__title">Company</h4>
                   <ul class="footer-widgets__list">
@@ -889,7 +1682,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-4 col-xs-9">
+              <div class="col-md-5 col-xs-9">
                 <div class="footer-widgets footer-widgets--l7">
                   <h4 class="footer-widgets__title">Newsletter</h4>
                   <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
@@ -904,10 +1697,17 @@
                   </div>
                   <!--/ .Newsletter -->
                 </div>
+                <h4 class="trusted-by">Trusted by</h4>
+                <!-- TrustBox widget - Micro Review Count -->
+                <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
+                  data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+                  data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+                  <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
+                    rel="noopener">Trustpilot</a>
+                </div>
+                <!-- End TrustBox widget -->
               </div>
             </div>
-          </div>
-        </div>
       </footer>
       <div class="copyright text-center border-top border-default-color-3">
         <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
@@ -915,11 +1715,12 @@
     </div>
   </div>
   <!-- FOOTER END -->
+
   <script src="plugins/type-js/typed.min.js"></script>
   <script>
     var strings = ["Easier", "Faster", "Cheaper"];
     for (var i = 0; i < strings.length; i++) {
-      strings[i] = `${strings[i]}<span><div class="dot"/></span>`
+      strings[i] = `${strings[i]}<span><div class="fullstop"/></span>`
     }
     var typed = new Typed('.highlight-text', {
       strings: strings,
@@ -950,6 +1751,8 @@
   <script src="js/menu.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/modal.js"></script>
+  <script src="/path/to/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  function toastMessagetwo(e) {
+    var x = document.getElementById("snackbar1");
+    x.className = "show1";
+    setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+
+  function modalToastMessage(e) {
+    var x = document.getElementById("showModalMessage");
+    x.className = "showModal";
+    setTimeout(function () { x.className = 'showModalMessage' }, 3000);
+    return false
+  }
+</script>
+
+<head>
+  <!-- <META NAME="robots" CONTENT="noindex,nofollow"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    The Dev Corporate
+  </title>
+  <link rel="shortcut icon" href="image/tdc_circle_logo.svg" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+
+  <script>
+    (function (w, d, s, r, n) {
+      w.TrustpilotObject = n; w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) };
+      a = d.createElement(s); a.async = 1; a.src = r; a.type = 'text/java' + s; f = d.getElementsByTagName(s)[0];
+      f.parentNode.insertBefore(a, f)
+    })(window, document, 'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+    tp('register', 'MWT1S2wyXqL1vcG4');
+  </script>
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden ">
+    <div id="loading">
+      <video width="80%" height="80%" muted autoplay playsinline>
+        <source src="./image/tdc_animation.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Hedaer -->
+    <header
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="Index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper  ms-lg-7">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="career-with-tdc.html">Careers</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                          <a href="faqs.html">FAQ</a>
+                        </li> -->
+                    <li class="sub-menu--item">
+                      <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </li>
+                
+
+                <li class="nav-item nav-item-has-children ">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="project-management.html">Project Management</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="web-app-development.html">Web App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="mobile-app-development.html">Mobile App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="digital-marketing.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                        <a href="it-services.html">IT Services</a>
+                      </li> -->
+                    <!-- <li class="sub-menu--item">
+                        <a href="ServicesScreen.html">Services</a>
+                      </li> -->
+                  </ul>
+                </li>
+
+                <!-- <li class="nav-item nav-item-has-children">
+                      <a href="tecnologies.html" class="nav-link-item drop-trigger hover-link">Technologies
+                      </a>
+                    </li> -->
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="portfolio.html" class="nav-link-item drop-trigger hover-link">Portfolio
+                  </a>
+                  <!-- <ul class="sub-menu" id="submenu-2">
+                        <li class="sub-menu--item">
+                          <a href="#">Jobs Done</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="testimonial.html">Happy Clients</a>
+                        </li>
+                      </ul> -->
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="blogs.html" class="nav-link-item hover-link active-link ">Blog</i>
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"
+              data-bs-target="#exampleModal">
+              Hire Now
+            </button>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable position-relative">
+        <form class="modal-content custom-border-none" id="hire-modal" method="post" action=""
+          onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)">
+          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
+          <div class="modal-body home-modal">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/user_icon.svg" />
+                <input type="text" class="user-inputs" id="username" placeholder="Name" required />
+              </div>
+              <div class="user-input-container">
+                <img src="image/company_icon.svg" />
+                <input type="text" class="user-inputs" id="company" placeholder="Company Name" required />
+              </div>
+            </div>
+
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/email_icon.svg" />
+                <input type="email" class="user-inputs" id="email" placeholder="Email Address" required />
+              </div>
+              <select class="user-custom-select form-select form-select-sm" id="experience" required>
+                <option disabled selected value="">Experience</option>
+                <option value="1-3">1-3 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="5+">5+ years</option>
+              </select>
+            </div>
+
+            <select class="user-custom-select-two form-select form-select-sm" id="position" required>
+              <option disabled selected value="">Hiring Position</option>
+              <option value="Front-end">Front-end</option>
+              <option value="Back-end">Back-end</option>
+              <option value="QA's">QA's</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Full-Stack">Full-Stack</option>
+              <option value="Tech-Stack">Tech-Stack</option>
+            </select>
+            <button type="submit" class="modal-button">Submit</button>
+            <div id="showModalMessage">We've received your mail. We'll contact you soon.</div>
+        </form>
+        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
+      </div>
+    </div>
+  </div>
+  <!-- navbar- -->
+  <!--/ .Header Area -->
+  
+  <!-- Blog Details Area -->
+  <div class="blog-details bg-default-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="blog-title">
+            <h1 class="blog-title__heading mt-5 mt-lg-0">
+              5 Cutting-Edge Technologies for Boosting Your
+              Resource Augmentation Strategy
+            </h1>
+            <!-- <div class="blog__metainfo">
+                <a href="#" class="blog__metainfo__author-name">By David Jones</a>
+                <a href="#" class="blog__metainfo__date">Jan 14, 2021</a>
+              </div> -->
+          </div>
+          <div class="blog-content">
+            <div class="blog-content__img">
+              <img class="w-100" src="image/blogs/cutting-edge-details.png" alt="Resource Augmentation">
+            </div>
+            <p class="blog-content__text">
+              Resource augmentation is the process of supplementing an organisation's workforce with external professionals to accomplish specific tasks or projects. This approach is becoming increasingly popular as companies strive to maintain agility and flexibility in a rapidly changing business environment. However, effective resource augmentation requires more than just hiring temporary staff; it requires cutting-edge technologies that can support and streamline the process.
+            </p>
+            <p class="blog-content__text">
+              In this blog post, we will explore five cutting-edge technologies that can boost your resource augmentation strategy and help you achieve your business goals.
+            </p>
+            <div class="blog-content__box">
+              <h2 class="blog-content__heading">1. Artificial Intelligence (AI)</h2>
+              <p class="blog-content__text">
+                Artificial intelligence (AI) is a game-changing technology that is transforming the way organizations operate. AI-powered tools can help companies automate routine tasks, improve decision-making, and enhance productivity. In the context of resource augmentation, AI can help organizations identify the most qualified candidates for specific projects and tasks.
+              </p>
+              <p class="blog-content__text">
+                One way that AI can help is by analyzing job postings and resumes to identify the most relevant skills and experience. AI algorithms can quickly and accurately match job requirements with the most qualified candidates, reducing the time and effort required to find the right people. Additionally, AI can help to eliminate unconscious bias in the hiring process, ensuring that candidates are evaluated based on their qualifications and experience rather than their demographic characteristics.
+              </p>
+              <p class="blog-content__text">
+                AI can also be used to analyze employee performance data to identify areas for improvement and provide targeted training and development opportunities. This can help to enhance the skills and capabilities of existing staff, making them better equipped to handle complex projects and tasks.
+              </p>
+
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">2. Augmented Reality (AR)</h3>
+                <p class="blog-content__text">
+                  Augmented Reality (AR) technology is increasingly being used in the workplace to provide employees with enhanced training and development opportunities. AR uses digital overlays to provide real-time information and instructions to workers as they perform tasks, creating a more immersive and interactive learning experience.
+                </p>
+                <p class="blog-content__text">
+                  In the healthcare industry, for example, AR can be used to simulate surgical procedures and provide doctors and nurses with hands-on training in a safe and controlled environment. By allowing medical professionals to practise complex procedures in a simulated environment, AR can help to reduce the risk of medical errors and improve patient outcomes.
+                </p>
+                <p class="blog-content__text">
+                  AR can also be used to enhance the training of technicians and maintenance workers in a variety of industries. For example, AR can provide visual cues and instructions to workers as they repair complex machinery or equipment, helping them to perform tasks more quickly and accurately.
+                </p>
+                <p class="blog-content__text">
+                  AR can also be used to improve safety in hazardous work environments. For example, AR can provide workers with real-time information on potential hazards, such as high-voltage electrical equipment or toxic chemicals. By providing workers with this information in real-time, AR can help to prevent accidents and injuries on the job.
+                </p>
+                <p class="blog-content__text">
+                  Another use case for AR in the workplace is remote support. AR can be used to provide remote guidance and support to workers in the field, allowing experts to provide visual cues and instructions to less experienced workers in real-time. This can be particularly useful in industries such as construction and mining, where workers are often operating in remote and hazardous locations.
+                </p>
+                <p class="blog-content__text">
+                  As AR technology continues to evolve and become more sophisticated, its potential applications in the workplace are likely to grow. By providing employees with enhanced training and development opportunities, improving safety in hazardous work environments, and enabling remote collaboration and support, AR can help organisations to build a more agile and flexible workforce that can quickly adapt to changing business requirements.
+                </p>
+                
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">3. Virtual Reality (VR)</h3>
+                <p class="blog-content__text">
+                  Virtual Reality (VR) is a technology that can provide immersive training and development experiences for employees. With VR, employees can practice complex tasks and scenarios in a simulated environment, allowing them to make mistakes and learn from them without any real-world consequences.
+                </p>
+                <p class="blog-content__text">
+                  VR can be particularly useful for industries such as aviation, healthcare, and manufacturing, where mistakes can be costly or even life-threatening. By using VR simulations, employees can gain experience and build confidence before working with real equipment or in real-life scenarios.
+                </p>
+                <p class="blog-content__text">
+                  In healthcare, VR can be used to simulate surgeries or medical procedures, allowing medical students and residents to practice without risk to actual patients. VR can also be used to train healthcare professionals on how to handle medical emergencies, such as cardiac arrests or strokes.
+                </p>
+                <p class="blog-content__text">
+                  In manufacturing, VR can be used to simulate assembly lines and test product designs before they are actually manufactured. This can help to identify potential issues or inefficiencies in the manufacturing process before any resources are committed.
+                </p>
+                <p class="blog-content__text">
+                  VR can also be used for team-building and collaboration. With VR, teams can work together in a shared virtual environment, regardless of their physical location. This can be particularly useful for teams working on complex projects that require close collaboration and coordination.
+                </p>
+                <p class="blog-content__text">
+                  One potential challenge with VR is the cost of hardware and software. VR headsets and other equipment can be expensive, and creating high-quality VR simulations can be time-consuming and costly. However, as VR technology continues to evolve and become more accessible, the cost of implementation is likely to decrease.
+                </p>
+                <p class="blog-content__text">
+                  Overall, VR is a powerful technology that can provide immersive training and development experiences for employees, enhance collaboration and teamwork, and improve overall business outcomes. As organisations continue to embrace resource augmentation strategies, VR is likely to play an increasingly important role in building a more agile and flexible workforce.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">4. Robotic Process Automation (RPA)</h3>
+                <p class="blog-content__text">
+                  Robotic Process Automation (RPA) is a technology that uses software robots to automate repetitive and time-consuming tasks. RPA can be used to streamline administrative tasks such as data entry, invoice processing, and report generation, freeing up staff to focus on more complex and strategic tasks.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">Conduct interviews</h3>
+                <p class="blog-content__text">Conducting interviews with employees and their managers
+                  can provide valuable insights into their strengths and
+                  weaknesses, as well as any areas where they may need additional training or support.
+                </p>
+                <p class="blog-content__text">
+                  RPA can also be used to automate certain aspects of the recruitment process, such as candidate screening and interview scheduling. This can help to reduce the workload of HR staff and ensure that the most qualified candidates are identified quickly and efficiently.
+                </p>
+                <p class="blog-content__text">
+                  RPA can also be used to improve the efficiency and accuracy of certain business processes. For example, RPA can automate the processing of invoices, reducing the likelihood of errors and improving the speed at which invoices are processed. Similarly, RPA can automate the processing of orders, reducing the time required to fulfill customer requests.
+                </p>
+                <p class="blog-content__text">
+                  It can also help automate customer service tasks such as responding to frequently asked questions and processing refund requests. This can help to reduce the workload of customer service staff and ensure that customer inquiries are handled quickly and efficiently.
+                </p>
+                <p class="blog-content__text">
+                  Another benefit of RPA is that it can be easily scaled up or down depending on business needs. For example, if a company experiences a sudden increase in demand, RPA can be used to quickly and efficiently handle the additional workload. Conversely, if demand decreases, RPA can be scaled back to reduce costs.
+                </p>
+                <p class="blog-content__text">
+                  In addition to improving efficiency and reducing costs, RPA can also improve compliance and reduce the risk of errors. By automating repetitive tasks, RPA can ensure that all processes are performed consistently and in accordance with company policies and procedures. This can help to reduce the risk of non-compliance and ensure that all transactions are accurate and error-free.
+                </p>
+                <p class="blog-content__text">
+                  However, it's important to note that RPA is not a panacea for all business problems. While RPA can automate many tasks, it's not a substitute for human judgment and creativity. Moreover, not all tasks are suitable for automation, and organizations need to carefully evaluate their business processes to determine which tasks are best suited for automation.
+                </p>
+                <p class="blog-content__text">
+                  In conclusion, RPA is a powerful technology that can help organizations to automate routine tasks, improve efficiency, and reduce costs. By leveraging RPA, organizations can create a more agile and flexible workforce that can quickly adapt to changing business requirements. However, it's important to remember that RPA is not a silver bullet, and organizations need to carefully evaluate their business processes to determine which tasks are best suited for automation.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">5. Blockchain</h3>
+                <p class="blog-content__text">
+                  Blockchain is a distributed ledger technology that allows for secure, transparent, and tamper-proof transactions. Blockchain can be used to verify the qualifications and credentials of job candidates, ensuring that organisations are hiring qualified and trustworthy individuals. Additionally, blockchain technology has the potential to revolutionise the way organisations manage their workforce and execute their resource augmentation strategies. Here are some more ways that blockchain can be used in this context:
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">1. Decentralised talent marketplaces</h3>
+                <p class="blog-content__text">
+                  Blockchain technology can be used to create decentralized talent marketplaces that connect organizations with qualified professionals. Blockchain can also be used to automate the payment process for contractors and temporary staff, ensuring that payments are made quickly and securely. This can help to reduce administrative overhead and improve cash flow for both organizations and workers.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">2. Skills verification</h3>
+                <p class="blog-content__text">
+                  One of the biggest challenges in resource augmentation is verifying the skills and experience of job candidates. Blockchain can be used to create immutable records of job candidates' qualifications and work history, making it easier for organizations to evaluate their skills and experience.
+                </p>
+                <p class="blog-content__text">
+                  For example, a job candidate could use a blockchain-based platform to create a record of their educational qualifications, work experience, and other credentials. This record could be verified by third-party organizations such as universities, employers, and certification bodies, and stored on the blockchain for future reference.
+                </p>
+                <p class="blog-content__text">
+                  This would enable organizations to quickly and easily verify the skills and experience of job candidates, reducing the time and effort required to identify qualified candidates for specific tasks or projects.
+                </p>
+              </div>
+              <div class="blog-content__box">
+                <h3 class="blog-content__heading-small">3. Smart contracts</h3>
+                <p class="blog-content__text">
+                  Blockchain technology can be used to create smart contracts that automate the payment process for contractors and temporary staff. Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. They can be used to automate the payment process based on predefined rules and conditions.
+                </p>
+                <p class="blog-content__text">
+                  For example, a smart contract could be created that automatically releases payment to a contractor once certain milestones or deliverables are met. This can help to reduce administrative overhead and ensure that payments are made quickly and securely.
+                </p>
+                <p class="blog-content__text">
+                  In conclusion, blockchain technology has the potential to transform the way organizations manage their workforce and execute their resource augmentation strategies. By creating decentralized talent marketplaces, verifying the skills and experience of job candidates, and automating the payment process through smart contracts, organizations can build a more agile and flexible workforce that can quickly adapt to changing business requirements.
+                </p>
+                <p class="blog-content__text">
+                  In conclusion, these five cutting-edge technologies can help organizations boost their resource augmentation strategies and build a more agile and flexible workforce. By leveraging AI, AR, VR, RPA, and blockchain, organisations can streamline administrative tasks, automate certain aspects of the recruitment process, and ensure that they are hiring qualified and trustworthy professionals.
+                </p>
+                <p class="blog-content__text">
+                  Implementing these technologies may seem daunting, but with the right guidance and support, organisations can overcome any challenges and reap the benefits of a more efficient and effective workforce.
+                </p>
+                <p class="blog-content__text">
+                  If you're interested in learning more about these technologies and how they can be applied in your organization, don't hesitate to reach out to us.
+                </p>
+                <p class="blog-content__text">
+                  We can help you navigate the complex landscape of emerging technologies and identify the solutions that best fit your unique needs and goals.
+                </p>
+                <p class="blog-content__text text-blue-ribbon">
+                  So, take the first step towards a more agile and flexible workforce today and explore these cutting-edge technologies!
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-xl-4 offset-xl-1 col-lg-5 mt-5 mt-lg-0">
+          <div class="sidebar-area">
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Search</h3>
+              <div class="widget__search">
+                <form action="https://finestdevs.com/demos/fastland-html/">
+                  <i class="fa fa-search text-royal-blue"></i>
+                  <input type="text" placeholder="Type to search">
+                </form>
+              </div>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Recent Posts</h3>
+              <ul class="widget__recent-post list-unstyled mb-0 pb-0">
+                <li class="widget__recent-post__single">
+                  <a href="#">
+                    <h4 class="widget__recent-post__title">How To Blow Through Capital At An
+                      Incredible Rate</h4>
+                    <p class="widget__recent-post__date">Jan 14, 2020</p>
+                  </a>
+                </li>
+                <li class="widget__recent-post__single">
+                  <a href="#">
+                    <h4 class="widget__recent-post__title">Design Studios That Everyone Should Know
+                      About?</h4>
+                    <p class="widget__recent-post__date">Jan 14, 2020</p>
+                  </a>
+                </li>
+                <li class="widget__recent-post__single">
+                  <a href="#">
+                    <h4 class="widget__recent-post__title">How did we get 1M+ visitors in 30 days
+                      without anything!</h4>
+                    <p class="widget__recent-post__date">Jan 14, 2020</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Recent Tweets</h3>
+              <ul class="widget__tweets list-unstyled">
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Smith,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Maurice,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Stella,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+                <li>
+                  <a class="widget__tweets__single" href="#">
+                    <span>@Howard,</span> the master-builder of human happiness. No one rejects,
+                    dislikes, or avoids pleasure
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+            <div class="widget">
+              <h3 class="widget__title">Categories</h3>
+              <div class="widget__category">
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Technology:</h4>
+                      <span>20 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Freelancing:</h4>
+                      <span>07 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Writing:</h4>
+                      <span>16 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Marketing:</h4>
+                      <span>11 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Business:</h4>
+                      <span>35 posts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center justify-content-between flex-wrap" href="#">
+                      <h4 class="mb-0">Education:</h4>
+                      <span>14 posts</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/ .Single Widgets -->
+            <!-- Single Widgets -->
+          </div>
+          <!--/ .Single Widgets -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ .Blog Details Area -->
+
+  <!-- Footer Area -->
+  <div class="footer-area footer-inner-1 bg-default-3">
+    <div class="container">
+      <footer class="footer-top">
+        <div class="row">
+          <div class="col-lg-3 col-md-7 col-xs-9">
+            <div class="footer-widgets footer-widgets--l7">
+              <!-- Brand Logo-->
+              <div class="d-flex justify-content-start">
+                <div class="brand-logo mt-1">
+                  <a href="#">
+                    <!-- light version logo (logo must be black)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
+                    <!-- Dark version logo (logo must be White)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
+                  </a>
+                </div>
+              </div>
+              <p class="footer-widgets__text mt-5">
+                We will bring your idea into its digital creation the way you want it to be.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                <li>
+                  <a href="https://www.facebook.com/thedevcorporate">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/thedevcorporate/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Contact Details</h4>
+                  <ul class="footer-widgets__list footer-widgets--address">
+                    <li>
+                      <i class="fa fa-map-marker-alt active-link"></i>
+                      <span>Address: <br class="d-block">
+                        4445 Corporation Ln.<br class="d-block">
+                        STE 264 Virginia Beach VA 23462 USA</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone-alt active-link"></i>
+                      <div class="list-content">
+                        <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                        <a href="#">+92 315 8098431</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope active-link"></i>
+                      <a class="heading-default-color gr-text-hover-underline text-break"
+                        href="mailto:hr@thedevcorporate.com">
+                        <span class="d-block gr-text-hover-decoration-none"> Email:
+                        </span>hr@thedevcorporate.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
+                  <h4 class="footer-widgets__title">Company</h4>
+                  <ul class="footer-widgets__list">
+                    <li>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html">Portfolios</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <!-- <li>
+                      <a href="ServicesScreen.html">Services</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-xs-9">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Newsletter</h4>
+                  <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at your inbox.</p>
+                  <!-- Newsletter -->
+                  <div class="newsletter newsletter--l7">
+                    <form class="form2" id="hire-now-form1" action="" method="post"
+                      onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
+                      <input type="email" id="footerInput" placeholder="Enter Your Email" required>
+                      <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
+                      <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                    </form>
+                  </div>
+                  <!--/ .Newsletter -->
+                </div>
+                <h4 class="trusted-by">Trusted by</h4>
+                <!-- TrustBox widget - Micro Review Count -->
+                <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
+                  data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+                  data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+                  <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
+                    rel="noopener">Trustpilot</a>
+                </div>
+                <!-- End TrustBox widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright text-center border-top border-default-color-3">
+      <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+    </div>
+  </div>
+  <!--/ .Footer Area -->
+
+  </div>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/counter-up/waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+  <!-- Activation Script -->
+  <script src="js/menu.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+
+
+
+
+</html>
