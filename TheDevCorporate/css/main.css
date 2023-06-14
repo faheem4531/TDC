@@ -6597,6 +6597,131 @@ ________________________________ */
 }
 
 /*
+  Custom Web hero section start
+---------------------------------*/
+  .webAppHeroMAin{
+    width: 100%;
+    height: 533px;
+    background: linear-gradient(90deg, #032AB6 0%, #2B59FF 100%);
+    margin-top: 76px;
+    position: relative;
+
+  }
+
+  .webAppHeroMAinCont{
+    margin-top: 160px;
+  }
+
+ 
+
+  .webAppHeroImage{
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+  }
+
+
+  .webCardSmallHeading{
+    font-weight: 700;
+    font-size: 21.0682px;
+    color: #262729;
+  }
+
+  .webCardSmallText{
+    font-weight: 400;
+font-size: 13.4813px;
+line-height: 20px;
+  }
+
+  .webAppsection2{
+    background-color: rgba(246, 250, 255, 1);
+  }
+
+
+  .webAppSection3{
+    width: 774px;
+    margin: 50px 0px 50px 50px;
+  }
+
+  .trustBy{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #717084;
+  }
+
+  .customWebAppImgMain{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .customWebAppImg{
+    width: 98%;
+  }
+
+
+
+  @media (max-width: 1200px) {
+  .webAppHeroImage{
+    height: 312px;
+  }
+   .webAppHeroMAinCont{
+    margin-top: 110px;
+  }
+  }
+
+  @media (max-width: 992px) {
+  .webAppHeroImage{
+    height: 312px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+  }
+  .webAppHeroMAin{
+    height: 633px;
+  }
+  }
+
+  @media (max-width: 768px) {
+  .webAppHeroImage{
+    height: 290px;
+  }
+    .customWebAppImg{
+    width: 75%;
+  }
+
+   .customWebAppImgMain{
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .webAppSection3{
+    width: 774px;
+    margin: 50px 0px 0px 50px;
+  }
+
+  }
+
+  @media (max-width: 576px) {
+    .webAppHeroImage{
+    height: 250px;
+  }
+    .webAppHeroMAin{
+    height: 600px;
+  }
+  .customWebRandomImg{
+    flex-direction: column;
+  }
+  }
+/*
+  Custom Web hero section end
+---------------------------------*/
+
+
+
+/*
   Home 5 : Footer Section
 ---------------------------------*/
 .footer-section--l5 {
@@ -11816,6 +11941,8 @@ ________________________________ */
   text-align: center;
 }
 
+
+
 .brand-logo__swwl{
   width: 120px;
   margin-left: 20px;
@@ -11845,12 +11972,21 @@ ________________________________ */
   margin-bottom: 20px;
 }
 
+.brand-logo__uptok1{
+  width: 150px;
+   margin-bottom: 20px;
+}
+
 
 @media (max-width: 385px) {
   .about-brand-logo-container{
     display: block !important;
     margin: 10px auto;
   }
+
+  .about-brand-logo-container1{
+  margin-top: 30px auto;
+}
 
 .brand-logo__swwl{
   width: 100px;
@@ -11914,6 +12050,10 @@ ________________________________ */
 
 .brand-logo__uptok{
   width: 210.47px;
+}
+
+.brand-logo__uptok1{
+  width: 210px;
 }
 
 
