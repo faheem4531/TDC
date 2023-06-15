@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  function toastMessage(e) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = 'snackbar' }, 3000);
+    return false
+  }
+
+  function toastMessagetwo(e) {
+    var x = document.getElementById("snackbar1");
+    x.className = "show1";
+    setTimeout(function () { x.className = 'snackbar1' }, 3000);
+    return false
+  }
+
+  function toastMessagethree(e) {
+    var x = document.getElementById("snackbar2");
+    x.className = "show2";
+    setTimeout(function () { x.className = 'snackbar2' }, 3000);
+    return false
+  }
+
+  function modalToastMessage(e) {
+    var x = document.getElementById("showModalMessage");
+    x.className = "showModal";
+    setTimeout(function () { x.className = 'showModalMessage' }, 3000);
+    return false
+  }
+</script>
+
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
+<head>
+  <!-- <META NAME="robots" CONTENT="noindex,nofollow"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    The Dev Corporate
+  </title>
+  <link rel="shortcut icon" href="image/tdc_circle_logo.svg" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+
+  <script>
+    (function (w, d, s, r, n) {
+      w.TrustpilotObject = n; w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) };
+      a = d.createElement(s); a.async = 1; a.src = r; a.type = 'text/java' + s; f = d.getElementsByTagName(s)[0];
+      f.parentNode.insertBefore(a, f)
+    })(window, document, 'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+    tp('register', 'MWT1S2wyXqL1vcG4');
+  </script>
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden">
+    <div id="loading">
+      <video width="80%" height="80%" muted autoplay playsinline>
+        <source src="./image/tdc_animation.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Hedaer -->
+    <header
+      class="site-header bg-white  site-header--menu-left dynamic-sticky-bg  site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="Index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo tdc-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo tdc-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper  ms-lg-7">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="Index.html" class="nav-link-item drop-trigger active-link hover-link">Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">About TDC<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="about.html" class="active-link">About Us</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="career-with-tdc.html">Careers</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                      <a href="faqs.html">FAQ</a>
+                    </li> -->
+                    <li class="sub-menu--item">
+                      <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+
+                <li class="nav-item nav-item-has-children ">
+                  <a href="#" class="nav-link-item drop-trigger hover-link">Services<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="project-management.html">Project Management</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="web-app-development.html">Web App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="mobile-app-development.html">Mobile App Development</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="digital-marketing.html">Digital Marketing</a>
+                    </li>
+                    <!-- <li class="sub-menu--item">
+                    <a href="it-services.html">IT Services</a>
+                  </li> -->
+                    <!-- <li class="sub-menu--item">
+                    <a href="ServicesScreen.html">Services</a>
+                  </li> -->
+                  </ul>
+                </li>
+
+                <!-- <li class="nav-item nav-item-has-children">
+                  <a href="tecnologies.html" class="nav-link-item drop-trigger hover-link">Technologies
+                  </a>
+                </li> -->
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="portfolio.html" class="nav-link-item drop-trigger hover-link">Portfolio
+                  </a>
+                  <!-- <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="#">Jobs Done</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="testimonial.html">Happy Clients</a>
+                    </li>
+                  </ul> -->
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="blogs.html" class="nav-link-item hover-link">Blog</i>
+                  </a>
+                </li>
+
+                <li class="nav-item nav-item-has-children">
+                  <a href="contact.html" class="nav-link-item hover-link">Contact Us</i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+            <button type="button" id="hire-now-btn" class=" bg-blue-ribbon text-white btn btn--lg m-sm-auto"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Hire Now
+            </button>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable position-relative">
+        <form class="modal-content custom-border-none" id="hire-modal" method="post" action=""
+          onsubmit="return submitForm(modalToastMessage, 'username', 'company', 'email', 'experience', 'position', null, null, null, true)">
+          <img src="image/modal_left_ellipse.png" alt="" class="modal-left-img">
+          <div class="modal-body home-modal">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">Hire Now!</h5>
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/user_icon.svg" />
+                <input type="text" class="user-inputs" id="username" placeholder="Name" required />
+              </div>
+              <div class="user-input-container">
+                <img src="image/company_icon.svg" />
+                <input type="text" class="user-inputs" id="company" placeholder="Company Name" required />
+              </div>
+            </div>
+
+            <div class="modal-field-container gap-sm-4">
+              <div class="user-input-container">
+                <img src="image/email_icon.svg" />
+                <input type="email" class="user-inputs" id="email" placeholder="Email Address" required />
+              </div>
+              <select class="user-custom-select form-select form-select-sm" id="experience" required>
+                <option disabled selected value="">Experience</option>
+                <option value="1-3">1-3 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="5+">5+ years</option>
+              </select>
+            </div>
+
+            <select class="user-custom-select-two form-select form-select-sm" id="position" required>
+              <option disabled selected value="">Hiring Position</option>
+              <option value="Front-end">Front-end</option>
+              <option value="Back-end">Back-end</option>
+              <option value="QA's">QA's</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Full-Stack">Full-Stack</option>
+              <option value="Tech-Stack">Tech-Stack</option>
+            </select>
+            <button type="submit" class="modal-button">Submit</button>
+            <div id="showModalMessage">We've received your mail. We'll contact you soon.</div>
+        </form>
+        <img src="image/modal_right_ellipse.png" alt="" class="modal-right-img">
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+
+  <!--Custom Web hero section start-->
+  <div class="webAppHeroMAin">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-12 webAppHeroMAinCont">
+          <h1 class="webAppHeroHeading page-title-content__heading text-white">
+            MVP <span style="color:#ffb700;"> Development for </span></br>
+            Startups
+          </h1>
+          <p class="welcome-content__descriptions text-white">
+            Build scalable web apps with us.
+          </p>
+        </div>
+        <div class="col-5 webAppHeroImageMain">
+
+          <img src="./image/customWebApp/heroImg.png" class="webAppHeroImage">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Custom Web hero section end-->
+
+  <!--section 2 start-->
+  <div class="testimonial-section testimonial-section--l4 webAppsection2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="section-title section-title--l4">
+            <h6 class="section-title__sub-heading text-blue-ribbon text-center" data-aos="fade-up"
+              data-aos-duration="500" data-aos-once="false">Our Services</h6>
+            <h2 class="section-title__heading mb-4 text-center" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Custom MVP Development Can Help You With</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row ms-5">
+
+
+        <div class="col-lg-6 col-md-12">
+          <div class="">
+            <div class="card-body">
+              <div class="d-flex flex-wrap align-items-center my-3">
+                <div class="card-image">
+                  <img src="image/customWebApp/cardImg4.png" alt="">
+                </div>
+              </div>
+              <div class="webCardSmallHeading">Iterative Development</div>
+              <p class="webCardSmallText mt-2"> We believe in the power of iterative development. Based on
+                the feedback from the MVP, we make necessary adjustments and enhancements, ensuring your
+                product evolves in line with user expectations and market trends.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="">
+            <div class="card-body">
+              <div class="d-flex flex-wrap align-items-center my-3">
+                <div class="card-image">
+                  <img src="image/customWebApp/cardImg3.png" alt="">
+                </div>
+              </div>
+              <div class="webCardSmallHeading">Rapid Prototyping</div>
+              <p class="webCardSmallText mt-2">Our MVP development services include rapid prototyping,
+                allowing you to visualize your product early in the development process. This helps in
+                refining ideas and making necessary changes before the full-scale development begins.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="">
+            <div class="card-body">
+              <div class="d-flex flex-wrap align-items-center my-3">
+                <div class="card-image">
+                  <img src="image/customWebApp/cardImg2.png" alt="">
+                </div>
+              </div>
+              <div class="webCardSmallHeading">Investor Ready</div>
+              <p class="webCardSmallText mt-2">An MVP is not just a product, but a powerful tool to
+                attract investors. We ensure your MVP is investor-ready, showcasing the potential of
+                your idea and the value it brings to the market.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="">
+            <div class="card-body">
+              <div class="d-flex flex-wrap align-items-center my-3">
+                <div class="card-image">
+                  <img src="image/customWebApp/cardImg1.png" alt="">
+                </div>
+              </div>
+              <div class="webCardSmallHeading">Scalability</div>
+              <p class="webCardSmallText mt-2">We build MVPs with scalability in mind. As your startup
+                grows, your MVP can be easily expanded and adapted to accommodate new users, features,
+                and functionalities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--section 2 end-->
+
+  <!--section 3 start-->
+  <div class="testimonial-section testimonial-section--l4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="section-title section-title--l4">
+            <h6 class="section-title__sub-heading text-blue-ribbon text-center" data-aos="fade-up"
+              data-aos-duration="500" data-aos-once="false">Our Services</h6>
+            <h2 class="section-title__heading mb-4 text-center" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">Custom MVP Development Can Help You With</h2>
+            <div class="section-title-description">
+              <div class="page-title-content__text text-center">
+                Sounds simple, yet barely anyone in the industry even measures it.
+              </div>
+              <div class="page-title-content__text text-center">
+                For us, that's the primary thing that keeps our focus on what's needed for your product
+                to succeed.
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-12 d-flex  justify-content-center">
+          <div class="webAppSection3 text-center">
+            <img class="w-100" src="./image/customWebApp/section3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--section 3 end-->
+
+
+  <!--section 4 start-->
+  <div class="testimonial-section testimonial-section--l4"
+    style="
+background: linear-gradient(0deg, #F3F4F6, #F3F4F6), linear-gradient(360deg, #DBEBFF 0%, rgba(217, 217, 217, 0) 100%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="section-title section-title--l4">
+            <h6 class="section-title__sub-heading text-blue-ribbon text-center" data-aos="fade-up"
+              data-aos-duration="500" data-aos-once="false">Our technologies</h6>
+            <h2 class="section-title__heading text-center" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">With Technology that’s here to stay</h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="about-brand-logo-container1 text-center d-flex gap-4 justify-content-center align-items-center flex-wrap">
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/react.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/typeScript.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/next.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/vueJs.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/python.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/django.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/redux.png" alt="">
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="900" data-aos-once="false" class="brand-logo__uptok1">
+          <img class="w-75" src="image/customWebApp/nest.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--section 4 end-->
+
+
+
+
+
+  <!--secttion 5 start-->
+  <div class="testimonial-section testimonial-section--l4 bg-default">
+    <div class="container">
+      <div class="row d-flex justify-content-between mb-5 mb-md-0">
+        <div class="col-md-4">
+          <div class="section-title section-title--l4">
+            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
+              Don’t Just Take Our Words For It</h2>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="trustPilotMain d-flex justify-content-around flex-wrap align-items-center">
+            <div class="trustBy">Trusted By:</div>
+            <div class="womenOwned">
+              <img src="image/customWebApp/womenOwne.png" alt="">
+            </div>
+
+            <div class="trustpilot-widget trustPilot mt-2" data-style-height="40px" data-locale="en-US"
+              data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+              data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+              <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank" rel="noopener">
+                <!-- <div class="trustPilot">
+                                <img src="image/customWebApp/trustpilot.png" alt="">
+                            </div> -->
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row justify-content-center testimonial-slider--l4" data-aos="fade-left" data-aos-duration="500"
+        data-aos-once="false">
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-4/user-img-1.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Charles Patterson</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor
+                invidunt
+                ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-1.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">John Doe</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor
+                invidunt
+                ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-2.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Tiana Dokidis</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor
+                invidunt
+                ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-3.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Tiana Dokidis</h3>
+                    <p class="card-text--ext">One year with us</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor
+                invidunt
+                ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card card-testimonial--l4">
+            <div class="card-body ">
+              <div class="card-body__top d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="card-image">
+                    <img src="image/home-3/user-circle-1.png" alt="">
+                  </div>
+                  <div class="card-body__user mr-3">
+                    <h3 class="card-title">Talan Bergson</h3>
+                    <p class="card-text--ext">CEO, Greener</p>
+                  </div>
+                </div>
+                <div class="card-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+              </div>
+              <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor
+                invidunt
+                ut labore
+                et dolore magna allquyam
+                erat, sed dlam voluptua.</p>
+              <div class="review-star">
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+                <a class="review-star__single active" href="#">
+                  <i class="fa fa-star"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-container">
+      <div class="scrolling-brands">
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/alayacare.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/chex.ai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/atoms.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/bondai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/it-boost.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/swvl.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/uptok.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/alayacare.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/chex.ai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/atoms.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/bondai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/it-boost.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/swvl.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/uptok.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/alayacare.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/chex.ai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/atoms.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/bondai.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/it-boost.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/swvl.png" alt="">
+        </span>
+        <span data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+          <img class="companies-logo" src="image/home-1/uptok.png" alt="">
+        </span>
+      </div>
+    </div>
+  </div>
+  <!--secttion 5 end-->
+
+  <!--section 6 start-->
+  <div class="testimonial-section testimonial-section--l4 bg-default" style="background: #F6FAFF;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="section-title section-title--l4">
+            <h6 class="section-title__sub-heading text-blue-ribbon text-center" data-aos="fade-up"
+              data-aos-duration="500" data-aos-once="false">Case Studies</h6>
+            <h2 class="section-title__heading text-center" data-aos="fade-up" data-aos-duration="500"
+              data-aos-once="false">See What We Have Posted</h2>
+          </div>
+        </div>
+      </div>
+      <div class="gap-6 customWebAppImgMain" data-aos="fade-left" data-aos-duration="500" data-aos-once="false">
+        <div class="customWebAppImg">
+          <img class="w-100" src="image/customWebApp/propersix.png" alt="">
+        </div>
+        <div class="customWebAppImg">
+          <img class="w-100" src="image/customWebApp/chexAi.png" alt="">
+        </div>
+        <div class="customWebAppImg">
+          <img class="w-100" src="image/customWebApp/opara.png" alt="">
+        </div>
+
+      </div>
+      <a href="contact.html" class="d-flex align-items-center justify-content-center mt-6" data-aos="fade-up"
+        data-aos-duration="00" data-aos-once="false">
+        <button type="button" class="bg-blue-ribbon text-white btn btn--lg m-sm-auto">
+          See More
+        </button>
+      </a>
+    </div>
+  </div>
+  <!--section 6 end-->
+
+  <!--section 7 start-->
+  <div class="content-section content-section--l3-2 bg-default-3 testimonial-section testimonial-section--l4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title section-title--l3 text-center">
+            <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+              Contact Us</h6>
+            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+              Four-Step Journey: From Idea Validation to MVP Launch</h2>
+          </div>
+        </div>
+      </div>
+      <div class="widgets widgets-content--l3">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2
+                  class="widget--content-l3__circle-content bg-blue-ribbon shadow--blue-ribbon-2 shadow--blue-ribbon-2 dark-mode-texts">
+                  1</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Idea Validation</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">We
+                start by understanding your business idea and validating its potential in the market. This involves
+                identifying the problem your product aims to solve and its target audience.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2 class="widget--content-l3__circle-content shadow--icon-yellow shadow--icon-yellow dark-mode-texts"
+                  style="background-color: #FFB700;">
+                  2</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Feature Prioritization</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false"> Based
+                on the idea validation, we identify and prioritize the essential features for your MVP. We focus on
+                features that provide the most value to your early adopters.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2
+                  class="widget--content-l3__circle-content  bg-blue-ribbon shadow--blue-ribbon-2 shadow--blue-ribbon-2 dark-mode-texts">
+                  3</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                MVP Development</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false"> Our
+                team then works on developing your MVP, ensuring it aligns with your business objectives and provides a
+                solid foundation for future development.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 single-widget">
+            <div class="widget widget--content-l3">
+              <div class="widget--content-l3__circle">
+                <h2
+                  class="widget--content-l3__circle-content shadow--icon-yellow shadow--icon-yellow shadow--blue-ribbon-2 dark-mode-texts"
+                  style="background-color: #FFB700;">
+                  4</h2>
+              </div>
+              <h4 class="widget--content-l3__title" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">
+                Testing & Feedback</h4>
+              <p class="widget--content-l3__text" data-aos="fade-up" data-aos-duration="00" data-aos-once="false">We
+                launch the MVP to a select group of users and gather feedback. This feedback is invaluable in making
+                necessary improvements and planning for full-scale development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="contact.html" class="d-flex align-items-center justify-content-center mt-6" data-aos="fade-up"
+        data-aos-duration="00" data-aos-once="false">
+        <button type="button" class="bg-blue-ribbon text-white btn btn--lg m-sm-auto mb-xs-5">
+          Contact Us
+        </button>
+      </a>
+    </div>
+  </div>
+  <!--section 7 end-->
+
+
+  <!--section 8 start-->
+  <div class="customWebRandomImg d-flex">
+    <div class="">
+      <img class="w-100" src="image/customWebApp/grouped.png" alt="">
+    </div>
+    <div>
+      <img class="w-100" src="image/customWebApp/ansari.png" alt="">
+    </div>
+    <div>
+      <img class="w-100" src="image/customWebApp/marsad.png" alt="">
+    </div>
+  </div>
+
+  <!--section 8 end-->
+
+
+
+  <!-- FOOTER START -->
+  <div class="footer-area footer-inner-1 bg-default-3">
+    <div class="container">
+      <footer class="footer-top">
+        <div class="row">
+          <div class="col-lg-3 col-md-7 col-xs-9">
+            <div class="footer-widgets footer-widgets--l7">
+              <!-- Brand Logo-->
+              <div class="d-flex justify-content-start">
+                <div class="brand-logo mt-1">
+                  <a href="#">
+                    <!-- light version logo (logo must be black)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="light-version-logo footer-logo">
+                    <!-- Dark version logo (logo must be White)-->
+                    <img src="image/tdc_circle_logo.png" alt="" class="dark-version-logo footer-logo">
+                  </a>
+                </div>
+              </div>
+              <p class="footer-widgets__text mt-5">
+                We will bring your idea into its digital creation the way you want it to be.</p>
+              <ul class="footer-social-share footer-social-share--rounded mt-4">
+                <li>
+                  <a href="https://www.facebook.com/thedevcorporate">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TheDevCorp?t=HICVK3-5QmqhyNX0yV1fGw&s=09">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/thedevcorporate/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/the-dev-corporate/mycompany/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Contact Details</h4>
+                  <ul class="footer-widgets__list footer-widgets--address">
+                    <li>
+                      <i class="fa fa-map-marker-alt active-link"></i>
+                      <span>Address: <br class="d-block">
+                        4445 Corporation Ln.<br class="d-block">
+                        STE 264 Virginia Beach <br /> VA 23462 USA</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone-alt active-link"></i>
+                      <div class="list-content">
+                        <span class="d-block gr-text-hover-decoration-none"> Phone: </span>
+                        <a href="#">+92 322 6761800</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope active-link"></i>
+                      <a class="heading-default-color gr-text-hover-underline text-break"
+                        href="mailto:hr@thedevcorporate.com">
+                        <span class="d-block gr-text-hover-decoration-none"> Email:
+                        </span>hr@thedevcorporate.com</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="footer-widgets footer-widgets--l7 mb-10 mb-md-0">
+                  <h4 class="footer-widgets__title">Company</h4>
+                  <ul class="footer-widgets__list">
+                    <li>
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html">Portfolios</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <!-- <li>
+                      <a href="ServicesScreen.html">Services</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-xs-9">
+                <div class="footer-widgets footer-widgets--l7">
+                  <h4 class="footer-widgets__title">Newsletter</h4>
+                  <p class="footer-widgets__text mb-4 mt-0">Get the latest trends updates right at
+                    your inbox.</p>
+                  <!-- Newsletter -->
+                  <div class="newsletter newsletter--l7">
+                    <form class="form2" id="hire-now-form1" action="" method="post"
+                      onsubmit="return submitForm(toastMessagetwo, null, null, 'footerInput', null, null, null, null, null, null, )">
+                      <input type="email" id="footerInput" placeholder="Enter Your Email" required>
+                      <button class="btn bg-blue-ribbon" type="submit">Hire Now</button>
+                      <div id="snackbar1">We've received your mail. We'll contact you soon.</div>
+                    </form>
+                  </div>
+                  <!--/ .Newsletter -->
+                </div>
+                <h4 class="trusted-by">Trusted by</h4>
+                <!-- TrustBox widget - Micro Review Count -->
+                <div class="trustpilot-widget" data-style-height="40px" data-locale="en-US"
+                  data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6440f87e41a0d9256c41b790"
+                  data-theme="light" data-min-review-count="10" data-without-reviews-preferred-string-id="1">
+                  <a href="https://www.trustpilot.com/review/thedevcorporate.com" target="_blank"
+                    rel="noopener">Trustpilot</a>
+                </div>
+                <!-- End TrustBox widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright text-center border-top border-default-color-3">
+      <p class="mb-0">© 2022 The Dev Corporate. All Rights Reserved</p>
+    </div>
+  </div>
+  </div>
+  <!-- FOOTER END -->
+
+  </div>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/counter-up/waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+  <!-- Activation Script -->
+  <script src="js/menu.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>
