@@ -894,6 +894,10 @@ a.hover-text--electric-violet-3:hover {
   color: #fff !important;
 }
 
+.text-black{
+  color: #000;
+}
+
 @-webkit-keyframes rotation {
   0% {
     transform: scale(0.6);
@@ -6684,10 +6688,14 @@ ________________________________ */
   line-height: 20px;
 }
 
-.webAppsection2 {
+.webAppsection2, .mvpAliSection {
   background-color: rgba(246, 250, 255, 1);
 }
 
+.mvpAliSection{
+  border-radius: 50px;
+  padding: 100px 20px 0px 50px;
+}
 
 .webAppSection3 {
   width: 774px;
@@ -6711,6 +6719,19 @@ ________________________________ */
 }
 
 
+.MVPAliHeading{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #262729;
+}
+
+
+.MVPAliHeadingSub{
+  font-size: 35px;
+}
+
+
 
 @media (max-width: 1200px) {
   .webAppHeroImage {
@@ -6720,6 +6741,13 @@ ________________________________ */
   .webAppHeroMAinCont {
     margin-top: 110px;
   }
+
+  .MVPAliHeading{
+  font-size: 35px;
+ }
+ .MVPAliHeadingSub{
+  font-size: 30px;
+}
 }
 
 @media (max-width: 992px) {
@@ -6735,6 +6763,17 @@ ________________________________ */
   .webAppHeroMAin {
     height: 633px;
   }
+
+  .MVPAliHeading{
+  font-size: 30px;
+  }
+  .MVPAliHeadingSub{
+    font-size: 25px;
+  }
+   .mvpAliSection{
+  border-radius: 50px;
+  padding: 80px 30px 30px 30px;
+ }
 }
 
 @media (max-width: 768px) {
@@ -6756,6 +6795,8 @@ ________________________________ */
     margin: 50px 0px 0px 50px;
   }
 
+ 
+
 }
 
 @media (max-width: 576px) {
@@ -6769,6 +6810,15 @@ ________________________________ */
 
   .customWebRandomImg {
     flex-direction: column;
+  }
+
+  
+    .MVPAliHeading{
+  font-size: 27px;
+  margin-bottom: 100px;
+  }
+  .MVPAliHeadingSub{
+    font-size: 22px;
   }
 }
 
@@ -19783,43 +19833,43 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 .marsad-profile {
-  background-image: url("../image/home-1/marsad-image.png");
+  background-image: url("../image/home-1/home1.5/AlaricMonroe.png");
 }
 
 .rubnawaz-profile {
-  background-image: url("../image/home-1/rubnawaz-image.png");
+  background-image: url("../image/home-1/home1.5/AlejandroSantos.png");
 }
 
 .suleman-prifile {
-  background-image: url("../image/home-1/suleman-image.png");
+  background-image: url("../image/home-1/home1.5/EmilHansen.png");
 }
 
 .shina-profile {
-  background-image: url("../image/home-1/shine-image.png");
+  background-image: url("../image/home-1/home1.5/Seraphina-everly.png");
 }
 
 .sham-profile {
-  background-image: url("../image/home-1/sham-image.png");
+  background-image: url("../image/home-1/home1.5/Li-Wei-Tao.png");
 }
 
 .abdullah-profile {
-  background-image: url("../image/home-1/abdullah-image.png");
+  background-image: url("../image/home-1/home1.5/MateoFernandez.png");
 }
 
 .ali-profile {
-  background-image: url("../image/home-1/ali-image.png");
+  background-image: url("../image/home-1/home1.5/OctaviaWinters.png");
 }
 
 .rameez-profile {
-  background-image: url("../image/home-1/rameez-image.png");
+  background-image: url("../image/home-1/home1.5/SeraphinaEverly.png");
 }
 
 .fawaz-profile {
-  background-image: url("../image/home-1/fawaz-image.png");
+  background-image: url("../image/home-1/home1.5/MalikAnderson.png");
 }
 
 .bakar-profile {
-  background-image: url("../image/home-1/bakar-image.png");
+  background-image: url("../image/home-1/home1.5/Elara.png");
 }
 
 .profile-containers {
@@ -19860,12 +19910,10 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 .bg-container {
-  background-color: #3359FF;
   height: 400px;
   width: 100%;
 }
 
-.centent {}
 
 .developer-name {
   font-size: 24px;
@@ -19881,6 +19929,10 @@ mark[data-aos="highlight-text"].aos-animate {
   font-weight: 500;
   width: 200px;
   margin-top: 15px;
+}
+
+.developer-card-btn{
+  margin-top: 150px;
 }
 
 .developer-experience {
