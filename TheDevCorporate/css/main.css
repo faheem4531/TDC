@@ -12016,6 +12016,10 @@ ________________________________ */
   }
 }
 
+.font-size-head {
+  font-size: 26px !important;
+}
+
 .feature-area--l2__image-group {
   position: relative;
   z-index: 1;
@@ -18426,7 +18430,7 @@ mark[data-aos="highlight-text"].aos-animate {
 
 .variety-contract-section {
   padding: 80px 0px;
-  background: url(../image/variety-contract.png), rgb(43, 89, 255, 1);
+  background: rgb(43, 89, 255, 1);
   background-size: contain;
   background-repeat: repeat;
   width: 100%;
@@ -19699,7 +19703,7 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 .companies-logo {
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 
@@ -19923,4 +19927,25 @@ mark[data-aos="highlight-text"].aos-animate {
 
 .widgets-content--l3 .single-widget:last-child>div::before {
   display: none
+}
+
+
+.section-title-hp {
+  color: #262729 !important;
+}
+
+.section-para-sec {
+  color: #717084 !important;
+}
+
+.section-main-slider-bg {
+  background-color: rgba(246, 850, 755, 1) !important;
+}
+
+.services-hover-effect:hover {
+  background-color: #2b59ff !important;
+  color: #fff !important;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
