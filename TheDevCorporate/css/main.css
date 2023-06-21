@@ -12083,6 +12083,10 @@ ________________________________ */
   }
 }
 
+.font-size-head {
+  font-size: 26px !important;
+}
+
 .feature-area--l2__image-group {
   position: relative;
   z-index: 1;
@@ -18494,7 +18498,7 @@ mark[data-aos="highlight-text"].aos-animate {
 
 .variety-contract-section {
   padding: 80px 0px;
-  background: url(../image/variety-contract.png), rgb(43, 89, 255, 1);
+  background: rgb(43, 89, 255, 1);
   background-size: contain;
   background-repeat: repeat;
   width: 100%;
@@ -19767,7 +19771,7 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 .companies-logo {
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 
