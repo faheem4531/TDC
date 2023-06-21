@@ -894,7 +894,7 @@ a.hover-text--electric-violet-3:hover {
   color: #fff !important;
 }
 
-.text-black{
+.text-black {
   color: #000;
 }
 
@@ -6688,13 +6688,14 @@ ________________________________ */
   line-height: 20px;
 }
 
-.webAppsection2, .mvpAliSection {
+.webAppsection2 {
   background-color: rgba(246, 250, 255, 1);
 }
 
-.mvpAliSection{
+.mvpAliSection {
   border-radius: 50px;
   padding: 100px 20px 0px 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .webAppSection3 {
@@ -6719,7 +6720,7 @@ ________________________________ */
 }
 
 
-.MVPAliHeading{
+.MVPAliHeading {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -6727,7 +6728,7 @@ ________________________________ */
 }
 
 
-.MVPAliHeadingSub{
+.MVPAliHeadingSub {
   font-size: 35px;
 }
 
@@ -6742,12 +6743,13 @@ ________________________________ */
     margin-top: 110px;
   }
 
-  .MVPAliHeading{
-  font-size: 35px;
- }
- .MVPAliHeadingSub{
-  font-size: 30px;
-}
+  .MVPAliHeading {
+    font-size: 35px;
+  }
+
+  .MVPAliHeadingSub {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -6764,16 +6766,18 @@ ________________________________ */
     height: 633px;
   }
 
-  .MVPAliHeading{
-  font-size: 30px;
+  .MVPAliHeading {
+    font-size: 30px;
   }
-  .MVPAliHeadingSub{
+
+  .MVPAliHeadingSub {
     font-size: 25px;
   }
-   .mvpAliSection{
-  border-radius: 50px;
-  padding: 80px 30px 30px 30px;
- }
+
+  .mvpAliSection {
+    border-radius: 50px;
+    padding: 80px 30px 30px 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6795,7 +6799,7 @@ ________________________________ */
     margin: 50px 0px 0px 50px;
   }
 
- 
+
 
 }
 
@@ -6812,12 +6816,13 @@ ________________________________ */
     flex-direction: column;
   }
 
-  
-    .MVPAliHeading{
-  font-size: 27px;
-  margin-bottom: 100px;
+
+  .MVPAliHeading {
+    font-size: 27px;
+    margin-bottom: 100px;
   }
-  .MVPAliHeadingSub{
+
+  .MVPAliHeadingSub {
     font-size: 22px;
   }
 }
@@ -19935,7 +19940,7 @@ mark[data-aos="highlight-text"].aos-animate {
   margin-top: 15px;
 }
 
-.developer-card-btn{
+.developer-card-btn {
   margin-top: 150px;
 }
 
@@ -19995,8 +20000,7 @@ mark[data-aos="highlight-text"].aos-animate {
 }
 
 .services-hover-effect:hover {
-  background-color: #2b59ff !important;
-  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.07) !important;
   border-radius: 10px;
   padding-right: 10px;
   padding-left: 10px;
