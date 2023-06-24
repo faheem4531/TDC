@@ -6663,11 +6663,13 @@ ________________________________ */
 
 }
 
+.webAppHeroMAin_staff-bg {
+  background: url(image/staff-augmentation/hero-bg.png);
+}
+
 .webAppHeroMAinCont {
   margin-top: 160px;
 }
-
-
 
 .webAppHeroImage {
   position: absolute;
@@ -6675,6 +6677,16 @@ ________________________________ */
   bottom: 0px;
 }
 
+.ai-mu_hero {
+  right: 70px;
+  bottom: 60px;
+}
+
+.itStaffHeroImage {
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+}
 
 .webCardSmallHeading {
   font-weight: 700;
@@ -6747,6 +6759,12 @@ ________________________________ */
     height: 312px;
   }
 
+  .itStaffHeroImage {
+    height: 300px;
+    right: 50px;
+    bottom: 40px;
+  }
+
   .webAppHeroMAinCont {
     margin-top: 110px;
   }
@@ -6770,9 +6788,22 @@ ________________________________ */
     transform: translate(-50%);
   }
 
+  .ai-mu_hero {
+    height: 330px;
+    bottom: 40px;
+  }
+
+  .itStaffHeroImage {
+    height: 312px;
+    right: 50px;
+    bottom: 30px;
+  }
+
   .webAppHeroMAin {
     height: 633px;
   }
+
+
 
   .MVPAliHeading {
     font-size: 30px;
@@ -6807,6 +6838,16 @@ ________________________________ */
     height: 290px;
   }
 
+  .ai-mu_hero {
+    height: 300px;
+  }
+
+  .itStaffHeroImage {
+    height: 290px;
+    right: 50px;
+    bottom: 30px;
+  }
+
   .customWebAppImg {
     width: 75%;
   }
@@ -6828,6 +6869,16 @@ ________________________________ */
 @media (max-width: 576px) {
   .webAppHeroImage {
     height: 250px;
+  }
+
+  .ai-mu_hero {
+    height: 280px;
+  }
+
+  .itStaffHeroImage {
+    height: 250px;
+    right: 40px;
+    bottom: 20px;
   }
 
   .webAppHeroMAin {
@@ -6861,11 +6912,6 @@ ________________________________ */
 /*
   Custom Web hero section end
 ---------------------------------*/
-.staff-aug-parent {
-  background-image: url(../image/staff-augementation/staff-bg.svg);
-  background-repeat: no-repeat;
-  height: 500px;
-}
 
 .staff-help-padding {
   padding: 0px;
@@ -20282,4 +20328,9 @@ mark[data-aos="highlight-text"].aos-animate {
     line-height: 30px;
     margin: 20px 0 30px;
   }
+}
+
+
+.text-clr-dark {
+  color: #262729 !important;
 }
